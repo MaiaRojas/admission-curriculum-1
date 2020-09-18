@@ -1,4 +1,4 @@
-# Seleção
+# Processo de seleção
 
 Dos o tres párrafos explicando el curso en líneas generales. Introducción al
 tema central y su importancia para un desarrollador full stack.
