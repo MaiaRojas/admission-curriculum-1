@@ -86,7 +86,7 @@ reflexionar y encontrar estrategias para cambiar.
 La siguiente imagen resume algunas de las diferencias entre ambas mentalidades,
 y te ayudará a identificar cómo mejorar:
 
-![Image Growth Mindset](https://user-images.githubusercontent.com/25912510/35746484-ef89fb66-0814-11e8-9da8-0440d5b0375c.png)
+![Image Growth Mindset](https://user-images.githubusercontent.com/25912510/93641403-ceb20900-f9c1-11ea-8d1e-49804357b616.png)
 
 ## Growth Mindset en Laboratoria
 

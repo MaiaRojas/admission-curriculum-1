@@ -6,34 +6,31 @@
 
 ***
 
-Hola y bienvenida a la tercera etapa del proceso de selección: el pre-trabajo.
+Hola y bienvenida a la tercer paso de tu proceso en la plataforma: el pre-trabajo.
 Debes sentirte muy orgullosa de estar dispuesta a invertir tu tiempo y esfuerzo
-para completar una de las etapas más importantes del proceso. Esta etapa
-consiste en realizar el curso **01. Introducción a la programación (con
-JavaScript)** de Laboratoria, que es el punto de inicio ideal para aprender a
-programar. Aquí empezamos desde cero, aprendiendo los fundamentos de JavaScript,
-el lenguaje de programación más popular del mundo.
+para completar una de las etapas más importantes del proceso. Esta etapa consiste
+en realizar el curso **01. Introducción a la programación (con JavaScript)** de
+Laboratoria, que es el punto de inicio ideal para aprender a programar. Aquí
+empezamos desde cero, aprendiendo los fundamentos de JavaScript, el lenguaje de
+programación más popular del mundo.
 
 Este curso es un paso fundamental del proceso de selección, pues nos permitirá
 comprobar tu interés por la tecnología, así como tu compromiso para pertenecer
-al programa. Además, analizaremos tu capacidad para aprender de manera
-individual e independiente.
+al programa. Además, analizaremos tu capacidad para aprender de manera individual
+e independiente.
 
-La duración aproximada del curso es de 15-20 horas. Tú podrás avanzar a tu
-propio ritmo, pero te recomendamos organizarte con tiempo para que vayas
-haciéndolo poco a poco. El equipo de Laboratoria te comunicará las fechas de
-cierre para el pretrabajo, no olvides anotarla y tenerla presente.
+La duración aproximada del curso es de 15-20 horas. Tú podrás avanzar a tu propio
+ritmo, pero te recomendamos organizarte con tiempo para que vayas haciéndolo poco
+a poco. El equipo de Laboratoria te comunicará las fechas de cierre para el
+pre-trabajo, no olvides anotar y tenerla presente.
 
-Para pasar a la siguiente etapa del proceso de selección es necesario que
-completes todo el pre-trabajo. Las postulantes que demuestren el mayor
-compromiso y potencial para aprender, serán invitadas a iniciar el periodo de
-pre-admisión, donde continuaremos con este curso de modo presencial. Será una
-buena oportunidad para demostrar todo lo que ya dominan y saben hacer.
+Para pasar a la siguiente etapa del proceso de selección es necesario que completes
+todo el pre-trabajo.
 
 ## Acompañamiento y puntos de apoyo
 
-Recuerda que no estás sola en este proceso. Nosotrxs te estaremos acompañando a
-cada paso a través de varios canales de apoyo a lo largo del curso:
+Recuerda que no estás sola en este proceso. Te estaremos acompañando a cada paso
+a través de varios canales de apoyo a lo largo de tu proceso:
 
 <!--
 ## Descargar y cuentas
@@ -59,12 +56,8 @@ Video de Michelle explicando las descargas:
 
 ### 1. Ayuda
 
-En la sección de Ayuda, podrás encontrar "Preguntas y Respuestas Frecuentes",
-que podrán guiarte en caso que tengas dudas. Si la sección de "Preguntas y
-Respuestas Frecuentes" no soluciona tus dudas, puedes contactarnos a través del
-formulario que se encuentra al final de la sección. Una vez completes el
-formulario, nosotros nos contactaremos contigo a través del correo electrónico
-para ayudarte.
+En la sección de Ayuda de esta misma plataforma, podrás encontrar "Preguntas y
+Respuestas Frecuentes", que podrán guiarte en caso que tengas dudas.
 
 <!--
 ### 2. Horas de consulta
@@ -93,48 +86,34 @@ Las horas de consulta por sede son las siguientes:
 
 ### 2. Correo
 
-Si no has podido resolver tus dudas y necesitas  recibir la ayuda de nuestro
-equipo de formación, también tendrás la opción de escribirle al equipo de
-selección y entrenamiento del bootcamp, a través de los datos de contacto
-señalados por sede.
-
-Trata de utilizar esta opción como último recurso ya que mientras más correos
-recibamos, más nos tardaremos en responderlos.
-
-Los contactos para cada sede, son los siguientes:
-
-* Lima:
-  - Alejandra Ramírez: alejandra@laboratoria.la
-* Ciudad de México:
-  - Catalina Guerrero: catalina.g@laboratoria.la
-* Santiago de Chile:
-  - Alexandra Neira: alexandra@laboratoria.la
-* Guadalajara:
-  - Ofelia Reyes: ofeleriareyes@laboratoria.la
+Si no has podido resolver tus dudas y necesitas más información, puedes visitar
+nuestra página de [preguntas frecuentes](https://preguntas.laboratoria.la/postulantes-al-bootcamp)
+sobre el programa, también puedes escribirle al equipo de selección y del
+bootcamp, a través de postula@laboratoria.la
 
 ## Sobre este curso
 
-### Objetivo del curso
+### Objetivo del pre-trabajo
 
-Este curso está dirigido a personas sin conocimientos previos de programación
-que tienen el interés de aventurarse al mundo del código. Será tu primer paso en
-la ruta de aprendizaje.
+El pre-trabajo es un curso en línea que está dirigido a personas sin conocimientos
+previos de programación y que tienen el interés de aventurarse al mundo del código.
+Será tu primer paso en la ruta de aprendizaje.
 
-El propósito de este curso es darte una idea de qué se trata el mundo del
-desarrollo de software, para que puedas determinar si es algo que te apasiona
-perseguir como profesión. Al terminar este curso sabrás si el código es lo tuyo
-y habrás sentado unas buenas bases para el desarrollo de tu carrera profesional
-en el mundo tech.
+El propósito de este curso es darte una idea de qué se trata el mundo del desarrollo
+de software, para que puedas determinar si es algo que te apasiona perseguir como
+profesión. Al terminar este curso sabrás si el código es lo tuyo y habrás sentado
+unas buenas bases para el desarrollo de tu carrera profesional en el mundo tech.
 
-### Aprenderás
+## Esto es lo que aprenderás al finalizar el curso
 
-* Entender **qué es la programación** y por qué aprender a programar.
-* Entender **qué es JavaScript** y por qué aprenderlo.
-* Tener un primer acercamiento al mundo del código, creando **tu primera página
-  web**.
-* A darle dinamismo a tu web utilizando JavaScript.
-* Algunos **conceptos básicos de programación** como: variables, tipos datos y
-  operadores.
+* Lograrás tener un entendimiento de **qué es la programación** y por qué aprender
+  a programar.
+* Entenderás **qué es JavaScript** y por qué aprenderlo.
+* Tendrás un primer acercamiento al mundo del código, creando **tu primera**
+  **página web**.
+* Podrás darle dinamismo a tu web utilizando JavaScript.
+* Lograrás el manejo de algunos **conceptos básicos de programación** como: variables,
+  tipos datos y operadores.
 
 ### Requerimientos previos
 
