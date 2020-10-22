@@ -6,10 +6,10 @@
 
 ***
 
-Hola y bienvenida a la tercer paso de tu proceso en la plataforma: el pre-trabajo.
-Debes sentirte muy orgullosa de estar dispuesta a invertir tu tiempo y esfuerzo
-para completar una de las etapas más importantes del proceso. Esta etapa consiste
-en realizar el curso **01. Introducción a la programación (con JavaScript)** de
+Bienvenida al tercer paso de tu proceso en la plataforma: el pre-trabajo. Debes
+sentirte muy orgullosa de estar dispuesta a invertir tu tiempo y esfuerzo para
+completar una de las etapas más importantes del proceso. Esta etapa consiste en
+realizar el curso **01. Introducción a la programación (con JavaScript)** de
 Laboratoria, que es el punto de inicio ideal para aprender a programar. Aquí
 empezamos desde cero, aprendiendo los fundamentos de JavaScript, el lenguaje de
 programación más popular del mundo.
@@ -22,7 +22,7 @@ e independiente.
 La duración aproximada del curso es de 15-20 horas. Tú podrás avanzar a tu propio
 ritmo, pero te recomendamos organizarte con tiempo para que vayas haciéndolo poco
 a poco. El equipo de Laboratoria te comunicará las fechas de cierre para el
-pre-trabajo, no olvides anotar y tenerla presente.
+pre-trabajo, no olvides anotarla y tenerla presente.
 
 Para pasar a la siguiente etapa del proceso de selección es necesario que completes
 todo el pre-trabajo.
@@ -56,8 +56,9 @@ Video de Michelle explicando las descargas:
 
 ### 1. Ayuda
 
-En la sección de Ayuda de esta misma plataforma, podrás encontrar "Preguntas y
-Respuestas Frecuentes", que podrán guiarte en caso que tengas dudas.
+En la [sección de Ayuda](https://preguntas.laboratoria.la/postulantes-al-bootcamp)
+de esta misma plataforma, podrás encontrar "Preguntas y Respuestas Frecuentes",
+que podrán guiarte en caso que tengas dudas.
 
 <!--
 ### 2. Horas de consulta
@@ -104,7 +105,7 @@ de software, para que puedas determinar si es algo que te apasiona perseguir com
 profesión. Al terminar este curso sabrás si el código es lo tuyo y habrás sentado
 unas buenas bases para el desarrollo de tu carrera profesional en el mundo tech.
 
-## Esto es lo que aprenderás al finalizar el curso
+### **Esto es lo que aprenderás al finalizar el curso:**
 
 * Lograrás tener un entendimiento de **qué es la programación** y por qué aprender
   a programar.
