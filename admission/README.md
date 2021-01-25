@@ -58,7 +58,11 @@ por lo que al final del examen tenemos una mejor idea de tu talento y tu
 capacidad. ¡No tienes de qué preocuparte! No tienes que estudiar ni tener
 conocimientos previos de programación.
 
-### Unidad 03: [Pre-trabajo](03-prework)
+### Unidad 03: [Pre-trabajo parte 1: Mentalidad para aprender](03-learning-mindset)
+
+Mentalidad para aprender
+
+### Unidad 04: [Pre-trabajo parte 2: Introducción a Javascript](04-prework)
 
 Bienvenida al curso en línea donde aprenderás conceptos básicos de programación
 y GrowthMindset. Podrás hacerlo a tu ritmo. Encontrarás quizzes y ejercicios
