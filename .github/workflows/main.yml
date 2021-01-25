@@ -1,0 +1,27 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Typeform configuration file
+        run: cp .typeformrc.example .typeformrc
+        shell: bash
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.18.1'
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+      - name: Install dependencies
+        run: npm install
+      - name: Run build for ES
+        run: npm run build -- --env=development
+      - name: Run build for PT
+        run: npm run build -- --env=development --locale=pt-BR

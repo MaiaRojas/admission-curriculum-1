@@ -1,5 +1,7 @@
 # Admission Curriculum
 
+![Integration tests](https://github.com/Laboratoria/admission.laboratoria.la/workflows/Integration%20tests/badge.svg)
+
 This repository holds the topics required for the admission process in spanish and portuguese.
 
 ## Install
