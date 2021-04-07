@@ -51,3 +51,5 @@ config/server.key
 .sass-cache/*
 
 .env
+
+solution/test.js
