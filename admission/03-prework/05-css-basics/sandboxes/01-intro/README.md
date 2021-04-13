@@ -2,7 +2,7 @@
 
 - Tipo: `lectura`
 - Formato: `self-paced`
-- Duración: `15min`
+- Duración: `30min`
 
 ## Objetivos de Aprendizaje
 
@@ -66,6 +66,20 @@ h2 {
 
 Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color rojo!
 {% endspoiler %}
+
+### Comentarios
+
+Así como es buena práctica comentar tu código html y tu código js, es buena
+práctica comentar tu CSS. Los comentarios en CSS se hacen de la siguiente manera:
+
+- El comienzo se indica mediante los caracteres `/*` * El final del comentario
+  se indica mediante `*/`
+
+Veamos un ejemplo:
+
+```css
+/* Comentario en CSS */
+```
 
 ## Lecturas complementarias
 
