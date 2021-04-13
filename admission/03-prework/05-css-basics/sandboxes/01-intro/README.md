@@ -66,3 +66,7 @@ h2 {
 
 Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color rojo!
 {% endspoiler %}
+
+## Lecturas complementarias
+
+[Selectores](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
