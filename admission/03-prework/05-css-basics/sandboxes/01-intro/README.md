@@ -83,4 +83,7 @@ Veamos un ejemplo:
 
 ## Lecturas complementarias
 
-[Selectores](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
+Puedes leer un poco más sobre selectores y dos características de CSS: La cascada y la herencia
+
+- [Selectores](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
+- [Cascada y Herencia - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Cascada_y_herencia)
