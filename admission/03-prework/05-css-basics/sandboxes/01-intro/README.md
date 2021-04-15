@@ -2,7 +2,7 @@
 
 - Tipo: `lectura`
 - Formato: `self-paced`
-- Duración: `30min`
+- Duración: `60min`
 
 ## Objetivos de Aprendizaje
 
@@ -66,6 +66,50 @@ h2 {
 
 Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color rojo!
 {% endspoiler %}
+{% next "Selectores" %}
+
+### Selectores
+
+Existen múltiples selectores para identificar el elemento que queremos formatear,
+sendo más utilizados los selectores de clase y los selectores de ID.
+
+Clase y ID son atributos de las etiquetas HTML y podemos utilizarlos para buscar el elemento.
+Por ejemplo, en ese fragmento del HTML hay dos elementos con la clase `destacado` (h1 y em)
+y un elemento `p` con el id `primer`.
+
+```html
+  <h1 class="destacado">LOVE HTML</h1>
+  <p id="primer">Eso es el primer párrafo</p>
+  <p>Eso es el <em class="destacado">segundo</em> párrafo</p>
+```
+
+Si crearmos un regla de CSS con ese selector de clases, todos los conteudos de esos elementos
+vaan a tener ese formato. Para que el navegador entienda que es un selector de clase,
+utiliza un punto (.) antes del nombre de la clase. Por ejemplo:
+
+```css
+  .destacado {
+    color: red;
+    background-color: yellow;
+  }
+```
+
+La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase,
+salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) :
+
+```css
+  #primer {
+    color: green;
+  }
+```
+
+{% spoiler %}
+
+Si quieres saber más revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+
+{% endspoiler %}
+
+{% next "Comentarios" %}
 
 ### Comentarios
 
