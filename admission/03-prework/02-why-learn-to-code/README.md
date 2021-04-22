@@ -119,7 +119,7 @@ posición como uno de los lenguages de programación más populares. Según GitH
 una red de trabajo colaborativo para programadores, JavaScript es el lenguaje
 más popular dentro de esta plataforma:
 
-![Most popular language](https://adtmag.com/articles/2015/08/20/~/media/ECG/adtmag/Images/2015/08/github_languages.jpg)
+![Most popular language](https://visualstudiomagazine.com/articles/2020/12/03/~/media/ECG/visualstudiomagazine/Images/2020/12/octoverse_languages.ashx)
 
 ## Historia de JavaScript
 
