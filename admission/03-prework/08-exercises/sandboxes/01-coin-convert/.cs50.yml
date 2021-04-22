@@ -1,1 +1,10 @@
-lab50: true
+lab50:
+  window:
+    - editor
+    - readme
+    #    - browser
+    - terminal
+#  files:
+#    - !include package.json
+#    - !include test/*
+#    - !include src/*

@@ -1,9 +1,9 @@
-const restaurantBill = (cuenta) => {
+function restaurantBill(cuenta, cantidadDeAmigas) {
   const impuesto = /* ??? */;
+  const totalDeLaCuenta = /* ??? */;
+  const valorFinal = /* ??? */;
 
-  /* ??? */
-
-  return /* ??? */;
+  return /* ??? */
 };
 
 module.exports = restaurantBill;

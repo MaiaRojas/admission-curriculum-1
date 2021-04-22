@@ -1,4 +1,4 @@
-const coinConvert = (dolares) => {
+function coinConvert(dolares) {
   // Asigna el monto equivalente en soles
   const soles = /* ??? */;
 
@@ -8,7 +8,13 @@ const coinConvert = (dolares) => {
   // Asigna el monto equivalente en pesos chilenos
   const pesosChilenos = /* ??? */;
 
-  return [soles, pesosMexicanos, pesosChilenos];
+  // Asigna el monto equivalente en pesos colombianos
+  const pesosColombianos = /* ??? */;
+
+  // Asigna el monto equivalente en reales
+  const reales = /* ??? */;
+
+  return [soles, pesosMexicanos, pesosChilenos, pesosColombianos, reales];
 };
 
 module.exports = coinConvert;
