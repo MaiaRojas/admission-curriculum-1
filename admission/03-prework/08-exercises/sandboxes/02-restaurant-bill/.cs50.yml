@@ -1,8 +1,1 @@
-lab50:
-  window:
-    - editor
-    - readme
-    #    - browser
-    - terminal
-#  files:
-#    - !include src/*
+lab50: true

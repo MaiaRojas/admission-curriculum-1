@@ -2,20 +2,21 @@
 
 ## Enunciado
 
-Crea una función que convierta una cantidad en dólares a 5 monedas diferentes (soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales)
+Crea una función que convierta una cantidad en dólares a 5 monedas diferentes:
+soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales
 
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitas completar las siguientes tareas:
 
-- Abrir el archivo `coinConvert.js` que tiene una _función_ llamada `coinConvert`
-- Calcular los valores de las varibles:
+* Abrir el archivo `coinConvert.js` que tiene una _función_ llamada `coinConvert`
+* Calcular los valores de las varibles:
   - `soles`
   - `pesosMexicanos`
   - `pesosChilenos`
   - `pesosColombianos`
   - `reales`
-- Usar la terminal para:
+* Usar la terminal para:
   - Instalar las dependencias del proyecto
   - Ejecutar los tests
 
@@ -23,7 +24,8 @@ Para llevar a adelante este reto necesitas completar las siguientes tareas:
 
 ## Abre el archivo `coinConvert.js`
 
-En el lado derecho de tu pantalla asegurate que estas abriendo y trabajando en el archivo coinConvert.js.
+En el lado derecho de tu pantalla asegurate que estas abriendo y trabajando
+en el archivo coinConvert.js.
 
 ### Estructura de la función `coinConvert`
 
@@ -31,13 +33,16 @@ En el lado derecho de tu pantalla asegurate que estas abriendo y trabajando en e
 
 Es la variable que se define cuando se declara la función.
 
-La función `coinConverter` en el boilerplate(plantilla) tiene un solo _parámetro_ (`dolares`), que es un _número_ que representa una cantidad en dólares.
+La función `coinConverter` en el boilerplate(plantilla) tiene un solo
+_parámetro_ (`dolares`), que es un _número_ que representa una cantidad en dólares.
 
 #### Valor de retorno
 
 Este es el valor que retorna nuestra función cuando termina de ejecutarse.
 
-La función `coinConverter` en el boilerplate(plantilla) tiene un valor de retorno que es un _arreglo_ (_array_) con cinco valores: la cantidad en soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales.
+La función `coinConverter` en el boilerplate(plantilla) tiene
+un valor de retorno que es un _arreglo_ (_array_) con cinco valores:
+la cantidad en soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales.
 
 {% next "Funcionalidad JS" %}
 
@@ -57,7 +62,8 @@ Utiliza las siguientes tasas de cambio:
 
 ### Calculo del valor de la variable `soles`
 
-Asigna a la variable `soles` el resultado de multiplicar `dolares` por el tipo de cambio.
+Asigna a la variable `soles` el resultado de multiplicar `dolares` por
+el tipo de cambio.
 
 ```js
 const soles = dolares * 3.65;
@@ -67,7 +73,8 @@ const soles = dolares * 3.65;
 
 ### Calculo del valor de la variable `pesosMexicanos`
 
-Asigna a la variable `pesosMexicanos` el resultado de multiplicar `dolares` por el tipo de cambio.
+Asigna a la variable `pesosMexicanos` el resultado de multiplicar `dolares`
+por el tipo de cambio.
 
 ```js
 const pesosMexicanos = dolares * 19.96;
@@ -99,7 +106,7 @@ Repite el proceso para `reales`
 
 Escribe el siguiente comando en la terminal:
 
-```
+```sh
 npm install
 ```
 
@@ -107,7 +114,7 @@ npm install
 
 Escribe el siguiente comando en la terminal:
 
-```
+```sh
 npm test
 ```
 

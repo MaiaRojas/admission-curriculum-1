@@ -4,9 +4,10 @@
 - Formato: `self-paced`
 - Duración: `20min`
 
-## Objetivo:
+## Objetivo
 
-Construir una página web que funcionalmente sea similar a esta: https://prework-test.netlify.app/
+Construir una página web que funcionalmente sea similar a esta: [https://prework-test.netlify.app/](https://prework-test.netlify.app/)
+
 ## ¿Qué necesitamos? (Objetivos de aprendizaje)
 
 - Entender como construir la **estructura** básica de una página web usando **HTML**.
@@ -15,6 +16,7 @@ Construir una página web que funcionalmente sea similar a esta: https://prework
 - Aprender a darle **dinamismo** a una web utilizando **JavaScript**.
 - Tener un primer acercamiento al mundo del código, creando tu primer sitio
   web.
+
 ***
 
 [FIXME: Que necesitamos para hacer una pagina web]

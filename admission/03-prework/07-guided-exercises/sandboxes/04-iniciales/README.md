@@ -86,7 +86,8 @@ Revisa el resultado en tu navegador, debería ser algo parecido a esto
 El archivo `index.html` no está enlazado a el archivo `app.js`
 y no reconocerá las funcionalidades `javascript`
 
-Para ello necesitamos importar el archivo `app.js` dentro de nuestro etiqueta `<body>`:
+Para ello necesitamos importar el archivo `app.js` dentro de
+nuestra etiqueta `<body>`:
 
 ```html
   <script type="text/javascript" src="app.js"></script>
@@ -95,8 +96,9 @@ Para ello necesitamos importar el archivo `app.js` dentro de nuestro etiqueta `<
 ## Crea tu _prompt_ y guarda el valor retornado en una variable
 
 {% spoiler %}
-El método `window.prompt()` de la web, es una función que toma un único argumento obligatorio,
-la pregunta a realizar y retorna el valor ingresado por la usuaria.
+El método `window.prompt()` de la web, es una función que toma un único
+argumento obligatorio, la pregunta a realizar y retorna el valor ingresado
+por la usuaria.
 
 Al ejecutarse esta función muestra en pantalla un diálogo
 con la pregunta y una caja de texto para que la usuaria complete.
@@ -131,7 +133,8 @@ Para obtener la primera inicial, vamos a usar el método `slice()`.
 
 {% spoiler "Pista" %}
 El método `slice()` toma dos argumentos y sirve para cortar una "porción" del `string`.
-El primer argumento indica en qué posición del `string` vas a comenzar a cortar y el segundo dónde vas a terminar.
+El primer argumento indica en qué posición del `string` vas a comenzar a cortar
+y el segundo dónde vas a terminar.
 
 ATENCIÓN: La *primera* letra del _string_ está en la posición 0,
 la *segunda* letra en la posición 1, y así sucesivamente
@@ -161,8 +164,8 @@ const primeraInicial = nombre.slice(0,1);
 Solo con `slice()` no es posible obtener la segunda inicial,
 porque su posición no es fija...
 
-Por ejemplo, para el nombre "Ana Martinez", la segunda inicial está en la posición 4,
-pero para "Michelle Seguil" está en la posición 9.
+Por ejemplo, para el nombre "Ana Martinez", la segunda inicial está en la
+posición 4, pero para "Michelle Seguil" está en la posición 9.
 
 ¿Cómo podemos hacer entonces?
 
@@ -171,7 +174,8 @@ Veamos:
 #### Buscar la posición de la segunda inicial
 
 {% spoiler "Pista"%}
-Una condición común es que la primera letra del apellido está inmediatamente después del espacio.
+Una condición común es que la primera letra del apellido está inmediatamente
+después del espacio.
 Entonces, primero vamos a encontrar la posición del espacio, ya que sabemos que
 la posición de la segunda inicial es la siguiente.
 
@@ -244,8 +248,9 @@ Si quieres saber más puedes revisar su
 document.write("Tus iniciales son " + primeraInicial + segundaInicial);
 ```
 
-Las iniciales ya aparecen en la pantalla... pero puedo testear que cuando escribimos
-un nombre como "ana martinez" (todo en minúsculas), las iniciales deberiam ser "AM" y no "am".
+Las iniciales ya aparecen en la pantalla... pero puedo testear que cuando
+escribimos un nombre como "ana martinez" (todo en minúsculas), las iniciales
+deberiam ser "AM" y no "am".
 Entonces, vamos a convertir las iniciales a mayúsculas
 
 ### Convertir las iniciales a mayúsculas
@@ -257,7 +262,8 @@ en cada una de las iniciales
 El método `toUpperCase()` es una función que no toma un argumento,
 y retorna todo el _string_ en mayúsculas.
 
-Si quieres saber más sobre el método `toUpperCase()` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+Si quieres saber más sobre el método `toUpperCase()` revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 
 {% endspoiler %}
 
