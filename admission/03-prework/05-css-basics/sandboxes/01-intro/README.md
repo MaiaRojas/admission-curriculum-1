@@ -6,7 +6,7 @@
 
 ## Objetivos de Aprendizaje
 
-- Entender qué es CSS y como aplicar
+- Entender qué es CSS y cómo usarlo
 - Conocer la estructura básica del CSS
 
 {% next "Intro" %}
@@ -28,7 +28,7 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 ## Sintaxis básica
 
-Básicamente necessitamos de três informaciones para crear las reglas de CSS :
+Básicamente necesitamos de tres datos para crear las reglas de CSS :
 
 - El selector - a quién se aplica esa regla
 - La propiedad que queremos formatear
@@ -60,9 +60,9 @@ h2 {
 
 {% spoiler %}
 
-- El selector es todas las etiquetas `h2`
+- El selector aplica a todas las etiquetas `h2`
 - La propiedad es el `color` del texto
-- `red` en inglés es rojo y es el valor que queremos aplicar
+- `red`, rojo en inglés, es el valor que queremos aplicar
 
 Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color rojo!
 {% endspoiler %}
@@ -71,9 +71,9 @@ Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color
 ### Selectores
 
 Existen múltiples selectores para identificar el elemento que queremos formatear,
-sendo más utilizados los selectores de clase y los selectores de ID.
+siendo los más utilizados los selectores de etiqueta, los selectores de clase (`class`) y los selectores de `id`.
 
-Clase y ID son atributos de las etiquetas HTML y podemos utilizarlos para buscar el elemento.
+`class` e `id` son atributos de las etiquetas HTML y podemos utilizarlos para buscar el elemento.
 Por ejemplo, en ese fragmento del HTML hay dos elementos con la clase `destacado` (h1 y em)
 y un elemento `p` con el id `primer`.
 
@@ -83,9 +83,9 @@ y un elemento `p` con el id `primer`.
   <p>Eso es el <em class="destacado">segundo</em> párrafo</p>
 ```
 
-Si crearmos un regla de CSS con ese selector de clases, todos los conteudos de esos elementos
-vaan a tener ese formato. Para que el navegador entienda que es un selector de clase,
-utiliza un punto (.) antes del nombre de la clase. Por ejemplo:
+Si crearmos un regla de CSS con ese selector de clases, todos los contenidos de esos elementos
+van a tener ese formato. Para que el navegador entienda que es un selector de clase,
+utiliza un punto (`.`) antes del nombre de la clase. Por ejemplo:
 
 ```css
   .destacado {
@@ -95,7 +95,7 @@ utiliza un punto (.) antes del nombre de la clase. Por ejemplo:
 ```
 
 La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase,
-salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) :
+salvo que se utiliza el símbolo de la almohadilla (`#`) en vez del punto (`.`) :
 
 ```css
   #primer {
@@ -113,7 +113,7 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 ### Comentarios
 
-Así como es buena práctica comentar tu código html y tu código js, es buena
+Así como es buena práctica comentar tu código html y tu código javascript, es buena
 práctica comentar tu CSS. Los comentarios en CSS se hacen de la siguiente manera:
 
 - El comienzo se indica mediante los caracteres `/*` * El final del comentario

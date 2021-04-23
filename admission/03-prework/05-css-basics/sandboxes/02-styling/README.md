@@ -16,7 +16,7 @@
 Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
-Primeramente, necesitamos un documento HTML para formatear.
+Primero, necesitamos un documento HTML para formatear.
 Vamos a hacerlo con un elemento `h1`, `h2` y un `p`.
 
 ```html
@@ -34,7 +34,7 @@ Vamos a hacerlo con un elemento `h1`, `h2` y un `p`.
 </html>
 ```
 
-Caso tiene dudas, puede revisitar la unidade HTML basics
+En caso tengas dudas, puede revisitar la unidad de HTML basics
 
 {% next "Formatear" %}
 
@@ -65,15 +65,15 @@ dentro de las etiquetas `head`.
 
 Puede testear algunos formatos, por ejemplo:
 
-- Cambiar el color del texto heading `h1` para rojo _(red)_
+- Cambiar el color del texto heading `h1` a rojo _(red)_
 - Poner amarillo _(yellow)_ como color de fondo _(background-color)_ en `h2`
-- Poner el texto de `p` en azul y verde como color de fondo
+- Poner el texto de `p` en azul y como color de fondo verde
 
 {% spoiler %}
 
 Los nombres de las propiedades y sus valores son siempre en inglés.
-Acuerdase que no necesitas saber inglés para continuar con tus estudios.
-Esto puede ayudarte, pero puede conocerlo más mientras aprende programación!
+Recuerda que no necesitas saber inglés para continuar con tu aprendizaje.
+Eso puede ayudarte, pero puedes ir aprendiendo más a medida que aprendes a programar!
 
 ```html
     <style>
@@ -101,8 +101,8 @@ pero el borde tiene varias propiedades como grosor (tamaño), tipo de línea y c
 
 Así, necesitamos añadir **todos** esos valores en la propiedad de borde _(border)_.
 
-- El tamaño _(width)_ puede ser en [pixel](https://en.wikipedia.org/wiki/Pixel), por ejemplo `2px`
-- Los tipos de linea _(style)_ pueden ser punteado _(dotted)_, sólido _(solid)_ y discontinuo _(dashed)_, por ejemplo
+- Para tamaño _(width)_ por el momento vamos a usar la unidad en [pixel](https://en.wikipedia.org/wiki/Pixel), por ejemplo `2px`
+- Los tipos de linea _(style)_ pueden ser punteado _(dotted)_, sólido _(solid)_ y discontinuo _(dashed)_
 - Y el color
 
 Podemos poner todas esas propiedades así:
@@ -113,7 +113,7 @@ Podemos poner todas esas propiedades así:
   border-color: blue;
 ```
 
-Otra forma de hacer es poniéndolo todos juntos en la propiedad `border`:
+Otra forma de hacerlo es poniéndolos todos juntos en la propiedad `border`:
 
 ```css
   border: 2px solid blue;
@@ -128,16 +128,16 @@ Esas propiedades también pueden ser aplicadas en diferentes lados del borde:
   border-left: 2px solid blue;
 ```
 
-### Practica del borde
+### Practica de borde
 
 Puede testear algunos formatos, por ejemplo:
 
-- Añadir un borde de 3px, punteado y verde en `h2` en todos os lados
-- Poner un borde amarillo, sólido de 5px en `p` en apenas el lado de bajo
+- Añadir un borde de 3px, punteado y verde en `h2` en todos los lados
+- Poner un borde amarillo, sólido de 5px en `p` solamente en el lado de abajo
 
 {% spoiler %}
 
-Al final, tu código vas a ser algo parecido con eso:
+Al final, tu código vas a ser algo parecido a eso:
 
 ```html
   <style>
@@ -156,7 +156,7 @@ Al final, tu código vas a ser algo parecido con eso:
   </style>
 ```
 
-Si quieres saber más sobre los tipos de linea revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
+Si quieres saber más sobre los tipos de línea revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
 
 {% endspoiler %}
 
