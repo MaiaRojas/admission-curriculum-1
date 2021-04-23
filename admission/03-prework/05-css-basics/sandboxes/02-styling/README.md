@@ -159,10 +159,3 @@ Al final, tu código vas a ser algo parecido a eso:
 Si quieres saber más sobre los tipos de línea revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
 
 {% endspoiler %}
-
-## Lecturas complementarias
-
-Hay muchas otras propiedades que pueden investigar.
-Además pueden leer sobre el modelo de caja de CSS.
-
-[Box Model - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
