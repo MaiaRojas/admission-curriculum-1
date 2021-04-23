@@ -95,7 +95,10 @@ en sólo un lado del elemento.
 
 {% endspoiler %}
 
-{% next "Dimensionamiento" %}
+Para entender mejor la diferencia, puede ver el **modelo de caja de CSS**.
+![Modelo de caja](https://upload.wikimedia.org/wikipedia/commons/e/ed/Box-model.svg)
+
+{% next "Tamaño" %}
 
 ## Tamaño
 
@@ -135,6 +138,9 @@ Si quieres saber más sobre los valores y unidades de CSS revisa su [documentaci
 {% endspoiler %}
 
 ## Lecturas complementarias
+
+Hay muchas otras propiedades que pueden investigar.
+Además pueden leer sobre el modelo de caja de CSS.
 
 - [Box Model - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 - [Unidades y medidas - Librosweb](https://uniwebsidad.com/libros/css/capitulo-3/unidades-de-medida?from=librosweb)
