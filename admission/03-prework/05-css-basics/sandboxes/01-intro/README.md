@@ -103,6 +103,24 @@ salvo que se utiliza el símbolo de la almohadilla (`#`) en vez del punto (`.`) 
   }
 ```
 
+Puedes combinar los selectores de tipo y el selector de clase o id,
+para obtener un selector mucho más específico. Por ejemplo, si modificamos
+los selectores anteriores:
+
+```css
+h1.destacado {
+  /* ... */
+}
+
+p#primer {
+  /* ... */
+}
+```
+
+El selector `h1.destacado` son los elementos de tipo `<h1>` que dispongan de
+un atributo class con valor `destacado`. Da misma forma, el selector `p#primer`
+solamente selecciona las etiquetas `<p>` cuyo atributo class sea igual a destacado.
+
 {% spoiler %}
 
 Si quieres saber más revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
