@@ -67,7 +67,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "develop": "webpack-dev-server --https",
+    "develop": "webpack-dev-server",
     "commit": "git-cz",
     "lint": "run-s lint:*",
     "lint:js": "eslint .",

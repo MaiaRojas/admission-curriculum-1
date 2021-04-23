@@ -167,11 +167,11 @@ export default function createTributePageTests() {
     });
 
     describe('#Interactivity', function () {
-      it(`My tribute page should start by default in 'light mode', its <body>
+      it(`My tribute page should start by default in 'light mode', its \`#main\`
       element should have class="light-theme".`, function () {
         assert(
-          document.querySelectorAll('body.light-theme').length,
-          '<body> element should have default class="light-theme"'
+          document.querySelectorAll('#main.light-theme').length,
+          '`#main` element should have default class="light-theme"'
         );
       });
 
@@ -184,35 +184,37 @@ export default function createTributePageTests() {
         );
       });
 
-      it(`When I press the theme-switcher, the <body> class attribute should change to "dark-theme".`, function () {
+      it(`When I press the theme-switcher, the #main class attribute should change to "dark-theme".`, function () {
         const switcher = document.getElementById('theme-switcher');
         switcher.click();
         assert(
-          document.querySelectorAll('body.dark-theme').length,
-          '<body> class should now be "dark-theme"'
+          document.querySelectorAll('#main.dark-theme').length,
+          '#main class should now be "dark-theme"'
         );
       });
 
-      it(`When I press the theme-switcher again, the <body> class attribute
+      it(`When I press the theme-switcher again, the #main class attribute
       should go back to "light-theme".`, function () {
         const switcher = document.getElementById('theme-switcher');
         switcher.click();
         assert(
-          document.querySelectorAll('body.light-theme').length,
-          '<body> class should now be "light-theme"'
+          document.querySelectorAll('#main.light-theme').length,
+          '#main class should now be "light-theme"'
         );
       });
 
       it(`The font color and the background color should be different between
       light and dark theme.`, function () {
-        const lightStyles = getComputedStyle(document.body);
+        const mainElem = document.getElementById('main');
+
+        const lightStyles = getComputedStyle(mainElem);
         const lightFontColor = lightStyles.color;
         const lightBgColor = lightStyles.backgroundColor;
 
         const switcher = document.getElementById('theme-switcher');
         switcher.click();
 
-        const darkStyles = getComputedStyle(document.body);
+        const darkStyles = getComputedStyle(mainElem);
         const darkFontColor = darkStyles.color;
         const darkBgColor = darkStyles.backgroundColor;
 

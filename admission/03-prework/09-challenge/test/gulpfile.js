@@ -21,8 +21,9 @@ const babelOptions = {
 };
 const noop = () => {};
 
-const bundle =
-  process.env.BUNDLE_URL || '../../testable-projects-fcc/v1/bundle.js';
+const bundle = process.env.BUNDLE_URL || '../../bundle.js';
+// ../../testable-projects-fcc/v1/bundle.js';
+
 const projectsPath = process.env.PROJECTS_PATH || './src/projects';
 const buildPath = process.env.BUILD_PATH || './build/pages';
 

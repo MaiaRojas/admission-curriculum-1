@@ -28,6 +28,12 @@ export default {
     codepen: 'https://codepen.io/freeCodeCamp/pen/zNqgVx',
     test: createTributePageTests
   },
+  'tribute-page-empty': {
+    name: 'Tribute Page Empty',
+    URL: projectsPath + '/tribute-page-empty/index.html',
+    codepen: 'https://codepen.io/freeCodeCamp/pen/zNqgVx',
+    test: createTributePageTests
+  }
   // portfolio: {
   //   name: 'Personal Portfolio',
   //   URL: projectsPath + '/portfolio/index.html',
