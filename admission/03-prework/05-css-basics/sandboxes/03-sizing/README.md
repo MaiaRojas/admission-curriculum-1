@@ -143,5 +143,5 @@ Hay muchas otras propiedades que pueden investigar.
 Además pueden leer sobre el modelo de caja de CSS.
 
 - [Box Model - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-- [Unidades y medidas - Librosweb](https://uniwebsidad.com/libros/css/capitulo-3/unidades-de-medida?from=librosweb)
-- [Colores - Librosweb](https://uniwebsidad.com/libros/css/capitulo-3/colores?from=librosweb)
+- [Percentage - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
+- [Unidades - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#longitudes)
