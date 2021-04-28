@@ -71,11 +71,12 @@ Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color
 ### Selectores
 
 Existen múltiples selectores para identificar el elemento que queremos formatear,
-siendo los más utilizados los selectores de etiqueta, los selectores de clase (`class`) y los selectores de `id`.
+siendo los más utilizados los selectores de etiqueta, los selectores de clase
+(`class`) y los selectores de `id`.
 
-`class` e `id` son atributos de las etiquetas HTML y podemos utilizarlos para buscar el elemento.
-Por ejemplo, en ese fragmento del HTML hay dos elementos con la clase `destacado` (h1 y em)
-y un elemento `p` con el id `primer`.
+`class` e `id` son atributos de las etiquetas HTML y podemos utilizarlos para
+buscar el elemento. Por ejemplo, en ese fragmento del HTML hay dos elementos con
+la clase `destacado` (`h1` y `em`) y un elemento `p` con el id `primer`.
 
 ```html
   <h1 class="destacado">LOVE HTML</h1>
@@ -83,9 +84,10 @@ y un elemento `p` con el id `primer`.
   <p>Eso es el <em class="destacado">segundo</em> párrafo</p>
 ```
 
-Si crearmos un regla de CSS con ese selector de clases, todos los contenidos de esos elementos
-van a tener ese formato. Para que el navegador entienda que es un selector de clase,
-utiliza un punto (`.`) antes del nombre de la clase. Por ejemplo:
+Si crearmos un regla de CSS con ese selector de clases, todos los contenidos de
+esos elementos van a tener ese formato. Para que el navegador entienda que es
+un selector de clase, utiliza un punto (`.`) antes del nombre de la clase.
+Por ejemplo:
 
 ```css
   .destacado {
@@ -145,7 +147,8 @@ Veamos un ejemplo:
 
 ## Lecturas complementarias
 
-Puedes leer un poco más sobre selectores y dos características de CSS: La cascada y la herencia
+Puedes leer un poco más sobre selectores y dos características de CSS:
+La cascada y la herencia
 
 - [Selectores](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 - [Cascada y Herencia - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Cascada_y_herencia)

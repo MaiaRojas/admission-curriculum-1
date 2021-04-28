@@ -101,8 +101,10 @@ pero el borde tiene varias propiedades como grosor (tamaño), tipo de línea y c
 
 Así, necesitamos añadir **todos** esos valores en la propiedad de borde _(border)_.
 
-- Para tamaño _(width)_ por el momento vamos a usar la unidad en [pixel](https://en.wikipedia.org/wiki/Pixel), por ejemplo `2px`
-- Los tipos de linea _(style)_ pueden ser punteado _(dotted)_, sólido _(solid)_ y discontinuo _(dashed)_
+- Para tamaño _(width)_ por el momento vamos a usar la unidad en
+  [pixel](https://en.wikipedia.org/wiki/Pixel), por ejemplo `2px`
+- Los tipos de linea _(style)_ pueden ser punteado _(dotted)_,
+  sólido _(solid)_ y discontinuo _(dashed)_
 - Y el color
 
 Podemos poner todas esas propiedades así:

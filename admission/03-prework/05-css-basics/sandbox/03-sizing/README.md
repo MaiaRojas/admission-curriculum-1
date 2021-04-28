@@ -61,7 +61,8 @@ un border de 3px, de linea sólida y de color rojo.
   }
 ```
 
-Ahora, agrega una margen de 30px alrededor del párrafo ponendo `margin: 30px` en CSS.
+Ahora, agrega una margen de 30px alrededor del párrafo ponendo `margin: 30px`
+en CSS.
 
 ```css
   p {
@@ -102,8 +103,9 @@ Para entender mejor la diferencia, puede ver el **modelo de caja de CSS**.
 
 ## Tamaño
 
-A veces, es posible que quieras utilizar un ancho y una altura específicos en sus elementos.
-¡Eso se puede hacer fácilmente con las propiedades de `width` (ancho) y `height` (altura)!
+A veces, es posible que quieras utilizar un ancho y una altura específicos en
+sus elementos. ¡Eso se puede hacer fácilmente con las propiedades de `width`
+(ancho) y `height` (altura)!
 
 ```css
   width: 300px;
@@ -117,11 +119,16 @@ la verdadera naturaleza de cómo se comportan el ancho y la altura.
 
 ## Valores y unidades CSS
 
-Existen una gran variedad de valores CSS, los cuales se pueden expresar con diferentes unidades.
-Por ejemplo: la altura, el ancho y el margen de un elemento pueden ser definidos en milímetros (`mm`),
-centímetros (`cm`), pulgadas (`in` del inglés _inches_) o pixeles (`px`).
+Existen una gran variedad de valores CSS, los cuales se pueden expresar con
+diferentes unidades. Por ejemplo: la altura, el ancho y el margen de un elemento
+pueden ser definidos en milímetros (`mm`), centímetros (`cm`), pulgadas
+(`in` del inglés _inches_) o pixeles (`px`).
 
-El color podemos definirlo con [palabras claves](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords) (como `red`), o con los modelos [RGB](https://es.wikipedia.org/wiki/RGB) o [HSL](https://es.wikipedia.org/wiki/Modelo_de_color_HSL).
+El color podemos definirlo con
+[palabras claves](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords)
+(como `red`), o con los modelos
+[RGB](https://es.wikipedia.org/wiki/RGB) o
+[HSL](https://es.wikipedia.org/wiki/Modelo_de_color_HSL).
 Por ejemplo, las tres formas del color rojo es:
 
 ```css
@@ -133,7 +140,8 @@ Por ejemplo, las tres formas del color rojo es:
 Puede leer y buscar un poco más sobre la unidad en porcentaje también
 
 {% spoiler %}
-Si quieres saber más sobre los valores y unidades de CSS revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units)
+Si quieres saber más sobre los valores y unidades de CSS revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units)
 
 {% endspoiler %}
 
