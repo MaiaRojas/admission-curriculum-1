@@ -1,8 +1,7 @@
 const fs = require('fs');
-const html = fs.readFileSync('./index.html', 'utf-8');
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+const { JSDOM } = require("jsdom");
 
+const html = fs.readFileSync('./index.html', 'utf-8');
 const page = new JSDOM(html);
 const { window } = page;
 const { document } = window;
