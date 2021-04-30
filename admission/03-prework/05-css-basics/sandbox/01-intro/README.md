@@ -30,11 +30,11 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 Básicamente necesitamos de tres datos para crear las reglas de CSS :
 
-- El selector - a quién se aplica esa regla
-- La propiedad que queremos formatear
-- El valor que queremos aplicar en la propiedad
+- El selector al cual se aplica esa regla
+- La propiedad a la que queremos darle formato
+- El valor que queremos aplicar en esa propiedad
 
-Con esas informaciones, podemos escribir el CSS con esa estructura:
+Con esa información, podemos escribir el CSS con la siguiente estructura:
 
 ```css
 selector {
@@ -44,13 +44,13 @@ selector {
 
 {% spoiler "Importante" %}
 **Atención con los siglos!**
-Las `llaves ({})` de apertura y cierre, los `dos puntos (:)` y `punto y coma (;)`
-son importantes para que el CSS funcione correctamente!
+Las **llaves** (`{}`) de apertura y cierre, los **dos puntos** (`:`) y 
+el **punto y coma** (`;`) son importantes para que el CSS funcione correctamente!
 {% endspoiler %}
 
 ### Ejemplo
 
-Vea el ejemplo. Puedes imaginar que eso hace?
+¿Puedes imaginar qué hace esto?
 
 ```css
 h2 {
