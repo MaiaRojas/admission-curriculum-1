@@ -27,13 +27,13 @@ comillas.
 Abre tu consola y escribe lo siguiente:
 
 ```js
-"Hola, mi nombre es Michelle"
+console.log("Hola, mi nombre es Michelle");
 // retorna: "Hola, mi nombre es Michelle"
 
-'Soy desarrolladora web'
+console.log('Soy desarrolladora web');
 // retorna: "Soy desarrolladora web"
 
-"123"
+console.log("123");
 // retorna: "123"
 ```
 
@@ -64,11 +64,11 @@ significa un tab. Escribe los siguientes textos en tu consola (recuerda siempre
 colocarlos entre comillas, sean simples o dobles).
 
 ```js
-'Esta es la primera línea \n Y esta la segunda'
+console.log('Esta es la primera línea \n Y esta la segunda');
 // retorna: "Esta es la primera línea
 //            Y esta la segunda"
 
-'Mi lenguaje favorito es \t JavaScript'
+console.log('Mi lenguaje favorito es \t JavaScript');
 // retorna: "Mi lenguaje favorito es    JavaScript"
 ```
 
@@ -76,7 +76,7 @@ Cuando una comilla es precedida por una diagonal invertida, la comilla no
 terminará la cadena sino que será parte de ella.
 
 ```js
-'Yo \'estudio\' en Laboratoria'
+console.log('Yo \'estudio\' en Laboratoria');
 // retorna: "Yo 'estudio' en Laboratoria"
 ```
 
@@ -86,7 +86,7 @@ invertidas están juntas, se volverán una, y sólo eso quedará como resultado 
 el valor de la cadena.
 
 ```js
-'Un carácter de nueva línea es escrito \'\\n\'.'
+console.log('Un carácter de nueva línea es escrito \'\\n\'.');
 // retorna: "Un carácter de nueva línea es escrito '\n'."
 ```
 
@@ -96,7 +96,7 @@ concatena; pega dos `strings`. La siguiente línea produce el `string`
 "concatenar":
 
 ```js
-'con' + 'cat' + 'e' + 'nar'
+console.log('con' + 'cat' + 'e' + 'nar');
 // retorna: "concatenar"
 ```
 
@@ -104,7 +104,7 @@ Ten cuidado mezclando operaciones entre _numbers_ y _strings_. Por ejemplo,
 multiplicar un _number_ por un _string_ resulta en NaN.
 
 ```js
-'hola' * 3
+console.log('hola' * 3);
 // retorna: NaN
 ```
 
@@ -117,16 +117,16 @@ ejemplo es el operador `typeof`, que produce una cadena de caracteres (_string_)
 que representa el tipo del valor que le pasaste.
 
 ```js
-typeof 4.5
+console.log(typeof 4.5);
 // retorna: "number"
 
-typeof 'hola'
+console.log(typeof 'hola');
 // retorna: "string"
 
-typeof NaN
+console.log(typeof NaN);
 // retorna: "number"
 
-typeof Infinity
+console.log(typeof Infinity);
 // retorna: "number"
 ```
 
@@ -142,6 +142,6 @@ El operador menos (`-`) puede usarse tanto como operador binario como operador
 unario.
 
 ```js
-- (10 - 2)
+console.log(- (10 - 2));
 // retorna: -8
 ```
