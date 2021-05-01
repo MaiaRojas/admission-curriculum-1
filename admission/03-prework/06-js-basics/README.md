@@ -15,11 +15,17 @@
 
 1. **Comentarios**
    [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/01-comments/)
-2. **Valores, tipos de datos y operadores**
-   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/02-values-data-types-and-operators/)
-3. **Variables**
-   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/03-variables/)
-4. **Interactividad en HTML con Javascript**
-  [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/04-dom-api-basics/)
+2. **Intro a valores, tipos de datos y operadores. Numbers**
+   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe//admission/03-prework/06-js-basics/sandbox/02-data-types-numbers/)
+3. **Strings. Operadores Unarios**
+   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/03-data-types-strings/)
+4. **Booleans. Operadores Lógicos**
+   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/04-data-types-booleans/)
+5. **`null` y `undefined`. Conversión de tipos. Igualdad/Desigualdad**
+   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/05-data-types-null-and-undefined/)
+6. **Variables**
+   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/06-variables/)
+7. **Interactividad en HTML con Javascript**
+  [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/07-dom-api-basics/)
 
 ***
