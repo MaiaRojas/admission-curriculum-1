@@ -76,10 +76,10 @@ con el botón derecho del mouse -> inspect -> console) y escribe los siguientes
 números. Al hacerlo, la consola te regresa el número de vuelta.
 
 ```js
-13
+console.log(13);
 // retorna: 13
 
--9.81
+console.log(-9.81);
 // retorna: -9.81
 ```
 
@@ -88,10 +88,10 @@ muy pequeños, añadiendo una "e" de "exponente", seguido por el exponente del
 número:
 
 ```js
-5e10
+console.log(5e10);
 // retorna: 50000000000
 
--2.998e8
+console.log(-2.998e8);
 // retorna: -299800000
 ```
 
@@ -102,7 +102,7 @@ comportamiento del tipo de dato `number` en tu consola. Escribe el siguiente
 ejemplo en tu consola y confirma que tienes el mismo resultado:
 
 ```js
-100 + 4 * 11
+console.log(100 + 4 * 11);
 // retorna: 144
 ```
 
@@ -113,7 +113,7 @@ Como ves, la multiplicación ocurre primero. Pero como en matemáticas, puedes
 cambiar esto encerrando en paréntesis la suma.
 
 ```js
-(100 + 4) * 11
+console.log((100 + 4) * 11);
 // retorna: 1144
 ```
 
@@ -121,25 +121,25 @@ Para la resta existe el operador `-`, y la división se puede hacer con el
 operador `/`. Veamos más ejemplos (recuerda hacerlos en tu consola también!):
 
 ```js
-12345 / 250
+console.log(12345 / 250);
 // retorna: 49.38
 
-1234 + 57 * 3 - 31 / 4
+console.log(1234 + 57 * 3 - 31 / 4);
 // retorna: 1397.25
 
-100 / 0
+console.log(100 / 0);
 // retorna: Infinity
 
-100 / -0
+console.log(100 / -0);
 // retorna: -Infinity
 
-1000 * Infinity
+console.log(1000 * Infinity);
 // retorna: Infinity
 
-0/0
+console.log(0/0);
 // retorna: NaN
 
-Infinity - Infinity
+Infinity - Infinity);
 // retorna: NaN
 ```
 
@@ -151,9 +151,9 @@ multiplicado por 12 + 0 = 144). Verás a menudo este operador referido como
 _módulo_, aunque técnicamente residuo es más preciso.
 
 ```js
-5 % 3
+console.log(5 % 3);
 // retorna: 2
 
-7 % 2
+console.log(7 % 2);
 // retorna: 1
 ```
