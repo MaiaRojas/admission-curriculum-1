@@ -46,33 +46,35 @@ const extractBinaryOperators = (accum, arg) => {
 
 const unaryOperatorsUsed = consoleLogsArgs.reduce((accum, args) => {
   const result = [...accum];
-  extractUnaryOperators(result, args[0]);
+  extractUnaryOperators(result, args[args.length - 1]);
   return result;
 }, []);
 
 const binaryOperatorsUsed = consoleLogsArgs.reduce((accum, args) => {
   const result = [...accum];
-  extractBinaryOperators(result, args[0]);
+  extractBinaryOperators(result, args[args.length - 1]);
   return result;
 }, []);
 
 describe('HTML Basics: Strings', () => {
   it('Un console.log de algún string con \'', () => {
-    const stringsDouble = consoleLogsArgs.filter((args) => 
-      args[0].value
-      && typeof args[0].value === 'string'
-      && args[0].raw.startsWith('\'')
-      && args[0].raw.endsWith('\'')
-    );
+    const stringsDouble = consoleLogsArgs.filter((args) => {
+      const arg = args[args.length - 1];
+      return arg.value
+        && typeof arg.value === 'string'
+        && arg.raw.startsWith('\'')
+        && arg.raw.endsWith('\'');
+    });
     expect(stringsDouble.length).toBeGreaterThan(0);
   });
   it('Un console.log de algún string con "', () => {
-    const stringsSingle = consoleLogsArgs.filter((args) =>
-      args[0].value
-      && typeof args[0].value === 'string'
-      && args[0].raw.startsWith('"')
-      && args[0].raw.endsWith('"')
-    );
+    const stringsSingle = consoleLogsArgs.filter((args) => {
+      const arg = args[args.length - 1];
+      return arg.value
+        && typeof arg.value === 'string'
+        && arg.raw.startsWith('"')
+        && arg.raw.endsWith('"')
+    });
     expect(stringsSingle.length).toBeGreaterThan(0);
   });
   it('Un console.log de alguna concatenación', () => {

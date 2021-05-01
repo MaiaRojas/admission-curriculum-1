@@ -29,23 +29,24 @@ const extractBinaryOperators = (accum, arg) => {
   return accum;
 }
 
-const operatorsUsed = consoleLogsArgs.reduce((accum, args) => {
+const binaryOperatorsUsed = consoleLogsArgs.reduce((accum, args) => {
   const result = [...accum];
-  extractBinaryOperators(result, args[0]);
+  extractBinaryOperators(result, args[args.length - 1]);
   return result;
 }, []);
 
 describe('HTML Basics: Numbers', () => {
   it('Un console.log de un numero positivo', () => {
-    const positiveNumbers = consoleLogsArgs.filter((args) => typeof args[0].value === 'number');
+    const positiveNumbers = consoleLogsArgs.filter((args) => typeof args[args.length - 1].value === 'number');
     expect(positiveNumbers.length).toBeGreaterThan(0);
   });
   it('Un console.log de un numero negativo', () => {
-    const negativeNumbers = consoleLogsArgs.filter((args) =>
-      args[0].type === 'UnaryExpression'
-      && args[0].operator === '-'
-      && typeof args[0].argument.value === 'number'
-    );
+    const negativeNumbers = consoleLogsArgs.filter((args) => {
+      const arg = args[args.length - 1];
+      return arg.type === 'UnaryExpression'
+        && arg.operator === '-'
+        && typeof arg.argument.value === 'number';
+    });
     expect(negativeNumbers.length).toBeGreaterThan(0);
   });
   it('Un console.log de una operación aritmética `+`', () => {
