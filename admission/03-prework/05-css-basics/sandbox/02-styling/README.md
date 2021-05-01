@@ -49,9 +49,7 @@ dentro de las etiquetas `head`.
   <head>
     <meta charset="utf-8" />
     <title>CSS</title>
-    <style>
-    /* CSS aquí */
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Divirtiéndose con CSS</h1>
@@ -75,19 +73,17 @@ Los nombres de las propiedades y sus valores son siempre en inglés.
 Recuerda que no necesitas saber inglés para continuar con tu aprendizaje.
 Eso puede ayudarte, pero puedes ir aprendiendo más a medida que aprendes a programar!
 
-```html
-    <style>
-      h1 {
-        color: red;
-      }
-      h2 {
-        background-color: yellow;
-      }
-      p {
-        color: blue;
-        background-color: green;
-      }
-    </style>
+```css
+h1 {
+  color: red;
+}
+h2 {
+  background-color: yellow;
+}
+p {
+  color: blue;
+  background-color: green;
+}
 ```
 
 {% endspoiler %}
