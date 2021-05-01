@@ -26,9 +26,7 @@ No olvides de añadir la etiqueta `style` para formatearlos
   <head>
     <meta charset="utf-8" />
     <title>CSS</title>
-    <style>
-    /* CSS aquí */
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Divirtiéndose con CSS</h1>
@@ -55,32 +53,32 @@ Para ver mejor la diferencia, vamos primero a poner un color de fondo verde y
 un border de 3px, de linea sólida y de color rojo.
 
 ```css
-  p {
-    background-color: green;
-    border: 3px solid red;
-  }
+p {
+  background-color: green;
+  border: 3px solid red;
+}
 ```
 
 Ahora, agrega una margen de 30px alrededor del párrafo ponendo `margin: 30px`
 en CSS.
 
 ```css
-  p {
-    background-color: green;
-    border: 3px solid red;
-    margin: 30px;
-  }
+p {
+  background-color: green;
+  border: 3px solid red;
+  margin: 30px;
+}
 ```
 
 Fíjate cómo queda y ahora, cambia la propiedad `margin` por `padding`
 para entender mejor la diferencia entre esas dos propiedades:
 
 ```css
-  p {
-    background-color: green;
-    border: 3px solid red;
-    padding: 30px;
-  }
+p {
+  background-color: green;
+  border: 3px solid red;
+  padding: 30px;
+}
 ```
 
 {% spoiler %}
