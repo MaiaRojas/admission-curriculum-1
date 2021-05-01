@@ -28,17 +28,17 @@ de dato _boolean_, que tiene solo dos valores: _true_ (verdadero) y _false_
 Realiza esta comparación en tu consola:
 
 ```js
-3 > 2
+console.log(3 > 2);
 // retorna: true
 
-2 > 3
+console.log(2 > 3);
 // retorna: false
 
-typeof (3 > 2)
-// retorna: "boolean"
+console.log(typeof (3 > 2));
+// retorna: boolean
 
-typeof (2 > 3)
-// retorna: "boolean"
+console.log(typeof (2 > 3));
+// retorna: boolean
 ```
 
 Los signos `>` y `<` son los símbolos tradicionales para "mayor que" y "menor
@@ -49,7 +49,7 @@ ciertos.
 Los `strings` pueden ser comparados de la misma manera.
 
 ```js
-"Aardvark" < "Zoroaster"
+console.log("Aardvark" < "Zoroaster");
 // retorna: true
 ```
 
@@ -60,36 +60,65 @@ también incluidos en el ordenamiento. La comparación real está basada en el
 estándar [Unicode](https://unicode-table.com/en/#control-character).
 
 ```js
-'Zeyla' < 'ana'
+console.log('Zeyla' < 'ana');
 // retorna: true
 
-'Zeyla' < '!na'
+console.log('Zeyla' < '!na');
 // retorna: false
+```
+
+[FIXME: console.log multiple params]
+
+```js
+true
+false
+boolean
+boolean
+true
+false
+true
+```
+
+```js
+console.log('3 > 2', 3 > 2);
+
+console.log('2 > 3', 2 > 3);
+
+console.log('typeof (3 > 2)', typeof (3 > 2));
+
+console.log('typeof (2 > 3)', typeof (2 > 3));
+
+console.log('"Aardvark" < "Zoroaster"', "Aardvark" < "Zoroaster");
+
+console.log("'Zeyla' < 'ana'", 'Zeyla' < 'ana');
+
+console.log("'Zeyla' < '!na'", 'Zeyla' < '!na');
+
 ```
 
 Otros operadores similares son >= (mayor o igual que), <= (menor o igual que),
 === (igual que), y !== (no es igual que).
 
 ```js
-'Itchy' === 'Itchy'
-// retorna: true
+console.log("'Itchy' === 'Itchy'", 'Itchy' === 'Itchy');
+// retorna: 'Itchy' === 'Itchy' true
 
-'Itchy' !== 'Scratchy'
-// retorna: true
+console.log("'Itchy' !== 'Scratchy'", 'Itchy' !== 'Scratchy');
+// retorna: 'Itchy' !== 'Scratchy' true
 
-5 === 5
-// retorna: true
+console.log("5 === 5", 5 === 5);
+// retorna: 5 === 5 true
 
-10 !== 'diez'
-// retorna: true
+console.log("10 !== 'diez'", 10 !== 'diez');
+// retorna: 10 !== 'diez' true
 ```
 
 Sólo existe un valor en JavaScript que no es igual a sí mismo, y este es NaN,
 que significa "no es un número".
 
 ```js
-NaN === NaN
-// retorna: false
+console.log('NaN === NaN', NaN === NaN);
+// retorna: NaN === NaN false
 ```
 
 La intención de NaN es representar el resultado de un cálculo sin sentido y como
@@ -110,26 +139,29 @@ el valor que se le de; !true produce false y !false produce true. Veamos unos
 ejemplos:
 
 ```js
-true && true
-// retorna: true
+console.log('true && true =', true && true);
+// retorna: true && true = true
 
-true && false
-// retorna: false
+console.log('true && false =', true && false);
+// retorna: true && false = false
 
-false && false
-// retorna: false
+console.log('false && false =', false && false);
+// retorna: false && false = false
 
-true || true
-// retorna: true
+console.log('true || true =', true || true);
+// retorna: true || true = true
 
-true || false
-// retorna: true
+console.log('false || true  =', false || true);
+// retorna: false || true = true
 
-!true
-// retorna: false
+console.log('false || false =', false || false);
+// retorna: false || false = false
 
-!false
-// retorna: true
+console.log('!true =', !true);
+// retorna: !true = false
+
+console.log('!false =', !false);
+// retorna: !false = true
 
 ```
 
@@ -138,11 +170,11 @@ ternario, opera en tres valores. Este es escrito con un símbolo de interrogaci�
 y dos puntos, como sigue:
 
 ```js
-true ? 1 : 2
-// retorna: 1
+console.log('(true ? 1 : 2) = ', true ? 1 : 2);
+// retorna: (true ? 1 : 2) = 1
 
-false ? 1 : 2
-// retorna: 2
+console.log("(false ? 1 : 2) =", false ? 1 : 2);
+// retorna: (false ? 1 : 2) = 2
 ```
 
 Este es llamado el operador condicional (o algunas veces el operador tenario
