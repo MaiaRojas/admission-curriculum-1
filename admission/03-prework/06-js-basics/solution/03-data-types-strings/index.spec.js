@@ -83,5 +83,4 @@ describe('HTML Basics: Strings', () => {
   it('Un console.log con typeof', () => {
     expect(unaryOperatorsUsed).toContain('typeof');
   });
-})
-
+});

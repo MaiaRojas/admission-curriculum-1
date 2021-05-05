@@ -13,4 +13,4 @@ describe('HTML Basics: Comments', () => {
     const blockComments = ast.comments.filter((c) => c.type === 'Block');
     expect(blockComments.length).toBeGreaterThan(0);
   });
-})
+});

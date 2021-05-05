@@ -111,5 +111,4 @@ describe('HTML Basics: Booleans', () => {
   it('Un console.log de operador ternario ?:', () => {
     expect(ternaryOperatorsUsed.length).toBeGreaterThan(0);
   });
-})
-
+});

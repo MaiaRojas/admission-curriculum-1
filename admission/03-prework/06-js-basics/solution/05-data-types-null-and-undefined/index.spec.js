@@ -66,4 +66,4 @@ describe('HTML Basics: Automatic type convertion & equality', () => {
     expect(binaryOperatorsUsed).toContain('===');
     expect(binaryOperatorsUsed).toContain('==');
   });
-})
+});
