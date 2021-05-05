@@ -41,7 +41,30 @@ Testea añadir párrafos y encabezados de varios niveles en su código,
 pero recuerda que todo lo que quieres que se muestre en su página web
 debe ir entre las etiquetas de apertura `<body>` y de cierre `</body>`.
 
+{% endspoiler %}
+
+Dos otros elementos muy utilizados para tener interacción con el usuario son
+las etiquetas de `input` y de `button`.
+
+El elemento de input es usado para recibir datos del usuario y no tiene
+una etiqueta de cierre. Hay una amplia variedad de tipos de datos de entrada,
+pero su tipo predeterminado es `text`.
+
+```html
+<input type='text'>
+```
+
+Por fin, la etiqueta de `button` es un elemento cliqueable que crea un botón.
+
+```html
+<button>Clica aquí</button>
+```
+
+{% spoiler %}
+Si quieres saber más revisa su documentación en MDN del [input](https://developer.mozilla.org/es/docs/Web/HTML/Element/input) y [button](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)
+
 Existen muchos más elementos y etiquetas HTML, que aprenderás en su momento.
+
 {% endspoiler %}
 
 ### Formato de texto
