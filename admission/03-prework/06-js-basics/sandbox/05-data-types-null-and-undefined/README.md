@@ -1,14 +1,15 @@
-# Javascript basics: Valores, tipos de datos y operadores
+# Javascript basics: `null` y `undefined`
 
-- Tipo: `lectura`
+- Tipo: `practice`
 - Formato: `self-paced`
 - Duración: `60min`
 
 ## Objetivos de Aprendizaje
 
-- Entender qué se entiende por _values_ (valores) en JavaScript.
-- Conocer los diferentes _data types_ (tipos de datos) en JavaScript.
-- Aprender cómo combinar y transformar valores con operadores en JavaScript.
+- Entender los tipos especiales `null` y `undefined`, así como cuál es la
+  diferencia entre ellos.
+- Entender qué es y cuándo se da la conversión automática de tipos de datos.
+- Familiarizarse con las diferentes formas de _"igualdad"_.
 
 ***
 
@@ -47,20 +48,20 @@ conjunto de reglas que a menudo no son lo que tú quieres o esperas. Esto es
 llamado _coerción de tipo_. Mira estos ejemplos:
 
 ```js
-8 * null
-// retorna: 0
+console.log('8 * null =', 8 * null);
+// retorna: 8 * null = 0
 
-'5' - 1
-// retorna: 4
+console.log("'5' - 1 =", '5' - 1);
+// retorna: '5' - 1 = 4
 
-'5' + 1
-// retorna: 51
+console.log("'5' + 1 =", '5' + 1);
+// retorna: '5' + 1 = 51
 
-'cinco' * 2
-// retorna: NaN
+console.log("'cinco' * 2 =", 'cinco' * 2);
+// retorna: 'cinco' * 2 = NaN
 
-false == 0
-// retorna: true
+console.log('false == 0 =', false == 0);
+// retorna: false == 0 = true
 ```
 
 El null en la primera expresión se vuelve 0, y el "5" en la segunda expresión se
@@ -85,10 +86,10 @@ que todos los demás valores cuentan como _true_. Debido a esto, las siguientes
 expresiones retornan _true_:
 
 ```js
-false == 0
+console.log(false == 0);
 // retorna: true
 
-'' == 0
+console.log('' == 0);
 // retorna: true
 ```
 
@@ -99,10 +100,10 @@ tanto, al cambiar de == a === las mismas expresiones anteriores, tenemos el
 resutado contrario: _false_:
 
 ```js
-false === 0
+console.log(false === 0);
 // retorna: false
 
-'' === 0
+console.log('' === 0);
 // retorna: false
 ```
 
@@ -133,11 +134,11 @@ continuación para determinar el resultado:
   * En otros casos, devuelve false.
 
 ```js
-null == undefined // true
-10 == '10'        // true
-true == 1         // true
-[10] == 10        // true
-[] == []          // false
+console.log(null == undefined); // true
+console.log(10 == '10');        // true
+console.log(true == 1);         // true
+console.log([10] == 10);        // true
+console.log([] == []);          // false
 ```
 
 #### Algoritmo de `===`
@@ -155,13 +156,13 @@ secuencia para determinar el resultado:
 - En otros casos, devuelve false.
 
 ```js
-21 === "21"         // false
-undefined === null  // false
-NaN === NaN         // false
-[10] === 10         // false
-true === 1          // false
-[] === []           // false
-'10' === '10'       // true
+console.log(21 === "21");         // false
+console.log(undefined === null);  // false
+console.log(NaN === NaN);         // false
+console.log([10] === 10);         // false
+console.log(true === 1);          // false
+console.log([] === []);           // false
+console.log('10' === '10');       // true
 ```
 
 Podrías tener lo siguiente en cuenta para saber cuál operador utilizar:
@@ -193,9 +194,9 @@ Casos de uso:
 - En otros casos es false.
 
 ```js
-[10] < 9    // false, caso 1
-"a" < "b"   // true, caso 2
-10 >= 10    // true, caso 3
+console.log([10] < 9);    // false, caso 1
+console.log("a" < "b");   // true, caso 2
+console.log(10 >= 10);    // true, caso 3
 ```
 
 ## Lecturas complementarias
