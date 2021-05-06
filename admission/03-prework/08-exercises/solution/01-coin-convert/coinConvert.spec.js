@@ -1,4 +1,4 @@
-const coinConvert = require('../src/coinConvert');
+const coinConvert = require('./coinConvert');
 
 describe('coinConvert()', () => {
   it('debería retornar [182.5, 998, 34975, 180575, 281], para $50', () => {

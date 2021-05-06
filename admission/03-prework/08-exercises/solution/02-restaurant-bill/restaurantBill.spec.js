@@ -1,4 +1,4 @@
-const restaurantBill = require('../src/restaurantBill');
+const restaurantBill = require('./restaurantBill');
 
 describe('restaurantBill()', () => {
   it('debería regresar $11, para $50 y 5 amigas', () => {
