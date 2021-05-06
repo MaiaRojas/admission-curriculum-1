@@ -44,7 +44,7 @@ selector {
 
 {% spoiler "Importante" %}
 **Atención con los siglos!**
-Las **llaves** (`{}`) de apertura y cierre, los **dos puntos** (`:`) y 
+Las **llaves** (`{}`) de apertura y cierre, los **dos puntos** (`:`) y
 el **punto y coma** (`;`) son importantes para que el CSS funcione correctamente!
 {% endspoiler %}
 

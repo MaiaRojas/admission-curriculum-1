@@ -21,4 +21,3 @@
    [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/03-sizing/)
 
 ***
-

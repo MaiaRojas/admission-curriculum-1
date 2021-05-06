@@ -89,7 +89,6 @@ esta sentencia, inmediatamente salta fuera de la función actual y pasa el valor
 retornado a la código que llamó la función. La palabra reservada return sin una
 expresión después de ella hará que la función devuelva undefined.
 
-
 ### Parámetros y ámbitos
 
 Los parametros para una función se comportan como variables normales, pero su
