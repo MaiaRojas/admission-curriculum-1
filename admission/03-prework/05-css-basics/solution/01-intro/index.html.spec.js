@@ -3,7 +3,7 @@ const { JSDOM } = require("jsdom");
 const css = require('css');
 const { CssSelectorParser } = require('css-selector-parser');
 
-const html = fs.readFileSync('./index.html', 'utf-8');
+const html = fs.readFileSync(__dirname + '/index.html', 'utf-8');
 const page = new JSDOM(html);
 const { window } = page;
 const { document } = window;

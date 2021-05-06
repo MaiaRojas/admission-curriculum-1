@@ -2,13 +2,13 @@ const fs = require('fs');
 const { JSDOM } = require("jsdom");
 const css = require('css');
 
-const html = fs.readFileSync('./index.html', 'utf-8');
+const html = fs.readFileSync(__dirname + '/index.html', 'utf-8');
 const page = new JSDOM(html);
 const { window } = page;
 const { document } = window;
 
 const stylesPath = document.querySelector('link[rel="stylesheet"]').getAttribute('href');
-const style = fs.readFileSync(stylesPath, 'utf-8');
+const style = fs.readFileSync(__dirname + '/' + stylesPath, 'utf-8');
 const { rules } = css.parse(style).stylesheet;
 const propertiesUsed = rules.reduce((accum, rule) => {
   if (rule.type === 'rule') {

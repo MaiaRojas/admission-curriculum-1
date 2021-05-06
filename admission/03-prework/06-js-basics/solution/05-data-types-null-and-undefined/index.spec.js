@@ -1,7 +1,7 @@
 const fs = require('fs');
 const esprima = require('esprima');
 
-const script = fs.readFileSync('./index.js', 'utf-8');
+const script = fs.readFileSync(__dirname + '/index.js', 'utf-8');
 const ast = esprima.parseScript(script, { comment: true });
 
 const consoleLogsArgs = ast.body.reduce((accum, i) => {
