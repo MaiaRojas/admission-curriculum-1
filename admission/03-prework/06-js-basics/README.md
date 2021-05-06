@@ -25,7 +25,9 @@
    [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/05-data-types-null-and-undefined/)
 6. **Variables**
    [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/06-variables/)
-7. **Interactividad en HTML con Javascript**
-  [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/07-dom-api-basics/)
+7. **Funciones**
+  [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/07-functions/)
+8. **Interactividad en HTML con Javascript**
+  [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/08-dom-api-basics/)
 
 ***
