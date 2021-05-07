@@ -55,6 +55,7 @@ function getNestedExpressions (nodeArr, nodeType) {
           'BinaryExpression',
           'LogicalExpression',
           'ConditionalExpression',
+          'Identifier',
         ].includes(node.type)
       ))
       .reduce((exprs, node) => (

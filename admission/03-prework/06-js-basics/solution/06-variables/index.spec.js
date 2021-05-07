@@ -3,7 +3,7 @@ const esprima = require('esprima');
 const utils = require('./utils');
 
 const script = fs.readFileSync(__dirname + '/index.js', 'utf-8');
-const ast = esprima.parseScript(script, { comment: true });
+const ast = esprima.parseScript(script, { loc: true });
 
 const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 const variablesDeclared = utils.getAll(ast, 'VariableDeclaration').map(
@@ -53,6 +53,69 @@ describe('HTML Basics: Variables', () => {
 
   });
   it('Una operación aritmética sobre una variable y un console.log de la variable modificada', () => {
+    // Todas las variables que hayan sigo modificadas
+    // a traves de una operacion aritmetica
+    const varsWithOperation = utils.getAll(ast.body)
+      .filter((node) => {
+        // tiene que ser una asignacion
+        if (node.type === 'AssignmentExpression') {
+          // si es una asignacion con operacion (-= += *= /=)
+          if (node.operator !== '=') {
+            // entonces es aritmetica
+            return true;
+          } else {
+            // sino, necesitamos que a la derecha haya una expresion aritmetica;
+            if (node.right.type === 'BinaryExpression') {
+              return ['+', '-', '*', '/'].includes(node.right.operator)
+            }
+          }
+        }
+        // en cualquier otro caso
+        return false;
+      })
+      .map((node) => ({
+        name: node.left.name, // el nombre de la variable modificada (izq)
+        line: node.loc.start.line,
+      }));
+
+      // Todas las variables que hayan sido console.loggeadas
+      const loggedVars = utils.getNestedExpressions(consoleLogsArgs, 'Identifier')
+        .map((arg) => ({
+          name: arg.name,
+          line: arg.loc.start.line
+        }));
+      
+
+      const intersection = varsWithOperation
+        // solo los nombres de las variables
+        .map((v) => v.name)
+        // todas las que esten en loggedVars
+        .filter((v) => loggedVars.map((v2) => v2.name).includes(v))
+        // quitamos repetidos
+        .filter((value, index, self) =>  self.indexOf(value) === index);
+   
+      expect(intersection.length).toBeGreaterThan(0);
+      
+      // chequeamos que por lo menos una de las variables que han sido tanto
+      // modificadas como loggeadas, primero hayan sido modificadas y luego
+      // loggeadas
+      const atLeastOneVarLoggedAfterOperation = intersection.reduce((result, v) => {
+        const assignationLines = varsWithOperation
+          .filter((v2) => v2.name === v)
+          .map((v2) => v2.line);
+        const firstAssigned = Math.min(...assignationLines);
+
+        const logLines = loggedVars
+          .filter((v2) => v2.name === v)
+          .map((v2) => v2.line);
+        
+        const lastLogged = Math.max(...logLines);
+
+        return result || firstAssigned < lastLogged;
+      }, false);
+
+      expect(atLeastOneVarLoggedAfterOperation).toBe(true);
+      
   });
   it('Una definicion con const', () => {
     const constVariables = variablesDeclared.filter((v) => v.kind === 'const');
