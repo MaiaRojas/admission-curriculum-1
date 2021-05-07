@@ -25,15 +25,13 @@ describe('HTML Basics: Strings', () => {
     expect(stringsDouble.length).toBeGreaterThan(0);
   });
   it('Un console.log de alguna concatenación', () => {
-    const binaryOperatorsUsed = consoleLogsArgs
-      .filter((arg) => ['BinaryExpression', 'LogicalExpression'].includes(arg.type))
+    const binaryOperatorsUsed = utils.getNestedBinaryExpressions(consoleLogsArgs)
       .map((arg) => arg.operator);
 
     expect(binaryOperatorsUsed).toEqual(expect.arrayContaining(['+', '+']));
   });
   it('Un console.log con typeof', () => {
-    const unaryOperatorsUsed = consoleLogsArgs
-      .filter((arg) => arg.type === 'UnaryExpression')
+    const unaryOperatorsUsed = utils.getNestedUnaryExpressions(consoleLogsArgs)
       .map((arg => arg.operator));
   
     expect(unaryOperatorsUsed).toContain('typeof');

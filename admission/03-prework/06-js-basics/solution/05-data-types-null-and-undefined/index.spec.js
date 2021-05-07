@@ -9,20 +9,14 @@ const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 
 describe('HTML Basics: Automatic type convertion & equality', () => {
   it('console.log con por lo menos dos operaciones con operadores de distinto tipo', () => {
-    const binaryOperatorsWithDiffTypes = consoleLogsArgs
-      .filter((arg) => (
-        ['BinaryExpression', 'LogicalExpression'].includes(arg.type)
-        && arg.left.type === 'Literal' && arg.right.type === 'Literal'
-      ))
-      .map((arg => (typeof arg.right.value) !== (typeof arg.left.value)));
+    const binaryOperatorsWithDiffTypes = utils.getNestedBinaryExpressions(consoleLogsArgs)
+      .filter((arg) => (arg.left.type === 'Literal' && arg.right.type === 'Literal'))
+      .map((arg) => (typeof arg.right.value) !== (typeof arg.left.value));
   
     expect(binaryOperatorsWithDiffTypes.length).toBeGreaterThan(0);
   });
   it('console.log con igualdades con == y ===', () => {
-    const binaryOperatorsUsed = consoleLogsArgs
-      .filter((arg) => (
-        ['BinaryExpression', 'LogicalExpression'].includes(arg.type)
-      ))
+    const binaryOperatorsUsed = utils.getNestedBinaryExpressions(consoleLogsArgs)
       .map((arg => arg.operator));
 
     expect(binaryOperatorsUsed).toContain('===');

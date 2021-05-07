@@ -7,11 +7,7 @@ const ast = esprima.parseScript(script, { comment: true });
 
 const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 
-const binaryOperatorsUsed = consoleLogsArgs
-  .filter((arg) => ['BinaryExpression', 'LogicalExpression'].includes(arg.type))
-  .reduce((args, arg) => (
-    [...args, ...utils.getAll(arg, 'BinaryExpression')]
-  ), [])
+const binaryOperatorsUsed = utils.getNestedBinaryExpressions(consoleLogsArgs)
   .map((arg) => arg.operator);
 
 describe('HTML Basics: Numbers', () => {
@@ -22,11 +18,11 @@ describe('HTML Basics: Numbers', () => {
     expect(positiveNumbers.length).toBeGreaterThan(0);
   });
   it('Un console.log de un numero negativo', () => {
-    const negativeNumbers = consoleLogsArgs.filter((arg) => (
-      arg.type === 'UnaryExpression'
-      && arg.operator === '-'
-      && typeof arg.argument.value === 'number'
-    ));
+    const negativeNumbers = utils.getNestedUnaryExpressions(consoleLogsArgs)
+      .filter((arg) => (
+        arg.operator === '-'
+        && typeof arg.argument.value === 'number'
+      ));
     expect(negativeNumbers.length).toBeGreaterThan(0);
   });
   it('Un console.log de una operación aritmética `+`', () => {

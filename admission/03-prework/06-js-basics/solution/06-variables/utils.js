@@ -42,7 +42,38 @@ function getAllConsoleLogLastArgs(root) {
   );
 }
 
+function getNestedExpressions (nodeArr, nodeType) {
+  return (
+    nodeArr
+      .filter((node) => (
+        [
+          'UnaryExpression',
+          'BinaryExpression',
+          'LogicalExpression',
+          'ConditionalExpression',
+        ].includes(node.type)
+      ))
+      .reduce((exprs, node) => (
+        [...exprs, ...(getAll(node, nodeType) || [])]
+      ), [])
+  );
+}
+
+function getNestedBinaryExpressions(nodeArr) {
+  return [
+    ...getNestedExpressions(nodeArr, 'BinaryExpression'),
+    ...getNestedExpressions(nodeArr, 'LogicalExpression'),
+  ];
+}
+
+function getNestedUnaryExpressions(nodeArr) {
+  return getNestedExpressions(nodeArr, 'UnaryExpression');
+}
+
 module.exports = {
   getAll,
   getAllConsoleLogLastArgs,
+  getNestedExpressions,
+  getNestedBinaryExpressions,
+  getNestedUnaryExpressions,
 };

@@ -7,8 +7,7 @@ const ast = esprima.parseScript(script, { comment: true });
 
 const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 
-const binaryOperatorsUsed = consoleLogsArgs
-  .filter((arg) => ['BinaryExpression', 'LogicalExpression'].includes(arg.type))
+const binaryOperatorsUsed = utils.getNestedBinaryExpressions(consoleLogsArgs)
   .map((arg) => arg.operator);
 
 describe('HTML Basics: Booleans', () => {
@@ -25,12 +24,12 @@ describe('HTML Basics: Booleans', () => {
     expect(binaryOperatorsUsed).toContain('!==');
   });
   it('Un typeof combinado con comparación', () => {
-    const typeofBoolean = consoleLogsArgs.filter((arg) => (
-      arg.type === 'UnaryExpression'
-      && arg.operator === 'typeof'
-      && arg.argument.type === "BinaryExpression"
-      && ['>', '<'].includes(arg.argument.operator)
-    ));
+    const typeofBoolean = utils.getNestedUnaryExpressions(consoleLogsArgs)
+      .filter((arg) => (
+        arg.operator === 'typeof'
+        && arg.argument.type === "BinaryExpression"
+        && ['>', '<'].includes(arg.argument.operator)
+      ));
 
     expect(typeofBoolean.length).toBeGreaterThan(0);
   });
@@ -48,8 +47,8 @@ describe('HTML Basics: Booleans', () => {
     expect(unaryOperatorsUsed).toContain('!');
   });
   it('Un console.log de operador ternario ?:', () => {
-    const ternaryOperatorsUsed = consoleLogsArgs
-      .filter((arg) => arg.type === 'ConditionalExpression');
+    const ternaryOperatorsUsed = utils
+      .getNestedExpressions(consoleLogsArgs, 'ConditionalExpression');
 
     expect(ternaryOperatorsUsed.length).toBeGreaterThan(0);
   });
