@@ -99,7 +99,6 @@ describe('JS Basics: Variables', () => {
           line: arg.loc.start.line
         }));
       
-
       const intersection = varsWithOperation
         // solo los nombres de las variables
         .map((v) => v.name)

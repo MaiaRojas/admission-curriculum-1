@@ -1,0 +1,16 @@
+{
+  "name": "js-basics-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "author": "Laboratoria",
+  "license": "ISC",
+  "devDependencies": {
+    "esprima": "^4.0.1",
+    "esprima-ast-utils": "^0.0.7",
+    "jest": "^26.6.3"
+  }
+}

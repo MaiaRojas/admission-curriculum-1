@@ -34,7 +34,7 @@ function getAll(root, nodeType) {
   if (!handler) {
     handler = defaultHandler;
   }
-  return handler(root, nodeType);
+  return handler(root, nodeType) || [];
 }
 
 function getAllConsoleLogLastArgs(root) {
