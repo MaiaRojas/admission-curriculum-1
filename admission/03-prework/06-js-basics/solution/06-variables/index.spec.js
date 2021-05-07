@@ -32,16 +32,20 @@ describe('HTML Basics: Variables', () => {
     const uninitVariableNames = variablesDeclared
       .filter((v) => !v.initialValue)
       .map((v) => v.name);
+
     const loggedUninitVariable = consoleLogsArgs.filter((arg) => (
       arg.type === 'Identifier' && uninitVariableNames.includes(arg.name)
     ));
+
     expect(loggedUninitVariable.length).toBeGreaterThan(0);
   });
   it('Una asignación', () => {
-    const assignments = utils.getAll(ast, (node) => (
-      node.type === 'ExpressionStatement'
-      && node.expression.type === 'AssignmentExpression'
-    )).map((node => node.operator));
+    const assignments = utils
+      .getAll(ast, (node) => (
+        node.type === 'ExpressionStatement'
+        && node.expression.type === 'AssignmentExpression'
+      ))
+      .map((node => node.operator));
   
     expect(assignments.length).toBeGreaterThan(0);
   });
