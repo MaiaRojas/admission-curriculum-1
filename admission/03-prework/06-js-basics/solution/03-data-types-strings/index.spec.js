@@ -11,7 +11,7 @@ const consoleLogsStringArgs = consoleLogsArgs.filter((arg) => (
   && typeof arg.value === 'string'
 ));
 
-describe('HTML Basics: Strings', () => {
+describe('JS Basics: Strings', () => {
   it('Un console.log de algún string con \'', () => {
     const stringsSingle = consoleLogsStringArgs.filter((arg) => (
       arg.raw.startsWith('\'') && arg.raw.endsWith('\'')

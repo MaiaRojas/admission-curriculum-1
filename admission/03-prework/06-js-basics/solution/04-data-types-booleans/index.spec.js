@@ -10,7 +10,7 @@ const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 const binaryOperatorsUsed = utils.getNestedBinaryExpressions(consoleLogsArgs)
   .map((arg) => arg.operator);
 
-describe('HTML Basics: Booleans', () => {
+describe('JS Basics: Booleans', () => {
   it('Un console.log de comparación <', () => {
     expect(binaryOperatorsUsed).toContain('<');
   });

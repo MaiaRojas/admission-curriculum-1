@@ -23,7 +23,7 @@ const variablesDeclared = utils.getAll(ast, 'VariableDeclaration').map(
   }
 );
 
-describe('HTML Basics: Variables', () => {
+describe('JS Basics: Variables', () => {
   it('Una definicion con let', () => {
     const letVariables = variablesDeclared.filter((v) => v.kind === 'let');
     expect(letVariables.length).toBeGreaterThan(0);

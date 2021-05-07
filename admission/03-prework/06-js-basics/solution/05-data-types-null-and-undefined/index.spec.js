@@ -7,7 +7,7 @@ const ast = esprima.parseScript(script);
 
 const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 
-describe('HTML Basics: Automatic type convertion & equality', () => {
+describe('JS Basics: Automatic type convertion & equality', () => {
   it('console.log con por lo menos dos operaciones con operadores de distinto tipo', () => {
     const binaryOperatorsWithDiffTypes = utils.getNestedBinaryExpressions(consoleLogsArgs)
       .filter((arg) => (arg.left.type === 'Literal' && arg.right.type === 'Literal'))

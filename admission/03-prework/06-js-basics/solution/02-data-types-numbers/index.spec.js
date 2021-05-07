@@ -10,7 +10,7 @@ const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 const binaryOperatorsUsed = utils.getNestedBinaryExpressions(consoleLogsArgs)
   .map((arg) => arg.operator);
 
-describe('HTML Basics: Numbers', () => {
+describe('JS Basics: Numbers', () => {
   it('Un console.log de un numero positivo', () => {
     const positiveNumbers = consoleLogsArgs.filter(
       (arg) => typeof arg.value === 'number'

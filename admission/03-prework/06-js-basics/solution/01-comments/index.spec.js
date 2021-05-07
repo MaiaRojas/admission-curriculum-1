@@ -4,7 +4,7 @@ const esprima = require('esprima');
 const script = fs.readFileSync(__dirname + '/index.js', 'utf-8');
 const ast = esprima.parseScript(script, { comment: true });
 
-describe('HTML Basics: Comments', () => {
+describe('JS Basics: Comments', () => {
   it('Por lo menos un comentario de linea', () => {
     const lineComments = ast.comments.filter((c) => c.type === 'Line');
     expect(lineComments.length).toBeGreaterThan(0);
