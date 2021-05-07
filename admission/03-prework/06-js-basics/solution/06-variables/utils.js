@@ -21,7 +21,11 @@ const defaultHandler = (root, nodeType) => (
 
 function getAll(root, nodeType) {
   if (!nodeType) {
-    return utils.traverse(root, (node) => node);
+    const result = [];
+    utils.traverse(root, (node) => {
+      result.push(node);
+    });
+    return result;
   }
   if (typeof nodeType === 'function') {
     return utils.filter(root, nodeType);
