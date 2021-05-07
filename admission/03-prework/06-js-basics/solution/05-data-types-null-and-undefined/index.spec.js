@@ -5,7 +5,7 @@ const utils = require('../06-variables/utils');
 const script = fs.readFileSync(__dirname + '/index.js', 'utf-8');
 const ast = esprima.parseScript(script, { comment: true });
 
-const consoleLogsArgs = utils.getAllConsoleLogArgsLast(ast);
+const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 
 describe('HTML Basics: Automatic type convertion & equality', () => {
   it('console.log con por lo menos dos operaciones con operadores de distinto tipo', () => {

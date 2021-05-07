@@ -33,7 +33,7 @@ function getAll(root, nodeType) {
   return handler(root, nodeType);
 }
 
-function getAllConsoleLogArgsLast(root) {
+function getAllConsoleLogLastArgs(root) {
   return getAll(root, 'ConsoleLogExpressionStatement').map(
     (cl) => {
       const { arguments: args } = cl.expression;
@@ -44,5 +44,5 @@ function getAllConsoleLogArgsLast(root) {
 
 module.exports = {
   getAll,
-  getAllConsoleLogArgsLast,
+  getAllConsoleLogLastArgs,
 };
