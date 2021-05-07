@@ -50,7 +50,21 @@ describe('HTML Basics: Variables', () => {
     expect(assignments.length).toBeGreaterThan(0);
   });
   it('Un console.log con una concatenación que utilice una variable', () => {
+    // Todos los console.log que tengan como argumento por lo menos
+    // una expression binaria
+    let loggedBinaryExprs = consoleLogsArgs.filter((arg) => arg.type === 'BinaryExpression');
+    loggedBinaryExprs = utils.getNestedBinaryExpressions(loggedBinaryExprs);
 
+    // y que la expression sea concatenacion entre un string y una variable
+    const concatWithVar = loggedBinaryExprs.filter((node) => (
+      node.operator === '+'
+      && (
+        node.left.type === 'Identifier'
+        || node.right.type === 'Identifier'
+      )
+    ));
+
+    expect(concatWithVar.length).toBeGreaterThan(0);
   });
   it('Una operación aritmética sobre una variable y un console.log de la variable modificada', () => {
     // Todas las variables que hayan sigo modificadas
