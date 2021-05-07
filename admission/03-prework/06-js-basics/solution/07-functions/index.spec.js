@@ -1,6 +1,6 @@
 const fs = require('fs');
 const esprima = require('esprima');
-const utils = require('../06-variables/utils');
+const { esprima: utils } = require('@laboratoria/prework-test-utils');
 
 const script = fs.readFileSync(__dirname + '/index.js', 'utf-8');
 const astLocs = esprima.parseScript(script, { loc: true });
