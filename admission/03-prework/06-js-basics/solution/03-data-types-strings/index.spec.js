@@ -3,7 +3,7 @@ const esprima = require('esprima');
 const utils = require('../06-variables/utils');
 
 const script = fs.readFileSync(__dirname + '/index.js', 'utf-8');
-const ast = esprima.parseScript(script, { comment: true });
+const ast = esprima.parseScript(script);
 
 const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
 const consoleLogsStringArgs = consoleLogsArgs.filter((arg) => (
