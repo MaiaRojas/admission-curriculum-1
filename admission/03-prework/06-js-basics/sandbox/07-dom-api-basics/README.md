@@ -57,3 +57,32 @@ cambiar, añadir o remover los elementos HTML o reagir a algún evento (como el 
 {% next "Eventos" %}
 
 ## Eventos
+
+Eventos son signos que son enviados cuando algo ocurre, y que pueden ser usados para interagir con el usuario.
+El *mouse clique* es un ejemplo de evento, pero hay muchos otros tipos. Imagine que el usuario puede clicar en todo website,
+pero solo nos interessa, cuando el usuario clica en un lugar o botón que queremos que hace algo.
+Así, es importante que nos quedamos "escuchando" ese elemento de interés.
+
+Vamos testear haciendo un `button` que cuando es clicado, imprime "Hola" en consola.
+Para hacer eso, la primera cosa que necesitamos hacer es crear el html y localizar el elemento DOM.
+
+```html
+<button id="btn">Clique aquí</button>
+```
+
+```js
+const button = document.getElementById("btn")
+```
+
+Para "escuchar" los eventos de *clique* del elemento, vamos a usar el método `addEventListener`.
+Para usarlo, necesitamos informar dos parámetros: el `tipo` de evento (en ese caso es de "click") y
+o que hacer cuando ocurre el evento (una `function`), que en ese caso es imprimir "Hola" en la consola.
+
+```js
+const button = document.getElementById("btn")
+button.addEventListener("click", function () {
+  console.log("Hola")
+  })
+```
+
+Si quieres saber más revisa su [documentación en MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
