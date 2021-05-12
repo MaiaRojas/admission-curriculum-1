@@ -133,6 +133,19 @@ element.addEventListener("click", function () {
 
 ### Obteniendo el nombre y apellido del `input`
 
+Queremos obtener el nombre y apellido que el usuario puse en `input` cuándo el botón es clicado.
+Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
+Para sacar el value que está en `input`, vamos poner un `id` en la etiqueta de input, para que posamos
+usar la propiedad `value` (valor) y salvarla en una variable llamada `nombre`
+
+```html
+    <input type="text" id="name">
+```
+
+```js
+  const nombre = document.getElementById("name").value
+```
+
 ### Obteniendo la inicial del nombre
 
 Para obtener la primera inicial, vamos a usar el método `slice()`.
