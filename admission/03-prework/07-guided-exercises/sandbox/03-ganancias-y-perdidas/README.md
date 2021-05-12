@@ -90,7 +90,7 @@ este botón, el programa hace los cálculos y imprima el resultado en la pantall
 ```html
     <p>Ingreso:</p>
     <input type="text">
-    <p>Costo:</p>
+    <p>Costos:</p>
     <input type="text">
     <p>Porcentaje de impuestos:</p>
     <input type="text">
@@ -116,9 +116,42 @@ element.addEventListener("click", function () {
 
 Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
 
-### Calcula el resultado de ganancia bruta, ganancia neta e impuestos
+## Calcula el resultado de ganancia bruta, ganancia neta e impuestos
 
-INSERTA EXPLICACION AQUI
+Queremos obtener los valores que el usuario puse en los `input` cuándo el botón es clicado.
+Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
+Para sacar los valores, vamos poner un `id` en las etiquetas de input, para que posamos
+usar la propiedad `value` (valor) y salvarlas en variables`
+
+```html
+    <p>Ingreso:</p>
+    <input type="text" id="ingreso">
+    <p>Costos:</p>
+    <input type="text" id="costos">
+    <p>Porcentaje de impuestos:</p>
+    <input type="text" id="porcentaje-impuesto">
+    <button>Calcular</button>
+```
+
+```js
+  const ingreso = document.getElementById("ingreso").value
+  const costos = document.getElementById("costos").value
+  const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value
+```
+
+{% spoiler %}
+Valida que las variables `ingreso`, `costos`, y `porcentajeImpuesto`
+tienen el valor que el usuario pone, usando `console.log`
+
+```js
+console.log(ingreso);
+console.log(costos);
+console.log(porcentajeImpuesto);
+```
+
+{% endspoiler %}
+
+
 
 ```js
 const gananciaBruta = ingreso - costos;
