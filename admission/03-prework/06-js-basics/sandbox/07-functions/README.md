@@ -12,9 +12,9 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 3 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
+capítulo 3 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
 Haverbeke, 2014. Traducción en
-[Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/03_functions.html)
+[Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/03_functions.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 {% next "Introducción" %}
@@ -22,7 +22,7 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 ## Introducción
 
 Has visto valores función, como `alert`, y cómo llamarlos. Las funciones son el
-pan de cada día en la programación en JavaScript. El concepto de de envolver una
+pan de cada día en la programación en Javascript. El concepto de de envolver una
 porción del programa en un valor (variable) tiene muchos usos. Es una
 herramienta para estructurar programas más grandes, para reducir la repetición,
 para asociar nombres con subprogramas, y para separar estos programas de los

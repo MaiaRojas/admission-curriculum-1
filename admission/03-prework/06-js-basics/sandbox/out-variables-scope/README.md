@@ -12,8 +12,8 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 2 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 2 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 {% next "El scope de una variable" %}
@@ -33,13 +33,13 @@ Aquí, el _direct scope_ (ámbito directo) de `x` es la función `foo`. Esta
 variable podrá ser accedida desde dentro del cuerpo de la función `foo`, pero no
 fuera de ella.
 
-Tradicionalmente, en JavaScript solo podíamos crear un nuevo scope o ámbito
+Tradicionalmente, en Javascript solo podíamos crear un nuevo scope o ámbito
 creando una nueva función. Desde ES6 (ES2015) tenemos `let` y `const`, que
-introducen el concepto de _block sope_ en JavaScript.
+introducen el concepto de _block sope_ en Javascript.
 
 ### Lexical scoping
 
-Las variables en JavaScript son _lexically scoped_ (de ámbito léxico), lo que
+Las variables en Javascript son _lexically scoped_ (de ámbito léxico), lo que
 significa que la estructura estática de un programa determina el ámbito de la
 variable (no es influenciada por dónde se invoca la función). En palabras más
 simples, significa que las variables declaradas dentro de un _ámbito_ (una

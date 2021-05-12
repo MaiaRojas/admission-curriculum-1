@@ -13,8 +13,8 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Strings
@@ -39,7 +39,7 @@ console.log("123");
 
 Tanto las comillas simples como las dobles pueden ser usadas para declarar
 `strings`, siempre y cuando coincidan al principio y al final. Casi cualquier
-cosa puede colocarse entre comillas, y JavaScript creará un _string value_ de
+cosa puede colocarse entre comillas, y Javascript creará un _string value_ de
 esa cosa.
 
 ***
@@ -68,8 +68,8 @@ console.log('Esta es la primera línea \n Y esta la segunda');
 // retorna: "Esta es la primera línea
 //            Y esta la segunda"
 
-console.log('Mi lenguaje favorito es \t JavaScript');
-// retorna: "Mi lenguaje favorito es    JavaScript"
+console.log('Mi lenguaje favorito es \t Javascript');
+// retorna: "Mi lenguaje favorito es    Javascript"
 ```
 
 Cuando una comilla es precedida por una diagonal invertida, la comilla no

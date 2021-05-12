@@ -135,7 +135,7 @@ Si quieres saber más revisa su
 
 ### Comentarios
 
-Así como es buena práctica comentar tu código html y tu código javascript, es buena
+Así como es buena práctica comentar tu código html y tu código Javascript, es buena
 práctica comentar tu CSS. Los comentarios en CSS se hacen de la siguiente manera:
 
 - El comienzo se indica mediante los caracteres `/*` * El final del comentario

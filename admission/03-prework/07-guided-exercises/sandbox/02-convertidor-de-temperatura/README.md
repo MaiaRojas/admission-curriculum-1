@@ -16,7 +16,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Crear un archivo `index.html`.
 - Crear la estructura de nuestra página web dentro de nuestro `index.html`.
 - Crear un archivo `app.js`.
-- Integrar la funcionalidad `javascript` con la página `html`
+- Integrar la funcionalidad `Javascript` con la página `html`
 - Preguntar la temperatura en Celsius (°C) por medio del método `window.prompt()`.
 - Convertir la temperatura en grados Fahrenheit (°F).
 - Mostrar el resultado en la consola por medio del método `console.log()`
@@ -69,18 +69,18 @@ que diga _Coloca la temperatura en grados Celsius (°C)_.
 const temperaturaCelsius = prompt('¿Cuál es la temperatura en Celsius?');
 ```
 
-## 3 - Integra la funcionalidad `javascript` con la página `html`
+## 3 - Integra la funcionalidad `Javascript` con la página `html`
 
 Si tu recargas la página, verás que nada ha cambiado
 y el `window.prompt` nunca se muestra.
 
 Esto es porque el archivo `index.html` nunca está llamando a la funcionalidad
-`javascript` especificada en el archivo `app.js`.
+`Javascript` especificada en el archivo `app.js`.
 
 Para ello necesitamos importar el archivo `app.js` dentro de nuestro etiqueta `<body>`:
 
 ```html
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/Javascript" src="app.js"></script>
 ```
 
 {% spoiler %}
@@ -131,5 +131,5 @@ const temperaturaCelsius = parseInt(prompt('¿Cuál es la temperatura en Celsius
 
 {% spoiler %}
 Si quieres saber más sobre el método `parseInt` revisa su
-[documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Reference/Global_Objects/parseInt)
 {% endspoiler %}

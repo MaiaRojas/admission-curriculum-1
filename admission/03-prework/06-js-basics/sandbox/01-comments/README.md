@@ -32,8 +32,8 @@ Se visualizan así:
 ```
 
 La computadora ignora los comentarios por completo. Los comentarios en
-JavaScript empiezan con `//`. Todo lo que sigue a las barras diagonales (en la
-misma línea) es ignorado por el intérprete de JavaScript. Los comentarios de
+Javascript empiezan con `//`. Todo lo que sigue a las barras diagonales (en la
+misma línea) es ignorado por el intérprete de Javascript. Los comentarios de
 múltiples líneas empiezan con `/*` y cierran con `*/`. Todo lo que está entre
 eso es ignorado por el programa.
 

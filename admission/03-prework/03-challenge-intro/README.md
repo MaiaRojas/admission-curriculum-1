@@ -16,7 +16,7 @@ Construir un sitio web que funcionalmente sea similar a este:
 - Entender como construir la **estructura** básica de una página web usando **HTML**.
 - Conocer los principales elementos y etiquetas **HTML**.
 - Aplicar **estilos** a los elementos usando **CSS**.
-- Aprender a darle **dinamismo** a una web utilizando **JavaScript**.
+- Aprender a darle **dinamismo** a una web utilizando **Javascript**.
 - Tener un primer acercamiento al mundo del código, creando tu primer sitio
   web.
 

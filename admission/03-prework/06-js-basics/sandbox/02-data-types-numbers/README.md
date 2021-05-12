@@ -6,14 +6,14 @@
 
 ## Objetivos de Aprendizaje
 
-- Conocer los diferentes _data types_ (tipos de datos) en JavaScript.
+- Conocer los diferentes _data types_ (tipos de datos) en Javascript.
 - Conocer los tipos de datos _Number_ (número) y el uso de operaciones aritméticas.
 
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Vivimos en un mundo de Data
@@ -46,9 +46,9 @@ unos y ceros que viste en Matrix.
 
 Las computadoras manejan billones de bits. Para hacer más fácil el manejo de
 grandes cantidades de bits, los podemos dividir en "pedazos" que representan
-piezas de información. En un entorno JavaScript, estos pedazos son llamados
+piezas de información. En un entorno Javascript, estos pedazos son llamados
 _**values**_ (valores en español). Cada _value_ tiene un _data type_ (tipo de
-dato) que determina su rol. En JavaScript existen cinco (5) tipos de datos
+dato) que determina su rol. En Javascript existen cinco (5) tipos de datos
 primitivos:
 
 1. `number` (número).

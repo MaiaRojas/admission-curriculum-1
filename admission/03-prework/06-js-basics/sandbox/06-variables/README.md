@@ -12,15 +12,15 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 2 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 2 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 {% next "Variables" %}
 
 ## Variables
 
-Ya conoces los tipos de datos más comunes en JavaScript. Sabes crear, combinar y
+Ya conoces los tipos de datos más comunes en Javascript. Sabes crear, combinar y
 transformar `numbers`, `strings` y `booleans`. Pero, ¿qué podemos hacer con
 esto? Hasta ahora, todo lo que has trabajado ha sido para uso inmediato. Es
 decir, los nuevos valores que generamos deben ser inmediatamente utilizados o se
@@ -35,7 +35,7 @@ Si quisiera utilizar ese `string` de nuevo, digamos porque Michelle cumplió añ
 y ahora queremos que diga 20 años en lugar de 19, no lo podemos hacer. Se ha
 perdido.
 
-Para atrapar y mantener los valores, JavaScript proporciona una cosa llamada
+Para atrapar y mantener los valores, Javascript proporciona una cosa llamada
 `variable`. Se utiliza así:
 
 ```js
@@ -50,7 +50,7 @@ asignación) y una expresión (el número `19`).
 
 La declaración anterior crea una variable llamada `age` (o edad en español) y se
 usa para retener el número `19`. La consola devuelve `undefined`, pero no creas
-que es un error. Es lo que JavaScript hace cuando un comando no retorna valor.
+que es un error. Es lo que Javascript hace cuando un comando no retorna valor.
 Cuando escribes `12 + 5`, la consola retorna `17`. Pero al declarar una variable
 llamada `age` asignándole el valor `19`, no hay un valor de retorno. Por eso la
 consola simplemente devuelve `undefined` (en el resto de los ejemplos vamos a
@@ -122,7 +122,7 @@ existentes para agarrar lo nuevo.
 
 ## Nombrando Variables
 
-En JavaScript, existen ciertas reglas para nombrar variables. Los nombres de
+En Javascript, existen ciertas reglas para nombrar variables. Los nombres de
 variables:
 
 1. **No** pueden incluir espacios
@@ -133,11 +133,11 @@ variables:
    `$` y `_`
 
 No seguir alguna de las reglas anteriores resulta en un **error** por parte de
-JavaScript.
+Javascript.
 
 Además de estas reglas, existen una serie de "sugerencias" que debes tomar en
 consideración a la hora de nombrar variables. Son "sugerencias" porque
-JavaScript no te dará un error si no las sigues. Sin embargo, son "buenas
+Javascript no te dará un error si no las sigues. Sin embargo, son "buenas
 prácticas" de escritura de código que hacen que tu trabajo sea de mejor calidad.
 Las sugerencias son:
 

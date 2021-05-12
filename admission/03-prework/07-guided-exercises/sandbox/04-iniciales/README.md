@@ -73,13 +73,13 @@ que diga _Coloca las iniciales_.
 ### Integra con la página `html`
 
 El archivo `index.html` no está enlazado a el archivo `app.js`
-y no reconocerá las funcionalidades `javascript`
+y no reconocerá las funcionalidades `Javascript`
 
 Para ello necesitamos importar el archivo `app.js` dentro de
 nuestra etiqueta `<body>`:
 
 ```html
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/Javascript" src="app.js"></script>
 ```
 
 ## Crea tu _prompt_ y guarda el valor retornado en una variable
@@ -136,7 +136,7 @@ const primeraInicial = nombre.slice(0,1);
 ```
 
 Si quieres saber más sobre el método `slice()` para _strings_
-revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Reference/Global_Objects/String/slice)
 {% endspoiler %}
 
 ```js
@@ -181,7 +181,7 @@ ATENCIÓN: La *primera* letra del _string_ está en la posición 0,
 la *segunda* letra en la posición 1, y así sucesivamente
 
 Si quieres saber más sobre el método `indexOf()` para _strings_
-revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Reference/Global_Objects/String/indexOf)
 
 1.2 Posición de la segunda inicial
 
@@ -247,7 +247,7 @@ El método `toUpperCase()` es una función que no toma un argumento,
 y retorna todo el _string_ en mayúsculas.
 
 Si quieres saber más sobre el método `toUpperCase()` revisa su
-[documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Reference/Global_Objects/String/toUpperCase)
 
 {% endspoiler %}
 

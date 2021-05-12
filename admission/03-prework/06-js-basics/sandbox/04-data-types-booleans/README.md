@@ -12,14 +12,14 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Booleans
 
 A menudo, necesitarás un valor que simplemente distinga entre dos posibilidades,
-como "sí" y "no" o "encendido" y "apagado". Para esto, JavaScript tiene un tipo
+como "sí" y "no" o "encendido" y "apagado". Para esto, Javascript tiene un tipo
 de dato _boolean_, que tiene solo dos valores: _true_ (verdadero) y _false_
 (falso).
 
@@ -113,7 +113,7 @@ console.log("10 !== 'diez'", 10 !== 'diez');
 // retorna: 10 !== 'diez' true
 ```
 
-Sólo existe un valor en JavaScript que no es igual a sí mismo, y este es NaN,
+Sólo existe un valor en Javascript que no es igual a sí mismo, y este es NaN,
 que significa "no es un número".
 
 ```js
@@ -127,7 +127,7 @@ tal, no es igual al resultado de cualquier otro cálculo sin sentido.
 ### Operadores Lógicos
 
 Hay también algunas operaciones que pueden ser aplicadas a los valores
-`Booleans`. JavaScript soporta tres operadores lógicos: _and_, _or_ y _not_.
+`Booleans`. Javascript soporta tres operadores lógicos: _and_, _or_ y _not_.
 Estos pueden ser usados para "razonar" con los `Booleans`.
 
 El operador `&&` representa la operación lógica _and_ ("y"). Es un operador

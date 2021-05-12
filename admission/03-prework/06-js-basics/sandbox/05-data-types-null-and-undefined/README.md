@@ -14,8 +14,8 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## `null` y `undefined`
@@ -27,7 +27,7 @@ producen un valor con significado (lo verás después) producen `undefined`
 simplemente porque tienen que producir algún valor.
 
 La diferencia en el significado entre `undefined` y `null` es un accidente del
-diseño de JavaScript, y no importa la mayoría del tiempo.
+diseño de Javascript, y no importa la mayoría del tiempo.
 
 Entender la diferencia entre `undefined` y `null` (sí hay una diferencia
 semántica) es importante, y más sencillo de lo que parece. Ambos valores denotan
@@ -42,7 +42,7 @@ El valor `undefined` significa que no se ha _asignado_ un valor, a diferencia de
 
 ### Conversión automática de tipo
 
-Cuando un operador es aplicado al tipo "incorrecto" de valor, JavaScript
+Cuando un operador es aplicado al tipo "incorrecto" de valor, Javascript
 convertirá silenciosamente el valor en el tipo de dato que espera, usando un
 conjunto de reglas que a menudo no son lo que tú quieres o esperas. Esto es
 llamado _coerción de tipo_. Mira estos ejemplos:
@@ -74,7 +74,7 @@ seguirán produciendo NaN. Por eso, en la cuarta expresión, "cinco" * 2 retorna
 NaN.
 
 En el caso de la quinta expresión, cuando comparamos valores que tienen tipos de
-dato diferentes, JavaScript usa un complicado y confuso conjunto de reglas para
+dato diferentes, Javascript usa un complicado y confuso conjunto de reglas para
 determinar qué hacer. En la mayoría de los casos, sólo trata de convertir uno de
 los valores al tipo de dato del otro valor. Sin embargo, cuando null o undefined
 están en cualquier lado de la operación, resulta verdadero sólo en el caso de
@@ -201,7 +201,7 @@ console.log(10 >= 10);    // true, caso 3
 
 ## Lecturas complementarias
 
-[Expresiones y Operadores - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+[Expresiones y Operadores - MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Guide/Expressions_and_Operators)
 
 ## Cierre
 

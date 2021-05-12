@@ -9,9 +9,9 @@
 Bienvenida al tercer paso de tu proceso en la plataforma: el pre-trabajo. Debes
 sentirte muy orgullosa de estar dispuesta a invertir tu tiempo y esfuerzo para
 completar una de las etapas más importantes del proceso. Esta etapa consiste en
-realizar el curso **01. Introducción a la programación (con JavaScript)** de
+realizar el curso **01. Introducción a la programación (con Javascript)** de
 Laboratoria, que es el punto de inicio ideal para aprender a programar. Aquí
-empezamos desde cero, aprendiendo los fundamentos de JavaScript, el lenguaje de
+empezamos desde cero, aprendiendo los fundamentos de Javascript, el lenguaje de
 programación más popular del mundo.
 
 Este curso es un paso fundamental del proceso de selección, pues nos permitirá
@@ -109,10 +109,10 @@ unas buenas bases para el desarrollo de tu carrera profesional en el mundo tech.
 
 * Lograrás tener un entendimiento de **qué es la programación** y por qué aprender
   a programar.
-* Entenderás **qué es JavaScript** y por qué aprenderlo.
+* Entenderás **qué es Javascript** y por qué aprenderlo.
 * Tendrás un primer acercamiento al mundo del código, creando **tu primera**
   **página web**.
-* Podrás darle dinamismo a tu web utilizando JavaScript.
+* Podrás darle dinamismo a tu web utilizando Javascript.
 * Lograrás el manejo de algunos **conceptos básicos de programación** como: variables,
   tipos datos y operadores.
 
@@ -156,7 +156,7 @@ programación, como lo son las variables, los tipos de datos y los operadores.
 * Sesión 3: lectura
   - Unidad 2: Manipulando `strings` y `numbers`
 * Sesión 4: lectura
-  - Unidad 2: Comentarios en JavaScript
+  - Unidad 2: Comentarios en Javascript
 * Sesión 5: seminario
   - Unidad 2: Practicando con ejercicios de variables y tipos de datos
 * Sesión 6: quiz

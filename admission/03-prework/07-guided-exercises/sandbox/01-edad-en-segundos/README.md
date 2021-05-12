@@ -16,7 +16,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Crear un archivo `app.js`.
 - Preguntar la edad por medio del método `window.prompt()`.
 - Convertir la edad ingresada en segundos.
-- Enlazar la funcionalidad `javascript` con la página `html`.
+- Enlazar la funcionalidad `Javascript` con la página `html`.
 - Mostrar el resultado en la página web por medio del método `document.write()`
 
 {% next "Comencemos" %}
@@ -83,19 +83,19 @@ revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/
 const edad = prompt('¿Cuál es tu edad?');
 ```
 
-## 3 - Integra la funcionalidad `javascript` con la página `html`
+## 3 - Integra la funcionalidad `Javascript` con la página `html`
 
 Si tu recargas la página, verás que nada ha cambiado y el `window.prompt`
 nunca se muestra.
 
 Esto es porque el archivo `index.html` nunca está llamando a la funcionalidad
-`javascript` especificada en el archivo `app.js`.
+`Javascript` especificada en el archivo `app.js`.
 
 Para ello necesitamos importar el archivo `app.js` dentro de nuestra
 etiqueta `<body>`:
 
 ```html
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/Javascript" src="app.js"></script>
 ```
 
 {% spoiler %}
