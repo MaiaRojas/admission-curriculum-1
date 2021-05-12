@@ -151,7 +151,10 @@ console.log(porcentajeImpuesto);
 
 {% endspoiler %}
 
-
+Ahora que tenemos los valores que el usuario puse en los `input`, vamos a hacer los cálculos.
+Para tener la ganancia después de impuestos necesitamos calcular el valor de impuestos.
+El impuesto es una porcentaje de la ganancia bruta, que es la diferencia entre los ingresos y los costos.
+Así, podemos calcular que la ganancia neta es:
 
 ```js
 const gananciaBruta = ingreso - costos;
