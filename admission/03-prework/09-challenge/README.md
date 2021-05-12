@@ -6,23 +6,20 @@
 
 ***
 
-## Intro
-
-[FIXME: Intro]
-
 ## Objetivo
 
-[FIXME-VIDEO: Demo de nuestra solucion]
-
-Construir una página web en codesandbox.io que funcionalmente
-sea similar a esta: [https://prework-test.netlify.app/](https://prework-test.netlify.app/)
+Construir una página web en [codesandbox.io](https://codesandbox.io) que
+funcionalmente sea similar a esta:
+[https://prework-test.netlify.app/](https://prework-test.netlify.app/)
 
 Completa las siguientes historias de usuario y consigue pasar todos los tests.
+
+[FIXME-VIDEO: Demo de nuestra solucion con ejemplo de como ejecutar tests]
 
 ## Historias de Usuario
 
 > **¿Qué es una Historia de Usuario?**
-> [FIXME: Historia de Usuario]
+> [FIXME: q es una Historia de Usuario]
 
 **Historia de Usuario #1:** Mi página tributo debería tener un elemento
 con un respectivo `id="main"`, el cual contiene todos los demás elementos.
@@ -63,6 +60,14 @@ dentro de su elemento madre.
 
 Puedes construir tu proyecto usando esta plantilla de
 [codesandbox](https://codesandbox.io/s/laboratoria-prework-challenge-boilerplate-z09zb).
+
+## Codesandbox
+
+Hasta el momento hemos usado un sandbox, que nos ha permitido resolver las
+prácticas, pero para resolver retos "reales" te comendamos utilizar
+[codesandbox.io](https://codesandbox.io), que es una herramienta profesional.
+
+[FIXME-VIDEO: demo codesandbox]
 
 ## Submit
 
