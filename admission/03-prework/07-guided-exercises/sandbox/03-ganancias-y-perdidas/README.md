@@ -13,10 +13,10 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Crear un archivo `index.html`.
 - Crear la estructura de nuestra página web dentro de nuestro de `index.html`.
 - Crear un archivo `app.js`.
-- Preguntar ganancias, costos y porcentaje de impuestos por medio del
-  método `window.prompt()`.
-- Calcular el resultado de ganancia bruta, ganancia neta e impuestos.
 - Enlazar la funcionalidad `javascript` con la página `html`.
+- Crear los campos html para que el usuario insira las ganancias, costos
+y porcentaje de impuestos por medio del `input`
+- Crear un botón que cuándo clicado calcula el resultado de ganancia bruta, ganancia neta e impuestos
 - Mostrar el resultado en la página web por medio del método `document.write()`
 
 {% next "Comencemos" %}
