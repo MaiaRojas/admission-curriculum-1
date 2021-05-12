@@ -6,6 +6,8 @@ Crear un programa que pide los ingresos, los costos y el % de impuestos,
 y calcula la ganancia después de impuestos. Debe imprimir el resultado
 en la web con el símbolo $ adelante.
 
+[FIXME-VIDEO: Demo del resultado final]
+
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
@@ -21,13 +23,11 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-## Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+## 2 - Crea la estructura de la página web
 
-## Crea la estructura de la página web
-
-### Creamos la estructura básica de cualquier documento `html`
+### 2.1 - Creamos la estructura básica de cualquier documento `html`
 
 ```html
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 </html>
 ```
 
-#### ... y la personalizamos un poco
+### 2.2 La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con
 el texto `Ganancias y perdidas`
@@ -58,16 +58,9 @@ que diga _Coloca tus ganancias, costos y porcentaje de impuestos_.
   </body>
 ```
 
-{% spoiler %}
-Revisa el resultado en tu navegador, debería ser algo parecido a esto
-[FIXME: screenshot]
-{% endspoiler %}
-
 {% next "Funcionalidad JS" %}
 
 ### Crea un archivo `app.js`
-
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
 
 ### Crea varios _prompt_ y guarda los valores que retornan en distintas variables
 
@@ -77,8 +70,6 @@ obligatorio, la pregunta a realizar y retorna el valor ingresado por la usuaria.
 
 Al ejecutarse esta función muestra en pantalla un diálogo con la pregunta
 y una caja de texto para que la usuaria complete.
-
-[FIXME screenshot]
 
 Si quieres saber más sobre el método `window.prompt` revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
@@ -113,7 +104,6 @@ tiene el valor ingresado por la usuaria, usando `console.log`
 console.log(edad);
 ```
 
-[FIXME: video ver valores de variables en la consola]
 {% endspoiler %}
 
 ### Calcula el resultado de ganancia bruta, ganancia neta e impuestos

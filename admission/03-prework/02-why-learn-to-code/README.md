@@ -134,7 +134,7 @@ infinitas, lo cual lo hace un excelente lenguaje de programación que aprender.
 
 ## Escribiendo JavaScript en la web
 
-[FIXME: Actualizar texto y video]
+[FIXME-VIDEO: Actualizar texto y video]
 
 Seguramente te estás preguntando cómo es eso de tener un _intérprete_ JavaScript
 en el navegador. Pues, _**la mejor forma de aprender es haciendo**_: abre tu

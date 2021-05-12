@@ -25,13 +25,21 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 {% next "Comencemos" %}
 
-### Primeros Pasos
+> Antes de comenzar recuerda inicializar tu solución ejecutando `npm install` en
+> tu terminal
 
-[ FIXME: Las partes de crear un archivo en CS50 ]
+{%spoiler "¿Cómo ejecutar `npm install`?"%}
+[FIXME-VIDEO: ejecutar `npm install`]
+{%endspoiler%}
 
-### Sintaxis básica
+### Primeros Pasos: Sintaxis básica
 
 Crea un archivo `index.html`.
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
 La primera línea que necesita en un archivo HTML es `<!DOCTYPE html>`.
 Esto le permite al navegador (como Chrome, Firefox, Internet Explorer o Safari)
 saber que el tipo de este documento es HTML y no es solo un archivo de texto normal.

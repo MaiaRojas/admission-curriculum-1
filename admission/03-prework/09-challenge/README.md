@@ -12,6 +12,8 @@
 
 ## Objetivo
 
+[FIXME-VIDEO: Demo de nuestra solucion]
+
 Construir una página web en codesandbox.io que funcionalmente
 sea similar a esta: [https://prework-test.netlify.app/](https://prework-test.netlify.app/)
 

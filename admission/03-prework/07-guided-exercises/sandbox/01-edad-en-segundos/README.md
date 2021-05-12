@@ -5,6 +5,8 @@
 Crea una página web que solicite a la usuaria su edad **en años** utilizando `window.prompt()`,
 y pinte su edad **en segundos** en la pantalla utilizando `document.write()`.
 
+[FIXME-VIDEO: Demo del resultado final]
+
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
@@ -19,13 +21,9 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-## Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
-
-## Crea la estructura de la página web
-
-### Creamos la estructura básica de cualquier documento `html`
+## 2 - Creamos la estructura básica de cualquier documento `html` dentro de `index.html`
 
 ```html
 <!DOCTYPE html>
@@ -40,7 +38,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 </html>
 ```
 
-#### ... y la personalizamos un poco
+## 3 - La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con el texto `Edad en segundos`
 
@@ -64,30 +62,28 @@ Revisa el resultado en tu navegador, debería ser algo parecido a esto
 
 {% next "Funcionalidad JS" %}
 
-### Crea un archivo `app.js`
+## 1 - Crea un archivo `app.js`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
-
-### Crea tu _prompt_ y guarda el valor retornado en una variable
+## 2 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
 
 {% spoiler %}
-El método `window.prompt` de la web, es una función que toma un único argumento
-obligatorio, la pregunta a realizar y retorna el valor ingresado por la usuaria.
+El método `window.prompt` de la web, es una función que toma un único argumento obligatorio,
+la pregunta a realizar y retorna el valor ingresado por la usuaria.
 
-Al ejecutarse esta función muestra en pantalla un diálogo con la pregunta y una
-caja de texto para que la usuaria complete.
+Al ejecutarse esta función muestra en pantalla un diálogo
+con la pregunta y una caja de texto para que la usuaria complete.
 
 [FIXME screenshot]
 
-Si quieres saber más sobre el método `window.prompt` revisa su
-[documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
+Si quieres saber más sobre el método `window.prompt`
+revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
 {% endspoiler %}
 
 ```js
 const edad = prompt('¿Cuál es tu edad?');
 ```
 
-### Integrar la funcionalidad `javascript` con la página `html`
+## 3 - Integra la funcionalidad `javascript` con la página `html`
 
 Si tu recargas la página, verás que nada ha cambiado y el `window.prompt`
 nunca se muestra.
@@ -110,10 +106,11 @@ Valida que la variable `edad` tiene el valor ingresado por la usuaria, usando
 console.log(edad);
 ```
 
-[FIXME: video ver valores de variables en la consola]
 {% endspoiler %}
 
-### Convierte la edad a segundos
+## 4 - Vamos a codear la solición
+
+### 4.1 - Convierte la edad a segundos
 
 Dado que dentro de un año existe **365** días, y cada día tiene **24** horas,
 y que cada hora cuenta con **60** minutos y cada minuto con **60** segundos,
@@ -133,7 +130,7 @@ console.log(edadEnSegundos);
 
 {% endspoiler %}
 
-### La imprimimos en pantalla
+### 4.2 - La imprimimos en pantalla
 
 Para escribir directamente un contenido dentro de nuestra página web, usaremos
 el método `document.write()` en nuestro archivo `app.js`.
@@ -144,5 +141,3 @@ Si quieres saber más puedes revisar su
 ```js
 document.write("Tu edad es " + edad + ", en segundos sería " + edadEnSegundos);
 ```
-
-## Cierre ? hablar de conversion automatica de tipos de datos ????

@@ -13,9 +13,7 @@ Veamos unos ejemplos:
 - "ana martinez" y "Ana Martinez" devuelven las iniciales "AM"
 - "Michelle Seguil" y "michelle seguil" devuelven "MS"
 
-## El programa
-
-[FIXME: um video o GIF de como será el programa final para que pueda visualizar]
+[FIXME-VIDEO: Demo del resultado final]
 
 ## Análisis y lista de tareas
 
@@ -33,8 +31,6 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 {% next "Comencemos" %}
 
 ## Crea un archivo `index.html`
-
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
 
 ## Crea la estructura de la página web
 
@@ -70,16 +66,9 @@ que diga _Coloca las iniciales_.
   </body>
 ```
 
-{% spoiler %}
-Revisa el resultado en tu navegador, debería ser algo parecido a esto
-[FIXME: screenshot]
-{% endspoiler %}
-
 {% next "Funcionalidad JS" %}
 
 ## Crea un archivo `app.js`
-
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
 
 ### Integra con la página `html`
 
@@ -103,8 +92,6 @@ por la usuaria.
 Al ejecutarse esta función muestra en pantalla un diálogo
 con la pregunta y una caja de texto para que la usuaria complete.
 
-[FIXME screenshot]
-
 Si quieres saber más sobre el método `window.prompt()`
 revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
 {% endspoiler %}
@@ -116,9 +103,6 @@ const nombre = window.prompt('¿Cuál es tu nombre y apellido?');
 ### Actualiza la pagina web, abra la consola y testea la variable
 
 {% spoiler %}
-
-[FIXME: video o screenshots o gif de como abrir la console en el navegador
-o puede referirse al ejercicio 02 para ver como hacer]
 
 En la consola, escribe la variable `nombre` y presiona `enter`.
 Debe aparecer el valor ingresado en el _prompt_.

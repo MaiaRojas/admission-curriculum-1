@@ -7,6 +7,8 @@ utilizando `prompt()`, y devuelva, en la consola, la temperatura en grados
 Fahrenheit (°F) utilizando `console.log()`.
 La fórmula matemática para pasar de °C a °F es: `T(°F) = ( T(°C) × 1.8 ) + 32`.
 
+[FIXME-VIDEO: Demo del resultado final]
+
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
@@ -21,13 +23,11 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-## Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+## 2 - Crea la estructura de la página web
 
-## Crea la estructura de la página web
-
-### Creamos la estructura básica de cualquier documento `html`
+### 2.1 - Creamos la estructura básica de cualquier documento `html`
 
 ```html
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 </html>
 ```
 
-#### ... y la personalizamos un poco
+#### 2.2 La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con el texto `Convertidor de temperatura`
 
@@ -59,37 +59,17 @@ que diga _Coloca la temperatura en grados Celsius (°C)_.
   </body>
 ```
 
-{% spoiler %}
-Revisa el resultado en tu navegador, debería ser algo parecido a esto
-[FIXME: screenshot]
-{% endspoiler %}
-
 {% next "Funcionalidad JS" %}
 
-## Crea un archivo `app.js`
+## 1 - Crea un archivo `app.js`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
-
-## Crea tu _prompt_ y guarda el valor retornado en una variable
-
-{% spoiler %}
-El método `window.prompt` de la web, es una función que toma un único argumento obligatorio,
-la pregunta a realizar y retorna el valor ingresado por la usuaria.
-
-Al ejecutarse esta función muestra en pantalla un diálogo
-con la pregunta y una caja de texto para que la usuaria complete.
-
-[FIXME screenshot]
-
-Si quieres saber más sobre el método `window.prompt`
-revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
-{% endspoiler %}
+## 2 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
 
 ```js
 const temperaturaCelsius = prompt('¿Cuál es la temperatura en Celsius?');
 ```
 
-### Integrar la funcionalidad `javascript` con la página `html`
+## 3 - Integra la funcionalidad `javascript` con la página `html`
 
 Si tu recargas la página, verás que nada ha cambiado
 y el `window.prompt` nunca se muestra.
@@ -107,7 +87,9 @@ Para ello necesitamos importar el archivo `app.js` dentro de nuestro etiqueta `<
 Recargas la página y ahora verás que el `window.prompt` se muestra.
 {% endspoiler %}
 
-## Convierte la temperatura Celsius (°C) a grados Fahrenheit (°F)
+## 4 - Codeamos la solución
+
+### 4.1 - Convierte la temperatura Celsius (°C) a grados Fahrenheit (°F)
 
 Ahora que tenemos la temperatura en grados Celsius guardada en la variable `temperaturaCelsius`,
 vamos a convertirla con la fórmula matemática:
@@ -117,7 +99,7 @@ vamos a convertirla con la fórmula matemática:
 const temperaturaFahrenheit = (temperaturaCelsius*1.8) + 32;
 ```
 
-## La imprimimos en la consola
+### 4.2 - La imprimimos en la consola
 
 Para mostrar un contenido dentro de la consola, usaremos
 el método `console.log()` en nuestro archivo `app.js`.
@@ -130,9 +112,7 @@ console.log("La temperatura en Fahrenheit es " + temperaturaFahrenheit);
 Recargas la página y ahora verás que el `window.prompt` se muestra.
 {% endspoiler %}
 
-### Abre la consola y averigua su valor
-
-[FIXME: video o screenshots o gif de como abrir la console en el navegador]
+### 4.3 - Abre la consola y cheque averigua su valor
 
 {% spoiler %}
 Como vimos anteriormente, tenemos varios tipos de datos y tenemos
@@ -141,7 +121,7 @@ así para evitar conflictos, vamos a mejorar el código y
 convertir este dato en un tipo `number` con el metodo `parseInt()`.
 {% endspoiler %}
 
-### Convertir el dato a number
+### 4.4 - Convertir el dato a number
 
 Pon el `prompt` dentro del metodo `parseInt()` en la variable `temperaturaCelsius`:
 
@@ -150,8 +130,6 @@ const temperaturaCelsius = parseInt(prompt('¿Cuál es la temperatura en Celsius
 ```
 
 {% spoiler %}
-Si quieres saber más sobre el método `parseInt` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
-
-El archivo `app.js` debería ser algo parecido a esto
-[FIXME: screenshot]
+Si quieres saber más sobre el método `parseInt` revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 {% endspoiler %}

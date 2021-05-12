@@ -7,6 +7,8 @@ del consumo es de 50 dólares, pero a eso debes agregarle el 10% de Impuesto al
 Valor Agregado (IVA). Quieres dividir la cuenta equitativamente entre tu y tus amigas.
 Para eso vamos a crear este programa.
 
+[FIXME-VIDEO: Demo del resultado final]
+
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitas completar las siguientes tareas:

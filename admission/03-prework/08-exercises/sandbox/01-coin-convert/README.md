@@ -3,7 +3,9 @@
 ## Enunciado
 
 Crea una función que convierta una cantidad en dólares a 5 monedas diferentes:
-soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales
+soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales.
+
+[FIXME-VIDEO: Demo del resultado final]
 
 ## Análisis y lista de tareas
 
