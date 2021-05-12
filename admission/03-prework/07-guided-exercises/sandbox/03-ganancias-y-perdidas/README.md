@@ -69,6 +69,18 @@ Revisa el resultado en tu navegador, debería ser algo parecido a esto
 
 [FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
 
+### Integra con la página `html`
+
+El archivo `index.html` no está enlazado a el archivo `app.js`
+y no reconocerá las funcionalidades `javascript`
+
+Para ello necesitamos importar el archivo `app.js` dentro de
+nuestra etiqueta `<body>`:
+
+```html
+  <script type="text/javascript" src="app.js"></script>
+```
+
 ### Crea varios _prompt_ y guarda los valores que retornan en distintas variables
 
 {% spoiler %}
@@ -90,21 +102,6 @@ const costo = prompt("¿Cuál es el costo?");
 const porcentajeImpuesto = prompt("¿Cuál es el porcentaje(%) de impuestos?");
 ```
 
-### Integrar la funcionalidad `javascript` con la página `html`
-
-Si tu recargas la página, verás que nada ha cambiado y el `window.prompt`
-nunca se muestra.
-
-Esto es porque el archivo `index.html` nunca está llamando a la funcionalidad
-`javascript` especificada en el archivo `app.js`.
-
-Para ello necesitamos importar el archivo `app.js` dentro de
-nuestra etiqueta `<body>`:
-
-```html
-<script type="text/javascript" src="app.js"></script>
-```
-
 {% spoiler %}
 Valida que las variables `ingreso`, `costo`, y `porcentajeImpuesto`
 tiene el valor ingresado por la usuaria, usando `console.log`
@@ -114,6 +111,7 @@ console.log(edad);
 ```
 
 [FIXME: video ver valores de variables en la consola]
+
 {% endspoiler %}
 
 ### Calcula el resultado de ganancia bruta, ganancia neta e impuestos
