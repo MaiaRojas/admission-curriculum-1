@@ -131,6 +131,8 @@ element.addEventListener("click", function () {
 })
 ```
 
+Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+
 ### Obteniendo el nombre y apellido del `input`
 
 Queremos obtener el nombre y apellido que el usuario puse en `input` cuándo el botón es clicado.
