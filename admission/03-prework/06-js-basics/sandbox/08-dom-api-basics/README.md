@@ -23,8 +23,9 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 ## Cierre
 
 Esta es la última lección relacionada a Javascript.
-Puedes continuar a tu próxima lección sobre
-[Interactividad en HTML con Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/08-dom-api-basics/).
+Puedes continuar a tu próxima lección donde aplicaremos todo lo que hemos visto
+hasta el momento a través de algunos
+[ejercicios guiados](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/sandbox/01-edad-en-segundos/).
 
 > Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
 > tu terminal
