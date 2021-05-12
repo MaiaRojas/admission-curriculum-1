@@ -114,7 +114,22 @@ El código deve ser algo parecido con eso:
 
 {% endspoiler %}
 
-## Añadiendo el listener del evento `click`
+## Añadiendo el listener de `click` con `addEventListener`
+
+Para poner un listener de evento usamos el método `addEventListener`, pero primero tenemos que localizar el elemento que
+vamos escuchar. El elemento que buscamos es el botón y para hacer eso, la etiqueta necessita un `id`.
+
+```html
+    <button id="btn">Iniciales</button>
+```
+
+```js
+const element = document.getElementById("btn")
+element.addEventListener("click", function () {
+  // Todo que está acá será ejecutado siempre que el element es clicado.
+  console.log("El botón fue clicado")
+})
+```
 
 ### Obteniendo el nombre y apellido del `input`
 
