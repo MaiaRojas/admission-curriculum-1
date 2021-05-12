@@ -81,38 +81,40 @@ nuestra etiqueta `<body>`:
   <script type="text/javascript" src="app.js"></script>
 ```
 
-### Crea varios _prompt_ y guarda los valores que retornan en distintas variables
+## Crea los campos para poner los dados que el usuario necesita
 
-{% spoiler %}
-El método `window.prompt` de la web, es una función que toma un único argumento
-obligatorio, la pregunta a realizar y retorna el valor ingresado por la usuaria.
+El usuario necesitar fornecer tres datos, `ingreso`,`costo` y `porcentaje de impuestos`.
+Además de los tres `input`, es necesario una etiqueta de `button`, para que al clique de
+este botón, el programa hace los cálculos y imprima el resultado en la pantalla.
 
-Al ejecutarse esta función muestra en pantalla un diálogo con la pregunta
-y una caja de texto para que la usuaria complete.
-
-[FIXME screenshot]
-
-Si quieres saber más sobre el método `window.prompt` revisa su
-[documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
-{% endspoiler %}
-
-```js
-const ingreso = prompt("¿Cuál es el ingreso?");
-const costo = prompt("¿Cuál es el costo?");
-const porcentajeImpuesto = prompt("¿Cuál es el porcentaje(%) de impuestos?");
+```html
+    <p>Ingreso:</p>
+    <input type="text">
+    <p>Costo:</p>
+    <input type="text">
+    <p>Porcentaje de impuestos:</p>
+    <input type="text">
+    <button>Calcular</button>
 ```
 
-{% spoiler %}
-Valida que las variables `ingreso`, `costo`, y `porcentajeImpuesto`
-tiene el valor ingresado por la usuaria, usando `console.log`
+## Añade el listener de `click` con `addEventListener`
 
-```js
-console.log(edad);
+Para poner un listener de evento usamos el método `addEventListener`, pero primero tenemos que localizar el elemento que
+vamos escuchar. El elemento que buscamos es el botón y para hacer eso, la etiqueta necessita un `id`.
+
+```html
+    <button id="btn">Calcular</button>
 ```
 
-[FIXME: video ver valores de variables en la consola]
+```js
+const element = document.getElementById("btn")
+element.addEventListener("click", function () {
+  // Todo que está acá será ejecutado siempre que el element es clicado.
+  console.log("El botón fue clicado")
+})
+```
 
-{% endspoiler %}
+Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
 
 ### Calcula el resultado de ganancia bruta, ganancia neta e impuestos
 
