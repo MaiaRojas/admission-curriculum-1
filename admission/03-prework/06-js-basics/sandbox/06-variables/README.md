@@ -262,3 +262,16 @@ const PI;
 PI = 3.15;
 // Dará ERROR, ya que ha de asignarse un valor en la declaración
 ```
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[funciones](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/07-functions/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}
+

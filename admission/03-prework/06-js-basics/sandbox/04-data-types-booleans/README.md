@@ -182,3 +182,15 @@ dado que es el único operador de este tipo en el lenguaje). El valor a la
 izquierda del signo de interrogación "escoge" cuál de los otros dos valores
 resultará. Cuando es verdadero, el valor central es escogido, y cuando es falso,
 el valor de la derecha se da como resultado.
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[tipos especiales](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/05-data-types-null-and-undefined/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

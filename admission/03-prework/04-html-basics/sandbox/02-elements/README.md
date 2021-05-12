@@ -130,8 +130,23 @@ Su segundo archivo `segundoArchivo.html` puede ser algo parecido de eso:
 </html>
 ```
 
-Puede leer más sobre atributos en ese [link aqui](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started#atributos)
+Puede leer más sobre atributos en ese
+[link aqui](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started#atributos)
 
 {% endspoiler %}
 
-[ Explicación y ejemplo de class e ID ]
+[FIXME: Explicación y ejemplo de class e ID ]
+
+## Cierre
+
+Esta es la última lección relacionada a HTML.
+Puedes continuar a tu próxima lección, la primera sobre
+[CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/01-intro/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}
+

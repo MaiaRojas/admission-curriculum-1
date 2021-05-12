@@ -58,3 +58,15 @@ código. No te preocupes por borrar los comentarios. Eso sí, **no** borres otra
 partes del programa. Si lo haces, es muy probable que no te funcione muy bien.
 
 Ahora sí, continúa con los ejercicios y quizzes de esta lección. ¡Mucha suerte!
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[números en Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe//admission/03-prework/06-js-basics/sandbox/02-data-types-numbers/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

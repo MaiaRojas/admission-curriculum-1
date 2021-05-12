@@ -202,3 +202,15 @@ console.log(10 >= 10);    // true, caso 3
 ## Lecturas complementarias
 
 [Expresiones y Operadores - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[variables](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/06-variables/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

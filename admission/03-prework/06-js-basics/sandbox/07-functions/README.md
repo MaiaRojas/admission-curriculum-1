@@ -171,3 +171,15 @@ parte superior de su ámbito y pueden ser usadas por todo el código en ese
 ámbito. Esto es útil algunas veces porque nos da la libertad de organizar el
 código de una manera parezca significativa sin preocuparnos por definir todas
 las funciones antes de su primer uso.
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[Interactividad en HTML con Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/08-dom-api-basics/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

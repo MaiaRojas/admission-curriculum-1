@@ -170,3 +170,16 @@ Además pueden leer sobre el modelo de caja de CSS.
 - [Box Model - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 - [Porcentaje - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
 - [Unidades - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#longitudes)
+
+## Cierre
+
+Esta es la última lección relacionada a CSS.
+Puedes continuar a tu próxima lección, la primera sobre
+[JavaScript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/01-comments/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

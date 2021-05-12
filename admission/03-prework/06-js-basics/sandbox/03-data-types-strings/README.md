@@ -145,3 +145,15 @@ unario.
 console.log(- (10 - 2));
 // retorna: -8
 ```
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[booleanos](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/04-data-types-booleans/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

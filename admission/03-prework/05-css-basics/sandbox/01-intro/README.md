@@ -154,3 +154,15 @@ La cascada y la herencia
 
 - [Selectores](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 - [Cascada y Herencia - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Cascada_y_herencia)
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[estilos con CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/02-styling/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

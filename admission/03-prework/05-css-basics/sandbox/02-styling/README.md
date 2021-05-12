@@ -162,3 +162,15 @@ Si quieres saber más sobre los tipos de línea revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
 
 {% endspoiler %}
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[tamaños con CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/03-sizing/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}
