@@ -17,7 +17,11 @@ Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
 Primero, necesitamos un documento HTML para formatear.
-Vamos a hacerlo con un elemento `h1`, `h2` y un `p`.
+Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
 ```html
 <!DOCTYPE html>
@@ -154,6 +158,7 @@ Al final, tu código vas a ser algo parecido a eso:
   </style>
 ```
 
-Si quieres saber más sobre los tipos de línea revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
+Si quieres saber más sobre los tipos de línea revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
 
 {% endspoiler %}

@@ -66,6 +66,7 @@ h2 {
 
 Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color rojo!
 {% endspoiler %}
+
 {% next "Selectores" %}
 
 ### Selectores
@@ -125,7 +126,8 @@ solamente selecciona las etiquetas `<p>` cuyo atributo class sea igual a destaca
 
 {% spoiler %}
 
-Si quieres saber más revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+Si quieres saber más revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
 
 {% endspoiler %}
 

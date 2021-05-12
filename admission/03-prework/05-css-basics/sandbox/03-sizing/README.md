@@ -17,8 +17,11 @@ Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
 Primero, necesitamos un documento HTML para formatear.
-Vamos a hacerlo con un elemento `h1`, `h2` y un `p`.
-No olvides de añadir la etiqueta `style` para formatearlos
+Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
 ```html
 <!DOCTYPE html>
@@ -26,7 +29,6 @@ No olvides de añadir la etiqueta `style` para formatearlos
   <head>
     <meta charset="utf-8" />
     <title>CSS</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Divirtiéndose con CSS</h1>
@@ -36,11 +38,27 @@ No olvides de añadir la etiqueta `style` para formatearlos
 </html>
 ```
 
-Si tienes dudas, puede revisitar el tópico anterior
+Ahora, a diferencia de los casos anteriores, vamos a incluir los estilos desde
+un archivo externo en lugar de usar la etiqueta `<style>`.
 
-{% next "Espacios" %}
+Para ello crea un nuevo archivo `styles.css` y agrega en dentro del `<head>` de
+tu archivo `index.html` la siguiente línea:
 
-## Espacios
+
+```html
+    <link rel="stylesheet" href="styles.css" />
+```
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
+Tener la estructura de nuestra página en un archivo y los estilos en otro, nos
+permite mantener nuestro código más ordenado.
+
+{% next "Espaciado" %}
+
+## Espaciado
 
 Hay dos propiedades muy utilizadas para agregar espacio alrededor de los elementos,
 que son el `margin` y el `padding`, pero hay una cosa distinta que los hace diferentes.
@@ -50,7 +68,7 @@ mientras que el `padding` agrega el espacio alrededor del contenido del elemento
 ### Practica
 
 Para ver mejor la diferencia, vamos primero a poner un color de fondo verde y
-un border de 3px, de linea sólida y de color rojo.
+un border de 3px, linea sólida y color rojo.
 
 ```css
 p {
@@ -131,8 +149,9 @@ Por ejemplo, las tres formas del color rojo es:
 
 ```css
   color: red;
-  color: #ff0000; /* este valor es el color rojo en RGB con notación hexadecimal */
   color: rgb(255,0,0);
+  color: #ff0000; /* este valor es el color rojo en RGB con notación hexadecimal,
+                     es equivalente al valor de arriba */
 ```
 
 Puede leer y buscar un poco más sobre la unidad en porcentaje también
