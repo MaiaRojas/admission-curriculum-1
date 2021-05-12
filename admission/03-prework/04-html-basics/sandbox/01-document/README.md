@@ -154,8 +154,13 @@ las personas que leen y editan el HTML.
 Puedes continuar a tu próxima lección sobre
 [elementos HTML](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/04-html-basics/sandbox/02-elements/).
 
-> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
 > tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
 [FIXME-VIDEO: ejecutar `npm run submit`]
