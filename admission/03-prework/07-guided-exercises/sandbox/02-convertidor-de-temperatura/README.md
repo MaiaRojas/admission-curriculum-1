@@ -133,3 +133,15 @@ const temperaturaCelsius = parseInt(prompt('¿Cuál es la temperatura en Celsius
 Si quieres saber más sobre el método `parseInt` revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Reference/Global_Objects/parseInt)
 {% endspoiler %}
+
+## Cierre
+
+Puedes continuar con tu próximo
+[ejercicio guiado](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/sandbox/03-ganancias-y-perdidas/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

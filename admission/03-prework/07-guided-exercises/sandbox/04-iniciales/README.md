@@ -254,3 +254,16 @@ Si quieres saber más sobre el método `toUpperCase()` revisa su
 ```js
 document.write("Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase());
 ```
+
+## Cierre
+
+Este es el último de los ejercicios guiados. A continuación encontrarás otros 2
+ejercicios, que te sugerimos intentes resolverlos por tu cuenta.
+[Continuar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/08-exercises/sandbox/01-coin-convert/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

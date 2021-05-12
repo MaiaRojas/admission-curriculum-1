@@ -141,3 +141,15 @@ Si quieres saber más puedes revisar su
 ```js
 document.write("Tu edad es " + edad + ", en segundos sería " + edadEnSegundos);
 ```
+
+## Cierre
+
+Puedes continuar con tu próximo
+[ejercicio guiado](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/sandbox/02-convertidor-de-temperatura/).
+
+> Antes de terminar recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}
