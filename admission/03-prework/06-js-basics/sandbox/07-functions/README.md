@@ -42,8 +42,8 @@ de nuestro propio vocabulario para evitar repetirnos demasiado.
 
 ## Definiendo una función
 
-Una definición de una función es sólo una definición regular de una variable
-cuando ocurre que el valor dado a la variable es una función. Por ejemplo, el
+La definición de una función es sólo una definición normal de una variable,
+pero ocurre que el valor dado a la variable es una función. Por ejemplo, el
 siguiente código define la variable `cuadrado` para referirse a la función que
 produce el cuadrado de un número dado:
 
@@ -55,6 +55,10 @@ const cuadrado = function(x) {
 console.log(cuadrado(12));
 // Retorna: 144
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 Una función es creada por una expresión que empieza con la palbra reservada
 `function`. Las funciones tienen un conjunto de parametros (en este caso sólo

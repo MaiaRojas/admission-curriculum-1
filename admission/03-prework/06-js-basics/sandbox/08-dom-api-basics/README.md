@@ -76,7 +76,7 @@ pero sólo nos interesa cuando el usuario hace click en un lugar o botón
 específico.
 
 Vamos probar definiendo un `button` que cuando es _clickeado_, imprime "Hola"
-en consola.
+en la consola.
 Para hacer eso, la primera cosa que necesitamos hacer es crear el html y
 localizar el elemento DOM que nos interesa.
 

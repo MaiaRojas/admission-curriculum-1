@@ -24,7 +24,7 @@ referencia a _cadena de caracteres_). Es el tipo de dato que
 utilzamos para representar texto. Se declaran al poner el contenido entre
 comillas.
 
-Abre tu consola y escribe lo siguiente:
+Escribe lo siguiente en el archivo `index.js` y ejecútalo en tu terminal:
 
 ```js
 console.log("Hola, mi nombre es Michelle");
@@ -36,6 +36,10 @@ console.log('Soy desarrolladora web');
 console.log("123");
 // retorna: "123"
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 Tanto las comillas simples como las dobles pueden ser usadas para declarar
 `strings`, siempre y cuando coincidan al principio y al final. Casi cualquier
@@ -60,8 +64,8 @@ encuentra dentro de un texto entre comillas, indica que el carácter siguiente
 tiene un significado especial. Esto se denomina _escapar el carácter_. Cuando el
 carácter `n` sigue a una diagonal invertida (backslash - `\`), se interpreta
 como una nueva línea. Similarmente, una `t` después de la diagonal invertida
-significa un tab. Escribe los siguientes textos en tu consola (recuerda siempre
-colocarlos entre comillas, sean simples o dobles).
+significa un tab. Escribe lo siguiente en tu `index.js` y pruébalo en tu terminal
+(recuerda siempre colocarlos entre comillas, sean simples o dobles).
 
 ```js
 console.log('Esta es la primera línea \n Y esta la segunda');

@@ -25,7 +25,8 @@ de dato _boolean_, que tiene solo dos valores: _true_ (verdadero) y _false_
 
 ### Operadores comparativos
 
-Realiza esta comparación en tu consola:
+Abre tu archivo `index.js` realiza estas comparaciones y ejecuta el archivo en
+tu terminal.
 
 ```js
 console.log(3 > 2);
@@ -40,6 +41,10 @@ console.log(typeof (3 > 2));
 console.log(typeof (2 > 3));
 // retorna: boolean
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 Los signos `>` y `<` son los símbolos tradicionales para "mayor que" y "menor
 que", respectivamente. Estos son operadores binarios (porque operan sobre dos

@@ -110,6 +110,10 @@ argumentos pasados a `console.log` se imprimen en la terminal. Si al mismo
 archivo `.js` lo importas desde una página web, el resultado lo verás impreso
 en la consola de tu navegador.
 
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
+
 {%spoiler "¿Cómo abrir la consola del navegador?"%}
 [FIXME-VIDEO: Cómo abrir la consola del navegador]
 {%endspoiler%}
@@ -120,8 +124,8 @@ en la consola de tu navegador.
 ### Operadores Aritméticos
 
 Lo principal que se hace con los números es aritmética. Sigamos explorando el
-comportamiento del tipo de dato `number` en tu consola. Escribe el siguiente
-ejemplo en tu consola y confirma que tienes el mismo resultado:
+comportamiento del tipo de dato `number`. Ejecuta el siguiente
+código en tu terminal y confirma que tienes el mismo resultado:
 
 ```js
 console.log(100 + 4 * 11);
@@ -140,7 +144,7 @@ console.log((100 + 4) * 11);
 ```
 
 Para la resta existe el operador `-`, y la división se puede hacer con el
-operador `/`. Veamos más ejemplos (recuerda hacerlos en tu consola también!):
+operador `/`. Veamos más ejemplos (recuerda también probarlos en tu terminal!):
 
 ```js
 console.log(12345 / 250);

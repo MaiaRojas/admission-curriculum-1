@@ -24,12 +24,16 @@ Ya conoces los tipos de datos más comunes en Javascript. Sabes crear, combinar 
 transformar `numbers`, `strings` y `booleans`. Pero, ¿qué podemos hacer con
 esto? Hasta ahora, todo lo que has trabajado ha sido para uso inmediato. Es
 decir, los nuevos valores que generamos deben ser inmediatamente utilizados o se
-pierden. Sigue en tu consola el siguiente ejemplo:
+pierden. Sigue en tu terminal el siguiente ejemplo:
 
 ```js
 console.log('Hola, mi nombre es ' + 'Michelle' + ' y tengo ' + 19 + ' años');
 // retorna: "Hola, mi nombre es Michelle y tengo 19 años"
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 Si quisiera utilizar ese `string` de nuevo, digamos porque Michelle cumplió años
 y ahora queremos que diga 20 años en lugar de 19, no lo podemos hacer. Se ha
@@ -49,11 +53,11 @@ queremos asignarle de inmediato un valor, le sigue el operador `=` (operador de
 asignación) y una expresión (el número `19`).
 
 La declaración anterior crea una variable llamada `age` (o edad en español) y se
-usa para retener el número `19`. La consola devuelve `undefined`, pero no creas
+usa para retener el número `19`. La terminal devuelve `undefined`, pero no creas
 que es un error. Es lo que Javascript hace cuando un comando no retorna valor.
-Cuando escribes `12 + 5`, la consola retorna `17`. Pero al declarar una variable
+Cuando escribes `12 + 5`, la terminal retorna `17`. Pero al declarar una variable
 llamada `age` asignándole el valor `19`, no hay un valor de retorno. Por eso la
-consola simplemente devuelve `undefined` (en el resto de los ejemplos vamos a
+terminal simplemente devuelve `undefined` (en el resto de los ejemplos vamos a
 omitir ese `undefined` de retorno porque no agrega mucho valor a la
 explicación).
 
@@ -68,11 +72,13 @@ console.log('Hola, mi nombre es ' + 'Michelle' + ' y tengo ' + age + ' años');
 // retorna: "Hola, mi nombre es Michelle y tengo 19 años"
 ```
 
-La consola nos ayuda a saber el valor de una variable. Si escribimos el nombre
-de una variable que ha sido declarada en la consola, nos devuelve su valor. Si
-esa variable no ha sido declarada, la consola retorna un error. Y si la variabla
-ha sido declarada, pero no le hemos asignado valor, la consola devuleve
-`undefined`.
+La terminal nos ayuda a saber el valor de una variable. Si escribimos el nombre
+de una variable que ha sido declarada, nos devuelve su valor.
+
+Si esa variable no ha sido declarada, retorna un error.
+
+Y si la variabla ha sido declarada, pero no le hemos asignado valor,
+devuelve `undefined`.
 
 ```js
 console.log(age);

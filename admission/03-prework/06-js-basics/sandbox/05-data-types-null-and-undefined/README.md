@@ -64,6 +64,10 @@ console.log('false == 0 =', false == 0);
 // retorna: false == 0 = true
 ```
 
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
+
 El null en la primera expresión se vuelve 0, y el "5" en la segunda expresión se
 convierte en 5 (de string a number). Aún así, en la tercera expresión, + intenta
 hacer concatenación de strings antes de una suma numérica, así que el 1 es
