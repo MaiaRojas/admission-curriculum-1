@@ -1,4 +1,4 @@
-# Tu primera página: Página Tributo
+# Tu primer sitio web: Página Tributo
 
 * Tipo: `practice`
 * Formato: `self-paced`

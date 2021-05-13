@@ -88,11 +88,11 @@ verlo cada vez que lo necesitemos.
 Esta herramienta es un entorno de trabajo que te permitirá ir probando de
 manera práctica los avances en estas 3 tecnologías.
 
-[FIXME-VIDEO: Demo cs50 lab ide]
+[Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/03-challenge-intro/sandbox/01-sandbox/)
 
 ### Flujo de trabajo
 
 Y por último te dejamos el ciclo de trabajo recomendado para que puedas avanzar
 con seguridad y podamos ir trackeando tu progreso en el camino
 
-[FIXME-VIDEO: Demo npm install, npm run test, npm run submit]
+[Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/03-challenge-intro/sandbox/02-workflow/)
