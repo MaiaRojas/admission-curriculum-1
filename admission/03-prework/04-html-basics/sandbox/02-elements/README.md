@@ -135,7 +135,39 @@ Puede leer más sobre atributos en ese
 
 {% endspoiler %}
 
-[FIXME: Explicación y ejemplo de class e ID ]
+### Atributos `class` e `id`
+
+Los atributos `id` y `class` identifican a un elemento en un documento HTML.
+Esto es útil para aplicar estilos con CSS y manipular un elemento con JavaScript.
+
+A diferencia de otros atributos, los atributos `id` y `class` pueden utilizarse
+en **todas las etiquetas HTML**.
+
+Veremos la utilidad de estos atributos en profundidad en las próximas lecciones.
+
+#### Atributo `id`
+
+El atributo `id` identifica un elemento **único** en el documento HTML. Una vez
+que un valor de `id` se utiliza en un elemento, no puede volver a utilizarse
+en ningún otro elemento.
+
+##### Sintaxis
+
+```html
+<etiqueta id="valor_de_id">contenido</etiqueta> 
+```
+
+#### Atributo `class`
+
+El atributo `class` puede identificar a uno o múltiples elementos en el
+documento HTML. Esto nos permite aplicar estilos o manipular a múltiples
+elementos que comparten alguna característica en común, de manera homogénea.
+
+##### Sintaxis
+
+```html
+<etiqueta class="valor_de_class">contenido</etiqueta> 
+```
 
 ## Cierre
 

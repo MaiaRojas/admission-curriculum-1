@@ -55,11 +55,6 @@ que diga _Coloca tu edad en años_.
   </body>
 ```
 
-{% spoiler %}
-Revisa el resultado en tu navegador, debería ser algo parecido a esto
-[FIXME: screenshot]
-{% endspoiler %}
-
 {% next "Funcionalidad JS" %}
 
 ## 1 - Crea un archivo `app.js`
@@ -73,7 +68,7 @@ la pregunta a realizar y retorna el valor ingresado por la usuaria.
 Al ejecutarse esta función muestra en pantalla un diálogo
 con la pregunta y una caja de texto para que la usuaria complete.
 
-[FIXME screenshot]
+[FIXME: screenshot]
 
 Si quieres saber más sobre el método `window.prompt`
 revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
