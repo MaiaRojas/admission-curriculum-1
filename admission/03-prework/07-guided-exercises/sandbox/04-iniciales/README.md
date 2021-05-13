@@ -27,10 +27,10 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Integrar el archivo `app.js` con la página `html`.
 - Preguntar el nombre y apellido por medio del `input` en html.
 - Crear un botón que al ser clicado vá a:
-  - Obtener el valor (nombre y apellido) inserido en el `input`
-  - Obtener las iniciales y
+  - Obtener el valor (nombre y apellido) insertado en el `input`
+  - Obtener las iniciales.
   - Convertir las iniciales a mayúsculas.
-- Mostrar el resultado en la página web por medio del método `document.write()`
+- Escribir el resultado dentro de un elemento a través de su propiedad `innerHTML`.
 
 {% next "Comencemos" %}
 
@@ -72,11 +72,6 @@ que diga _Coloca las iniciales_.
   </body>
 ```
 
-{% spoiler %}
-Revisa el resultado en tu navegador, debería ser algo parecido a esto
-[FIXME: screenshot]
-{% endspoiler %}
-
 {% next "Funcionalidad JS" %}
 
 ## Crea un archivo `app.js`
@@ -97,18 +92,20 @@ nuestra etiqueta `<body>`:
 
 ## Añade las etiquetas necesarias
 
-Vamos a necesitar de una etiqueta de `input` para que el usuario insira su nombre y apellido,
-y también un botón `button` para que el programa devuelva sus iniciales.
+Vamos a necesitar de una etiqueta `input` para que el usuario ingrese su nombre
+y apellido, y también un botón `button` para que el usuario pueda hacer click,
+cuando quiera ver las iniciales.
 
 Crea una etiqueta de `input` en el archivo `index.html`
 Crea una etiqueta de `button` en el archivo `index.html`
 
 {% spoiler %}
 
-El código deve ser algo parecido con eso:
+El código debe ser algo parecido con eso:
 
 ```html
     <input type="text">
+    <br />
     <button>Iniciales</button>
 ```
 
@@ -116,8 +113,10 @@ El código deve ser algo parecido con eso:
 
 ## Añadiendo el listener de `click` con `addEventListener`
 
-Para poner un listener de evento usamos el método `addEventListener`, pero primero tenemos que localizar el elemento que
-vamos escuchar. El elemento que buscamos es el botón y para hacer eso, la etiqueta necessita un `id`.
+Para poner "escuchar" el evento _click_ en el botón, usamos el método
+`addEventListener`, pero primero necesitamos 2 cosas
+- localizar al elemento `button`. Para hacer eso, le colocaremos un `id`.
+- definir un `function` que se ejecute cada vez que suceda el evento.
 
 ```html
     <button id="btn">Iniciales</button>
@@ -125,10 +124,11 @@ vamos escuchar. El elemento que buscamos es el botón y para hacer eso, la etiqu
 
 ```js
 const element = document.getElementById("btn")
-element.addEventListener("click", function () {
+const listener = function () {
   // Todo que está acá será ejecutado siempre que el element es clicado.
-  console.log("El botón fue clicado")
-})
+  console.log("El botón fue clickeado")
+};
+element.addEventListener("click", listener);
 ```
 
 Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
@@ -145,45 +145,48 @@ usar la propiedad `value` (valor) y salvarla en una variable llamada `nombre`
 ```
 
 ```js
-  const nombre = document.getElementById("name").value
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+};
 ```
 
 ### Obteniendo la inicial del nombre
 
-Para obtener la primera inicial, vamos a usar el método `slice()`.
+Para obtener la primera inicial, vamos a usar el método `String.slice()`.
 
 {% spoiler "Pista" %}
-El método `slice()` toma dos argumentos y sirve para cortar una "porción" del `string`.
+El método `slice()` de un `String` toma dos argumentos y sirve para cortar una
+"porción" del `string`.
+
 El primer argumento indica en qué posición del `string` vas a comenzar a cortar
 y el segundo dónde vas a terminar.
 
-ATENCIÓN: La *primera* letra del _string_ está en la posición 0,
-la *segunda* letra en la posición 1, y así sucesivamente
+> **ATENCIÓN:** La *primera* letra del _string_ está en la posición 0,
+> la *segunda* letra en la posición 1, y así sucesivamente
 
-Testea en su consola el é y cambia las posiciones como quiera para entender:
+Pruébalo en tu consola y cambia las posiciones como quiera para entender:
 
 ```js
-"Ana Martinez!".slice(1,5)
+console.log("Ana Martinez!".slice(1,5));
 ```
 
 Así, para obtener la primera inicial, vamos a usar:
 
 ```js
-const primeraInicial = nombre.slice(0,1);
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+  const primeraInicial = nombre.slice(0,1);
+};
 ```
 
-Si quieres saber más sobre el método `slice()` para _strings_
-revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+Si quieres saber más sobre el método `slice()` para _strings_ revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 {% endspoiler %}
-
-```js
-const primeraInicial = nombre.slice(0,1);
-```
 
 ### Obteniendo la inicial del apellido
 
-Solo con `slice()` no es posible obtener la segunda inicial,
-porque su posición no es fija...
+Sólo con `slice()` no es posible obtener la segunda inicial,
+porque su posición no es fija, depende de la longitud del nombre.
 
 Por ejemplo, para el nombre "Ana Martinez", la segunda inicial está en la
 posición 4, pero para "Michelle Seguil" está en la posición 9.
@@ -202,37 +205,50 @@ la posición de la segunda inicial es la siguiente.
 
 1.1 Posición del espacio
 
-Vamos utilizar el método `indexOf()` que toma un argumento y sirve para encontrar
-la posición del argumento dentro del _string_. Esa posición es llamada `index`.
+Vamos utilizar el método `String.indexOf()` que toma un argumento y sirve para
+encontrar la posición del argumento dentro del _string_. Esa posición es llamada
+`index`.
 
-Testea en su consola el método y cambia el argumento:
+Pruébalo en tu consola el método:
 
 ```js
 //"Ana Martinez!" es el `string` dónde vamos a buscar la posición del argumento
 // el argumento es el carácter " " (espacio)
 
-"Ana Martinez!".indexOf(" ")
+console.log("Ana Martinez!".indexOf(" "))ñ
 ```
 
-ATENCIÓN: La *primera* letra del _string_ está en la posición 0,
-la *segunda* letra en la posición 1, y así sucesivamente
+> **ATENCIÓN:** La *primera* letra del _string_ está en la posición 0,
+> la *segunda* letra en la posición 1, y así sucesivamente
 
-Si quieres saber más sobre el método `indexOf()` para _strings_
-revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+Si quieres saber más sobre el método `indexOf()` para _strings_ revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 
 1.2 Posición de la segunda inicial
 
 La posición de la segunda inicial es la que le sigue al espacio, por tanto:
 
 ```js
-const posicionSegundaInicial = "Ana Martinez".indexOf(" ") + 1
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+
+  const primeraInicial = nombre.slice(0,1);
+
+  const posicionSegundaInicial = "Ana Martinez".indexOf(" ") + 1;
+};
 ```
 
-Como queremos hacer esto con el nombre obtenido a través de `window.prompt`,
+Como queremos hacer esto con el nombre obtenido a través del `input#nombre`,
 vamos a cambiar el ejemplo por la variable
 
 ```js
-const posicionSegundaInicial = nombre.indexOf(" ") + 1
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+
+  const primeraInicial = nombre.slice(0,1);
+
+  const posicionSegundaInicial = nombre.indexOf(" ") + 1;
+};
 ```
 
 {% endspoiler %}
@@ -241,7 +257,7 @@ const posicionSegundaInicial = nombre.indexOf(" ") + 1
 
 {% spoiler "Pista"%}
 Ahora que ya tenemos la posición (index) de la segunda inicial,
-vamos a usar `slice` nuevamente..
+vamos a usar `slice` nuevamente.
 
 Vamos a cortar la _string_ comenzando en la posición de la segunda inicial y
 terminando un carácter después:
@@ -253,31 +269,51 @@ const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInici
 {% endspoiler %}
 
 ```js
-const posicionSegundaInicial = nombre.indexOf(" ") + 1
-const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1)
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+
+  const primeraInicial = nombre.slice(0,1);
+
+  const posicionSegundaInicial = nombre.indexOf(" ") + 1
+  const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
+};
 ```
 
 ## Las imprimimos en pantalla
 
-Para escribir directamente un contenido dentro de nuestra página web, usaremos
-el método `document.write()` en nuestro archivo `app.js`.
+### La imprimimos en pantalla
 
-Si quieres saber más puedes revisar su
-[documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Document/write).
+Para mostrar el resultado en nuestra página web, colocaremos un elemento `p`
+con `id=resultado` debajo de nuestro `button` en el cual colocaremos el resultado,
+a través de su propiedad `innerHTML`.
 
-```js
-document.write("Tus iniciales son " + primeraInicial + segundaInicial);
+```html
+    <p id="resultado"></p>
 ```
 
-Las iniciales ya aparecen en la pantalla... pero puedo testear que cuando
+```js
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+
+  const primeraInicial = nombre.slice(0,1);
+
+  const posicionSegundaInicial = nombre.indexOf(" ") + 1
+  const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
+
+  const elementResultado =  document.getElementById("resultado");
+  elementResulta.innerHTML = "Tus iniciales son " + primeraInicial + segundaInicial;
+};
+```
+
+Las iniciales ya aparecen en la pantalla, pero puedes ver que cuando
 escribimos un nombre como "ana martinez" (todo en minúsculas), las iniciales
 deberiam ser "AM" y no "am".
-Entonces, vamos a convertir las iniciales a mayúsculas
+Entonces, vamos a convertir las iniciales a mayúsculas.
 
 ### Convertir las iniciales a mayúsculas
 
 Para convertir cualquer _string_ en mayúsculas, vamos a usar el método `toUpperCase()`
-en cada una de las iniciales
+en cada una de las iniciales.
 
 {% spoiler %}
 El método `toUpperCase()` es una función que no toma un argumento,
@@ -285,9 +321,18 @@ y retorna todo el _string_ en mayúsculas.
 
 Si quieres saber más sobre el método `toUpperCase()` revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-
 {% endspoiler %}
 
 ```js
-document.write("Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase());
+const listener = function () {
+  const nombre = document.getElementById("name").value;
+
+  const primeraInicial = nombre.slice(0,1);
+
+  const posicionSegundaInicial = nombre.indexOf(" ") + 1
+  const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
+
+  const elementResultado =  document.getElementById("resultado");
+  elementResulta.innerHTML = "Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase();
+};
 ```
