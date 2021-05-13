@@ -60,7 +60,24 @@ sin exceder su tamaño original.
 **Historia de Usuario #9:** El elemento `img` debería estar centrado
 dentro de su elemento madre.
 
-[FIXME: HUs para theme switch]
+**Historia de Usuario #10:** Mi página tributo debería comenzar en por defecto
+con un tema de colores claros. Esto se traduce en que el elemento `#main` debería
+inicializarse con un `class=light-theme`.
+
+**Historia de Usuario #10:** Debe existir un elemento `button` con el correspondiente
+`id="theme-switcher"`.
+
+**Historia de Usuario #11:** Cuando la usuaria hace click en el elemento
+`id="theme-switcher"`, el atributo `class` del elemento `#main` debería cambiar
+su valor a `dark-theme`.
+
+**Historia de Usuario #12:** Si la usuaria vuelve a hacer click en el elemento
+`id="theme-switcher"`, el atributo `class` del elemento `#main` debería volver
+al valor `light-theme`.
+
+**Historia de Usuario #13:** El color de la fuente y el color del fondo deben
+ser diferentes entre el tema claro (`#main.light-theme`)
+y el oscuro (`#main.dark-theme`).
 
 Puedes construir tu proyecto usando esta plantilla de
 [codesandbox](https://codesandbox.io/s/laboratoria-prework-challenge-boilerplate-z09zb).
