@@ -19,7 +19,11 @@ Completa las siguientes historias de usuario y consigue pasar todos los tests.
 ## Historias de Usuario
 
 > **¿Qué es una Historia de Usuario?**
-> [FIXME: q es una Historia de Usuario]
+> 
+> Las historias de usuario son descripciones cortas y simples de una
+> característica con la que debe contar tu solución. Son una herramienta
+> fundamental para poder especificar con la menor ambigüedad posible, la
+> funcionalidad de un producto.
 
 **Historia de Usuario #1:** Mi página tributo debería tener un elemento
 con un respectivo `id="main"`, el cual contiene todos los demás elementos.
