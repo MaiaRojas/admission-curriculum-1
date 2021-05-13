@@ -82,9 +82,9 @@ export default {
   //   codepen: 'https://codepen.io/freeCodeCamp/pen/XpKrrW',
   //   test: create25Plus5ClockTests
   // },
-  // 'javascript-calculator': {
+  // 'Javascript-calculator': {
   //   name: 'Javascript Calculator',
-  //   URL: projectsPath + '/javascript-calculator/index.html',
+  //   URL: projectsPath + '/Javascript-calculator/index.html',
   //   codepen: 'https://codepen.io/freeCodeCamp/pen/wgGVVX',
   //   test: createCalculatorTests
   // },

@@ -44,7 +44,7 @@ selector {
 
 {% spoiler "Importante" %}
 **Atención con los siglos!**
-Las **llaves** (`{}`) de apertura y cierre, los **dos puntos** (`:`) y 
+Las **llaves** (`{}`) de apertura y cierre, los **dos puntos** (`:`) y
 el **punto y coma** (`;`) son importantes para que el CSS funcione correctamente!
 {% endspoiler %}
 
@@ -66,6 +66,7 @@ h2 {
 
 Así, todos los textos de las etiquetas `h2` del archivo HTML van a ser de color rojo!
 {% endspoiler %}
+
 {% next "Selectores" %}
 
 ### Selectores
@@ -125,7 +126,8 @@ solamente selecciona las etiquetas `<p>` cuyo atributo class sea igual a destaca
 
 {% spoiler %}
 
-Si quieres saber más revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+Si quieres saber más revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
 
 {% endspoiler %}
 
@@ -133,7 +135,7 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 ### Comentarios
 
-Así como es buena práctica comentar tu código html y tu código javascript, es buena
+Así como es buena práctica comentar tu código html y tu código Javascript, es buena
 práctica comentar tu CSS. Los comentarios en CSS se hacen de la siguiente manera:
 
 - El comienzo se indica mediante los caracteres `/*` * El final del comentario
@@ -152,3 +154,20 @@ La cascada y la herencia
 
 - [Selectores](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 - [Cascada y Herencia - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Cascada_y_herencia)
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[estilos con CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/02-styling/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

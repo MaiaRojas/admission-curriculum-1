@@ -13,8 +13,8 @@
 ## Topics
 
 1. **El Documento HTML**
-   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/04-html-basics/sandbox/01-document/)
+   [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/04-html-basics/sandbox/01-document/)
 2. **Elementos HTML**
-   [Comenzar](https://lab.cs50.io/merunga/admission-curriculum/rediseno-prework-fe/admission/03-prework/04-html-basics/sandbox/02-elements/)
+   [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/04-html-basics/sandbox/02-elements/)
 
 ***

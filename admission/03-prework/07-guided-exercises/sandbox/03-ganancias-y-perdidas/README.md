@@ -6,6 +6,8 @@ Crear un programa que pide los ingresos, los costos y el % de impuestos,
 y calcula la ganancia. Debe imprimir el resultado
 en la web con el símbolo `$` adelante.
 
+[FIXME-VIDEO: Demo del resultado final]
+
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
@@ -22,13 +24,15 @@ y porcentaje de impuestos.
 
 {% next "Comencemos" %}
 
-## Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
-## Crea la estructura de la página web
+## 2 - Crea la estructura de la página web
 
-### Creamos la estructura básica de cualquier documento `html`
+### 2.1 - Creamos la estructura básica de cualquier documento `html`
 
 ```html
 <!DOCTYPE html>
@@ -41,7 +45,7 @@ y porcentaje de impuestos.
 </html>
 ```
 
-#### ... y la personalizamos un poco
+### 2.2 - La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con
 el texto `Ganancias y perdidas`
@@ -61,11 +65,13 @@ que diga _Coloca tus ganancias, costos y porcentaje de impuestos_.
 
 {% next "Funcionalidad JS" %}
 
-### Crea un archivo `app.js`
+## 3 - Crea un archivo `app.js`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
-### Integra con la página `html`
+## 4 - Integra con la página `html`
 
 El archivo `index.html` no está enlazado a el archivo `app.js`
 y no reconocerá las funcionalidades `javascript`
@@ -77,7 +83,7 @@ nuestra etiqueta `<body>`:
   <script type="text/javascript" src="app.js"></script>
 ```
 
-## Crea los campos para poner los datos requeridos
+## 5 - Crea los campos para poner los datos requeridos
 
 El usuario necesitar proporcionar tres datos, `ingreso`,`costo` y
 `porcentaje de impuestos`.
@@ -98,10 +104,13 @@ el programa hace los cálculos e imprima el resultado en la pantalla.
     <button>Calcular</button>
 ```
 
-## Añade el listener de `click` con `addEventListener`
+## 6 - Codeamos la solución
+
+### 6.1 - Añade el listener de `click` con `addEventListener`
 
 Para poner "escuchar" el evento _click_ en el botón, usamos el método
-`addEventListener`, pero primero necesitamos 2 cosas
+`addEventListener`, pero primero necesitamos 2 cosas:
+
 - localizar al elemento `button`. Para hacer eso, le colocaremos un `id`.
 - definir un `function` que se ejecute cada vez que suceda el evento.
 
@@ -118,14 +127,15 @@ const listener = function () {
 element.addEventListener("click", listener);
 ```
 
-## Calcula el resultado de ganancia bruta, ganancia neta e impuestos
+### 6.2 - Calcula el resultado de ganancia bruta, ganancia neta e impuestos
 
 Queremos obtener los valores que el usuario colocó en los `input` cuándo el
-botón es clickeado.
+botón es _clickeado_.
 
-Esta funcionalidad, la colocaremos **dentro** de la función del método
-`addEventListener`.
-Para sacar los valores, vamos poner un `id` en las etiquetas de input, y así
+Esta funcionalidad, la colocaremos **dentro** de la función de que colocaremos
+como segundo argumento de `addEventListener`.
+
+Para sacar los valores, vamos poner un `id` en las etiquetas `input`, y así
 podamos extraer los valores (`value`) de los `input` y guardarlos en variables.
 
 ```html
@@ -214,7 +224,7 @@ const listener = function () {
 
 {% endspoiler %}
 
-### La imprimimos en pantalla
+### 6.3 - Imprimimos el resultado en pantalla
 
 Para mostrar el resultado en nuestra página web, colocaremos un elemento `p`
 con `id=resultado` debajo de nuestro `button` en el cual colocaremos el resultado,
@@ -238,7 +248,6 @@ const listener = function () {
   elementResulta.innerHTML = "Tu ganancia neta es " + gananciaNeta;
 };
 ```
-
 
 Si quieres saber más sobre `innerHTML` puedes revisar su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Document/write).

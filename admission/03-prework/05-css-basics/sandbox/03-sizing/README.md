@@ -17,8 +17,11 @@ Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
 Primero, necesitamos un documento HTML para formatear.
-Vamos a hacerlo con un elemento `h1`, `h2` y un `p`.
-No olvides de añadir la etiqueta `style` para formatearlos
+Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
 ```html
 <!DOCTYPE html>
@@ -26,9 +29,6 @@ No olvides de añadir la etiqueta `style` para formatearlos
   <head>
     <meta charset="utf-8" />
     <title>CSS</title>
-    <style>
-    /* CSS aquí */
-    </style>
   </head>
   <body>
     <h1>Divirtiéndose con CSS</h1>
@@ -38,11 +38,26 @@ No olvides de añadir la etiqueta `style` para formatearlos
 </html>
 ```
 
-Si tienes dudas, puede revisitar el tópico anterior
+Ahora, a diferencia de los casos anteriores, vamos a incluir los estilos desde
+un archivo externo en lugar de usar la etiqueta `<style>`.
 
-{% next "Espacios" %}
+Para ello crea un nuevo archivo `styles.css` y agrega en dentro del `<head>` de
+tu archivo `index.html` la siguiente línea:
 
-## Espacios
+```html
+    <link rel="stylesheet" href="styles.css" />
+```
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
+Tener la estructura de nuestra página en un archivo y los estilos en otro, nos
+permite mantener nuestro código más ordenado.
+
+{% next "Espaciado" %}
+
+## Espaciado
 
 Hay dos propiedades muy utilizadas para agregar espacio alrededor de los elementos,
 que son el `margin` y el `padding`, pero hay una cosa distinta que los hace diferentes.
@@ -52,35 +67,35 @@ mientras que el `padding` agrega el espacio alrededor del contenido del elemento
 ### Practica
 
 Para ver mejor la diferencia, vamos primero a poner un color de fondo verde y
-un border de 3px, de linea sólida y de color rojo.
+un border de 3px, linea sólida y color rojo.
 
 ```css
-  p {
-    background-color: green;
-    border: 3px solid red;
-  }
+p {
+  background-color: green;
+  border: 3px solid red;
+}
 ```
 
 Ahora, agrega una margen de 30px alrededor del párrafo ponendo `margin: 30px`
 en CSS.
 
 ```css
-  p {
-    background-color: green;
-    border: 3px solid red;
-    margin: 30px;
-  }
+p {
+  background-color: green;
+  border: 3px solid red;
+  margin: 30px;
+}
 ```
 
 Fíjate cómo queda y ahora, cambia la propiedad `margin` por `padding`
 para entender mejor la diferencia entre esas dos propiedades:
 
 ```css
-  p {
-    background-color: green;
-    border: 3px solid red;
-    padding: 30px;
-  }
+p {
+  background-color: green;
+  border: 3px solid red;
+  padding: 30px;
+}
 ```
 
 {% spoiler %}
@@ -133,8 +148,9 @@ Por ejemplo, las tres formas del color rojo es:
 
 ```css
   color: red;
-  color: #ff0000; /* este valor es el color rojo en RGB con notación hexadecimal */
   color: rgb(255,0,0);
+  color: #ff0000; /* este valor es el color rojo en RGB con notación hexadecimal,
+                     es equivalente al valor de arriba */
 ```
 
 Puede leer y buscar un poco más sobre la unidad en porcentaje también
@@ -153,3 +169,21 @@ Además pueden leer sobre el modelo de caja de CSS.
 - [Box Model - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 - [Porcentaje - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
 - [Unidades - MDN](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#longitudes)
+
+## Cierre
+
+Esta es la última lección relacionada a CSS.
+Puedes continuar a tu próxima lección, la primera sobre
+[Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/01-comments/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

@@ -6,14 +6,14 @@
 
 ## Objetivos de Aprendizaje
 
-- Conocer los diferentes _data types_ (tipos de datos) en JavaScript.
+- Conocer los diferentes _data types_ (tipos de datos) en Javascript.
 - Conocer los tipos de datos _Number_ (número) y el uso de operaciones aritméticas.
 
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Vivimos en un mundo de Data
@@ -46,9 +46,9 @@ unos y ceros que viste en Matrix.
 
 Las computadoras manejan billones de bits. Para hacer más fácil el manejo de
 grandes cantidades de bits, los podemos dividir en "pedazos" que representan
-piezas de información. En un entorno JavaScript, estos pedazos son llamados
+piezas de información. En un entorno Javascript, estos pedazos son llamados
 _**values**_ (valores en español). Cada _value_ tiene un _data type_ (tipo de
-dato) que determina su rol. En JavaScript existen cinco (5) tipos de datos
+dato) que determina su rol. En Javascript existen cinco (5) tipos de datos
 primitivos:
 
 1. `number` (número).
@@ -71,38 +71,64 @@ el tipo `number`. Esto incluye números positivos, negativos, enteros y
 decimales. Además, el tipo de datos `number` tiene tres valores simbólicos:
 `+Infinity`, `-Infinity` y `NaN` (no-un-número).
 
-Veamos varios ejemplos. Abre tu consola (recuerda que lo haces haciendo click
-con el botón derecho del mouse -> inspect -> console) y escribe los siguientes
-números. Al hacerlo, la consola te regresa el número de vuelta.
+Veamos varios ejemplos. Abre tu archivo `index.js` escribe las siguientes líneas
+y ejecutas el archivo en tu terminal.
 
 ```js
-13
+console.log(13);
 // retorna: 13
 
--9.81
+console.log(-9.81);
 // retorna: -9.81
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 También puedes hacer uso de la notación científica para números muy grandes o
 muy pequeños, añadiendo una "e" de "exponente", seguido por el exponente del
 número:
 
 ```js
-5e10
+console.log(5e10);
 // retorna: 50000000000
 
--2.998e8
+console.log(-2.998e8);
 // retorna: -299800000
 ```
+
+### `console.log`
+
+Verás en el código de arriba que hemos utilizado `console.log` para poder
+ver en la terminal los números. A lo largo de esta y las siguientes lecciones
+utilizaremos `console.log` para poder entender qué es lo que está haciendo
+nuestro programa.
+
+Ten en cuenta que si ejecutas un archivo `.js` en la terminal con `node`, los
+argumentos pasados a `console.log` se imprimen en la terminal. Si al mismo
+archivo `.js` lo importas desde una página web, el resultado lo verás impreso
+en la consola de tu navegador.
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo abrir la consola del navegador?"%}
+[FIXME-VIDEO: Cómo abrir la consola del navegador]
+{%endspoiler%}
+
+> Si quieres saber más sobre `console.log`, te invitamos a revisar la
+> [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Console/log).
 
 ### Operadores Aritméticos
 
 Lo principal que se hace con los números es aritmética. Sigamos explorando el
-comportamiento del tipo de dato `number` en tu consola. Escribe el siguiente
-ejemplo en tu consola y confirma que tienes el mismo resultado:
+comportamiento del tipo de dato `number`. Ejecuta el siguiente
+código en tu terminal y confirma que tienes el mismo resultado:
 
 ```js
-100 + 4 * 11
+console.log(100 + 4 * 11);
 // retorna: 144
 ```
 
@@ -113,33 +139,33 @@ Como ves, la multiplicación ocurre primero. Pero como en matemáticas, puedes
 cambiar esto encerrando en paréntesis la suma.
 
 ```js
-(100 + 4) * 11
+console.log((100 + 4) * 11);
 // retorna: 1144
 ```
 
 Para la resta existe el operador `-`, y la división se puede hacer con el
-operador `/`. Veamos más ejemplos (recuerda hacerlos en tu consola también!):
+operador `/`. Veamos más ejemplos (recuerda también probarlos en tu terminal!):
 
 ```js
-12345 / 250
+console.log(12345 / 250);
 // retorna: 49.38
 
-1234 + 57 * 3 - 31 / 4
+console.log(1234 + 57 * 3 - 31 / 4);
 // retorna: 1397.25
 
-100 / 0
+console.log(100 / 0);
 // retorna: Infinity
 
-100 / -0
+console.log(100 / -0);
 // retorna: -Infinity
 
-1000 * Infinity
+console.log(1000 * Infinity);
 // retorna: Infinity
 
-0/0
+console.log(0/0);
 // retorna: NaN
 
-Infinity - Infinity
+Infinity - Infinity);
 // retorna: NaN
 ```
 
@@ -151,9 +177,26 @@ multiplicado por 12 + 0 = 144). Verás a menudo este operador referido como
 _módulo_, aunque técnicamente residuo es más preciso.
 
 ```js
-5 % 3
+console.log(5 % 3);
 // retorna: 2
 
-7 % 2
+console.log(7 % 2);
 // retorna: 1
 ```
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[strings](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/03-data-types-strings/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

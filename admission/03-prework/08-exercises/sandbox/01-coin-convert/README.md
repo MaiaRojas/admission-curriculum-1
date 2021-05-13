@@ -3,7 +3,9 @@
 ## Enunciado
 
 Crea una función que convierta una cantidad en dólares a 5 monedas diferentes:
-soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales
+soles, pesos mexicanos, pesos chilenos, pesos colombianos y reales.
+
+[FIXME-VIDEO: Demo del resultado final]
 
 ## Análisis y lista de tareas
 
@@ -98,24 +100,21 @@ Repite el proceso para `pesosColombianos`
 
 Repite el proceso para `reales`
 
-{% next "Usar la terminal" %}
-
-## Usa de la terminal
-
-### Instala las dependencias del proyecto
-
-Escribe el siguiente comando en la terminal:
-
-```sh
-npm install
-```
-
-### Ejecuta los tests
-
-Escribe el siguiente comando en la terminal:
-
-```sh
-npm test
-```
+## Cierre
 
 Si llegaste hasta aquí y tus test pasaron tu función ya está completa!
+
+Puedes continuar con el último
+[ejercicio](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/08-exercises/sandbox/02-restaurant-bill/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

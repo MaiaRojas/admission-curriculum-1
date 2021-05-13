@@ -1,20 +1,21 @@
-# Javascript basics: Valores, tipos de datos y operadores
+# Javascript basics: `null` y `undefined`
 
-- Tipo: `lectura`
+- Tipo: `practice`
 - Formato: `self-paced`
 - Duración: `60min`
 
 ## Objetivos de Aprendizaje
 
-- Entender qué se entiende por _values_ (valores) en JavaScript.
-- Conocer los diferentes _data types_ (tipos de datos) en JavaScript.
-- Aprender cómo combinar y transformar valores con operadores en JavaScript.
+- Entender los tipos especiales `null` y `undefined`, así como cuál es la
+  diferencia entre ellos.
+- Entender qué es y cuándo se da la conversión automática de tipos de datos.
+- Familiarizarse con las diferentes formas de _"igualdad"_.
 
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## `null` y `undefined`
@@ -26,7 +27,7 @@ producen un valor con significado (lo verás después) producen `undefined`
 simplemente porque tienen que producir algún valor.
 
 La diferencia en el significado entre `undefined` y `null` es un accidente del
-diseño de JavaScript, y no importa la mayoría del tiempo.
+diseño de Javascript, y no importa la mayoría del tiempo.
 
 Entender la diferencia entre `undefined` y `null` (sí hay una diferencia
 semántica) es importante, y más sencillo de lo que parece. Ambos valores denotan
@@ -41,27 +42,31 @@ El valor `undefined` significa que no se ha _asignado_ un valor, a diferencia de
 
 ### Conversión automática de tipo
 
-Cuando un operador es aplicado al tipo "incorrecto" de valor, JavaScript
+Cuando un operador es aplicado al tipo "incorrecto" de valor, Javascript
 convertirá silenciosamente el valor en el tipo de dato que espera, usando un
 conjunto de reglas que a menudo no son lo que tú quieres o esperas. Esto es
 llamado _coerción de tipo_. Mira estos ejemplos:
 
 ```js
-8 * null
-// retorna: 0
+console.log('8 * null =', 8 * null);
+// retorna: 8 * null = 0
 
-'5' - 1
-// retorna: 4
+console.log("'5' - 1 =", '5' - 1);
+// retorna: '5' - 1 = 4
 
-'5' + 1
-// retorna: 51
+console.log("'5' + 1 =", '5' + 1);
+// retorna: '5' + 1 = 51
 
-'cinco' * 2
-// retorna: NaN
+console.log("'cinco' * 2 =", 'cinco' * 2);
+// retorna: 'cinco' * 2 = NaN
 
-false == 0
-// retorna: true
+console.log('false == 0 =', false == 0);
+// retorna: false == 0 = true
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 El null en la primera expresión se vuelve 0, y el "5" en la segunda expresión se
 convierte en 5 (de string a number). Aún así, en la tercera expresión, + intenta
@@ -73,7 +78,7 @@ seguirán produciendo NaN. Por eso, en la cuarta expresión, "cinco" * 2 retorna
 NaN.
 
 En el caso de la quinta expresión, cuando comparamos valores que tienen tipos de
-dato diferentes, JavaScript usa un complicado y confuso conjunto de reglas para
+dato diferentes, Javascript usa un complicado y confuso conjunto de reglas para
 determinar qué hacer. En la mayoría de los casos, sólo trata de convertir uno de
 los valores al tipo de dato del otro valor. Sin embargo, cuando null o undefined
 están en cualquier lado de la operación, resulta verdadero sólo en el caso de
@@ -85,10 +90,10 @@ que todos los demás valores cuentan como _true_. Debido a esto, las siguientes
 expresiones retornan _true_:
 
 ```js
-false == 0
+console.log(false == 0);
 // retorna: true
 
-'' == 0
+console.log('' == 0);
 // retorna: true
 ```
 
@@ -99,10 +104,10 @@ tanto, al cambiar de == a === las mismas expresiones anteriores, tenemos el
 resutado contrario: _false_:
 
 ```js
-false === 0
+console.log(false === 0);
 // retorna: false
 
-'' === 0
+console.log('' === 0);
 // retorna: false
 ```
 
@@ -133,11 +138,11 @@ continuación para determinar el resultado:
   * En otros casos, devuelve false.
 
 ```js
-null == undefined // true
-10 == '10'        // true
-true == 1         // true
-[10] == 10        // true
-[] == []          // false
+console.log(null == undefined); // true
+console.log(10 == '10');        // true
+console.log(true == 1);         // true
+console.log([10] == 10);        // true
+console.log([] == []);          // false
 ```
 
 #### Algoritmo de `===`
@@ -155,13 +160,13 @@ secuencia para determinar el resultado:
 - En otros casos, devuelve false.
 
 ```js
-21 === "21"         // false
-undefined === null  // false
-NaN === NaN         // false
-[10] === 10         // false
-true === 1          // false
-[] === []           // false
-'10' === '10'       // true
+console.log(21 === "21");         // false
+console.log(undefined === null);  // false
+console.log(NaN === NaN);         // false
+console.log([10] === 10);         // false
+console.log(true === 1);          // false
+console.log([] === []);           // false
+console.log('10' === '10');       // true
 ```
 
 Podrías tener lo siguiente en cuenta para saber cuál operador utilizar:
@@ -193,11 +198,28 @@ Casos de uso:
 - En otros casos es false.
 
 ```js
-[10] < 9    // false, caso 1
-"a" < "b"   // true, caso 2
-10 >= 10    // true, caso 3
+console.log([10] < 9);    // false, caso 1
+console.log("a" < "b");   // true, caso 2
+console.log(10 >= 10);    // true, caso 3
 ```
 
 ## Lecturas complementarias
 
-[Expresiones y Operadores - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+[Expresiones y Operadores - MDN](https://developer.mozilla.org/es/docs/Web/Javascript/Guide/Expressions_and_Operators)
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[variables](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/06-variables/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

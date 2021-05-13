@@ -1,6 +1,6 @@
 # Javascript basics: Booleans
 
-- Tipo: `lectura`
+- Tipo: `practice`
 - Formato: `self-paced`
 - Duración: `60min`
 
@@ -12,34 +12,39 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Booleans
 
 A menudo, necesitarás un valor que simplemente distinga entre dos posibilidades,
-como "sí" y "no" o "encendido" y "apagado". Para esto, JavaScript tiene un tipo
+como "sí" y "no" o "encendido" y "apagado". Para esto, Javascript tiene un tipo
 de dato _boolean_, que tiene solo dos valores: _true_ (verdadero) y _false_
 (falso).
 
 ### Operadores comparativos
 
-Realiza esta comparación en tu consola:
+Abre tu archivo `index.js` realiza estas comparaciones y ejecuta el archivo en
+tu terminal.
 
 ```js
-3 > 2
+console.log(3 > 2);
 // retorna: true
 
-2 > 3
+console.log(2 > 3);
 // retorna: false
 
-typeof (3 > 2)
-// retorna: "boolean"
+console.log(typeof (3 > 2));
+// retorna: boolean
 
-typeof (2 > 3)
-// retorna: "boolean"
+console.log(typeof (2 > 3));
+// retorna: boolean
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
 
 Los signos `>` y `<` son los símbolos tradicionales para "mayor que" y "menor
 que", respectivamente. Estos son operadores binarios (porque operan sobre dos
@@ -49,7 +54,7 @@ ciertos.
 Los `strings` pueden ser comparados de la misma manera.
 
 ```js
-"Aardvark" < "Zoroaster"
+console.log("Aardvark" < "Zoroaster");
 // retorna: true
 ```
 
@@ -60,36 +65,93 @@ también incluidos en el ordenamiento. La comparación real está basada en el
 estándar [Unicode](https://unicode-table.com/en/#control-character).
 
 ```js
-'Zeyla' < 'ana'
+console.log('Zeyla' < 'ana');
 // retorna: true
 
-'Zeyla' < '!na'
+console.log('Zeyla' < '!na');
 // retorna: false
 ```
+
+{% spoiler %}
+
+Si ejecutas todos las líneas de arriba, vas ver en tu terminal algo parecido a
+esto:
+
+```js
+true
+false
+boolean
+boolean
+true
+false
+true
+```
+
+Lo que no es realmente útil, porque ya no sabemos qué expresión se correlaciona
+con qué línea de salida.
+
+`console.log` nos permite pasar múltiples argumentos separados por comas, de
+manera que podamos darle más claridad a los mensajes impresos en la terminal.
+
+Mira por ejemplo este ejemplo:
+
+```js
+console.log('3 > 2', 3 > 2);
+
+console.log('2 > 3', 2 > 3);
+
+console.log('typeof (3 > 2)', typeof (3 > 2));
+
+console.log('typeof (2 > 3)', typeof (2 > 3));
+
+console.log('"Aardvark" < "Zoroaster"', "Aardvark" < "Zoroaster");
+
+console.log("'Zeyla' < 'ana'", 'Zeyla' < 'ana');
+
+console.log("'Zeyla' < '!na'", 'Zeyla' < '!na');
+```
+
+Lo impreso ahora en la terminal, nos da mucha más información:
+
+```js
+3 > 2 true
+2 > 3 false
+typeof (3 > 2) boolean
+typeof (2 > 3) boolean
+"Aardvark" < "Zoroaster" true
+'Zeyla' < 'ana' true
+'Zeyla' < '!na' false
+```
+
+> Ten en cuenta que por practicidad, los tests de todas las lecciones de
+> Javascript, sólo tendrán en cuenta al último argumento que le coloques
+> a `console.log`, para realizar las validaciones.
+
+{% endspoiler %}
 
 Otros operadores similares son >= (mayor o igual que), <= (menor o igual que),
 === (igual que), y !== (no es igual que).
 
 ```js
-'Itchy' === 'Itchy'
-// retorna: true
+console.log("'Itchy' === 'Itchy'", 'Itchy' === 'Itchy');
+// retorna: 'Itchy' === 'Itchy' true
 
-'Itchy' !== 'Scratchy'
-// retorna: true
+console.log("'Itchy' !== 'Scratchy'", 'Itchy' !== 'Scratchy');
+// retorna: 'Itchy' !== 'Scratchy' true
 
-5 === 5
-// retorna: true
+console.log("5 === 5", 5 === 5);
+// retorna: 5 === 5 true
 
-10 !== 'diez'
-// retorna: true
+console.log("10 !== 'diez'", 10 !== 'diez');
+// retorna: 10 !== 'diez' true
 ```
 
-Sólo existe un valor en JavaScript que no es igual a sí mismo, y este es NaN,
+Sólo existe un valor en Javascript que no es igual a sí mismo, y este es NaN,
 que significa "no es un número".
 
 ```js
-NaN === NaN
-// retorna: false
+console.log('NaN === NaN', NaN === NaN);
+// retorna: NaN === NaN false
 ```
 
 La intención de NaN es representar el resultado de un cálculo sin sentido y como
@@ -98,7 +160,7 @@ tal, no es igual al resultado de cualquier otro cálculo sin sentido.
 ### Operadores Lógicos
 
 Hay también algunas operaciones que pueden ser aplicadas a los valores
-`Booleans`. JavaScript soporta tres operadores lógicos: _and_, _or_ y _not_.
+`Booleans`. Javascript soporta tres operadores lógicos: _and_, _or_ y _not_.
 Estos pueden ser usados para "razonar" con los `Booleans`.
 
 El operador `&&` representa la operación lógica _and_ ("y"). Es un operador
@@ -110,26 +172,29 @@ el valor que se le de; !true produce false y !false produce true. Veamos unos
 ejemplos:
 
 ```js
-true && true
-// retorna: true
+console.log('true && true =', true && true);
+// retorna: true && true = true
 
-true && false
-// retorna: false
+console.log('true && false =', true && false);
+// retorna: true && false = false
 
-false && false
-// retorna: false
+console.log('false && false =', false && false);
+// retorna: false && false = false
 
-true || true
-// retorna: true
+console.log('true || true =', true || true);
+// retorna: true || true = true
 
-true || false
-// retorna: true
+console.log('false || true  =', false || true);
+// retorna: false || true = true
 
-!true
-// retorna: false
+console.log('false || false =', false || false);
+// retorna: false || false = false
 
-!false
-// retorna: true
+console.log('!true =', !true);
+// retorna: !true = false
+
+console.log('!false =', !false);
+// retorna: !false = true
 
 ```
 
@@ -138,11 +203,11 @@ ternario, opera en tres valores. Este es escrito con un símbolo de interrogaci�
 y dos puntos, como sigue:
 
 ```js
-true ? 1 : 2
-// retorna: 1
+console.log('(true ? 1 : 2) = ', true ? 1 : 2);
+// retorna: (true ? 1 : 2) = 1
 
-false ? 1 : 2
-// retorna: 2
+console.log("(false ? 1 : 2) =", false ? 1 : 2);
+// retorna: (false ? 1 : 2) = 2
 ```
 
 Este es llamado el operador condicional (o algunas veces el operador tenario
@@ -150,3 +215,20 @@ dado que es el único operador de este tipo en el lenguaje). El valor a la
 izquierda del signo de interrogación "escoge" cuál de los otros dos valores
 resultará. Cuando es verdadero, el valor central es escogido, y cuando es falso,
 el valor de la derecha se da como resultado.
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[tipos especiales](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/05-data-types-null-and-undefined/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

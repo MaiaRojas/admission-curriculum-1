@@ -56,7 +56,7 @@ como por ejemplo, cambiar su texto, sus estilos o "escuchar" sus eventos.
 
 Si quieres saber más revisa la documentación oficial de
 [getElementById](https://developer.mozilla.org/es/docs/Web/API/Document/getElementById)
-y de 
+y de
 [querySelector](https://developer.mozilla.org/es/docs/Web/API/Document/querySelector)
 
 Por medio del DOM, podemos crear un HTML más dinámico, dónde javascript puede,
@@ -76,7 +76,7 @@ pero sólo nos interesa cuando el usuario hace click en un lugar o botón
 específico.
 
 Vamos probar definiendo un `button` que cuando es _clickeado_, imprime "Hola"
-en consola.
+en la consola.
 Para hacer eso, la primera cosa que necesitamos hacer es crear el html y
 localizar el elemento DOM que nos interesa.
 
@@ -91,6 +91,7 @@ const button = document.getElementById("btn")
 Para "escuchar" los eventos de *click* del elemento, vamos a usar el método
 `addEventListener`.
 Para usarlo, necesitamos proporcionar dos argumentos:
+
 - el `tipo` de evento (en ese caso es de "click")
 - qué hacer cuando ocurre el evento (una `function`), que en ese caso es
   imprimir "Hola" en la consola.
@@ -105,3 +106,22 @@ button.addEventListener("click", sayHi);
 
 Si quieres saber más revisa la documentación oficial de
 [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+## Cierre
+
+Esta es la última lección relacionada a Javascript.
+Puedes continuar a tu próxima lección donde aplicaremos todo lo que hemos visto
+hasta el momento a través de algunos
+[ejercicios guiados](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/sandbox/01-edad-en-segundos/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

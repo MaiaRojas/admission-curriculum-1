@@ -13,9 +13,7 @@ Veamos unos ejemplos:
 - "ana martinez" y "Ana Martinez" devuelven las iniciales "AM"
 - "Michelle Seguil" y "michelle seguil" devuelven "MS"
 
-## El programa
-
-[FIXME: um video o GIF de como será el programa final para que pueda visualizar]
+[FIXME-VIDEO: Demo del resultado final]
 
 ## Análisis y lista de tareas
 
@@ -27,20 +25,22 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Integrar el archivo `app.js` con la página `html`.
 - Preguntar el nombre y apellido por medio del `input` en html.
 - Crear un botón que al ser clicado vá a:
-  - Obtener el valor (nombre y apellido) insertado en el `input`
-  - Obtener las iniciales.
-  - Convertir las iniciales a mayúsculas.
+  * Obtener el valor (nombre y apellido) insertado en el `input`
+  * Obtener las iniciales.
+  * Convertir las iniciales a mayúsculas.
 - Escribir el resultado dentro de un elemento a través de su propiedad `innerHTML`.
 
 {% next "Comencemos" %}
 
-## Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
-## Crea la estructura de la página web
+## 2 - Crea la estructura de la página web
 
-### Creamos la estructura básica de cualquier documento `html`
+### 2.1 - Creamos la estructura básica de cualquier documento `html`
 
 ```html
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 </html>
 ```
 
-#### ... y la personalizamos un poco
+### 2.2 - La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con el texto `Iniciales`
 
@@ -74,23 +74,25 @@ que diga _Coloca las iniciales_.
 
 {% next "Funcionalidad JS" %}
 
-## Crea un archivo `app.js`
+## 3 - Crea un archivo `app.js`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
-### Integra con la página `html`
+## 4 - Integra con la página `html`
 
 El archivo `index.html` no está enlazado a el archivo `app.js`
-y no reconocerá las funcionalidades `javascript`
+y no reconocerá las funcionalidades `Javascript`
 
 Para ello necesitamos importar el archivo `app.js` dentro de
 nuestra etiqueta `<body>`:
 
 ```html
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/Javascript" src="app.js"></script>
 ```
 
-## Añade las etiquetas necesarias
+## 5 - Añade las etiquetas necesarias
 
 Vamos a necesitar de una etiqueta `input` para que el usuario ingrese su nombre
 y apellido, y también un botón `button` para que el usuario pueda hacer click,
@@ -111,10 +113,13 @@ El código debe ser algo parecido con eso:
 
 {% endspoiler %}
 
-## Añadiendo el listener de `click` con `addEventListener`
+## 6 - Codeamos la solución
+
+### 6.1 - Añade el listener de `click` con `addEventListener`
 
 Para poner "escuchar" el evento _click_ en el botón, usamos el método
-`addEventListener`, pero primero necesitamos 2 cosas
+`addEventListener`, pero primero necesitamos 2 cosas:
+
 - localizar al elemento `button`. Para hacer eso, le colocaremos un `id`.
 - definir un `function` que se ejecute cada vez que suceda el evento.
 
@@ -131,14 +136,23 @@ const listener = function () {
 element.addEventListener("click", listener);
 ```
 
-Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+Si quieres saber más sobre el método `addEventListener` revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
 
-### Obteniendo el nombre y apellido del `input`
+En la consola, escribe la variable `nombre` y presiona `enter`.
+Debe aparecer el valor ingresado en el _prompt_.
 
-Queremos obtener el nombre y apellido que el usuario puse en `input` cuándo el botón es clicado.
-Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
-Para sacar el value que está en `input`, vamos poner un `id` en la etiqueta de input, para que posamos
-usar la propiedad `value` (valor) y salvarla en una variable llamada `nombre`
+### 6.2 - Obtenemos el nombre y apellido del `input`
+
+Queremos obtener el nombre y apellido que el usuario colocó en el `input` cuándo
+el botón es _clickeado_.
+
+Esta funcionalidad, la colocaremos **dentro** de la función de que colocaremos
+como segundo argumento de `addEventListener`.
+
+Para obtener el nombre y apellido que ingresó la usuaria, vamos poner un `id`
+en la etiquetas `input`, y así podamos extraer el valor (`value`) del `input` y
+guardarlo en una variable llamada `nombre`.
 
 ```html
     <input type="text" id="name">
@@ -150,7 +164,7 @@ const listener = function () {
 };
 ```
 
-### Obteniendo la inicial del nombre
+### 6.3 - Obtenemos la inicial del nombre
 
 Para obtener la primera inicial, vamos a usar el método `String.slice()`.
 
@@ -183,7 +197,7 @@ Si quieres saber más sobre el método `slice()` para _strings_ revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 {% endspoiler %}
 
-### Obteniendo la inicial del apellido
+### 6.4 - Obtenemos la inicial del apellido
 
 Sólo con `slice()` no es posible obtener la segunda inicial,
 porque su posición no es fija, depende de la longitud del nombre.
@@ -195,15 +209,14 @@ posición 4, pero para "Michelle Seguil" está en la posición 9.
 
 Veamos:
 
-#### Buscar la posición de la segunda inicial
+#### Buscamos la posición de la segunda inicial
 
-{% spoiler "Pista"%}
 Una condición común es que la primera letra del apellido está inmediatamente
 después del espacio.
 Entonces, primero vamos a encontrar la posición del espacio, ya que sabemos que
 la posición de la segunda inicial es la siguiente.
 
-1.1 Posición del espacio
+##### Posición del espacio
 
 Vamos utilizar el método `String.indexOf()` que toma un argumento y sirve para
 encontrar la posición del argumento dentro del _string_. Esa posición es llamada
@@ -224,7 +237,7 @@ console.log("Ana Martinez!".indexOf(" "))ñ
 Si quieres saber más sobre el método `indexOf()` para _strings_ revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 
-1.2 Posición de la segunda inicial
+##### Posición de la segunda inicial
 
 La posición de la segunda inicial es la que le sigue al espacio, por tanto:
 
@@ -251,22 +264,13 @@ const listener = function () {
 };
 ```
 
-{% endspoiler %}
+### 6.5 - Obtenemos la inicial del apellido
 
-#### Obtener la segunda inicial
-
-{% spoiler "Pista"%}
 Ahora que ya tenemos la posición (index) de la segunda inicial,
 vamos a usar `slice` nuevamente.
 
 Vamos a cortar la _string_ comenzando en la posición de la segunda inicial y
 terminando un carácter después:
-
-```js
-const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1)
-```
-
-{% endspoiler %}
 
 ```js
 const listener = function () {
@@ -279,9 +283,7 @@ const listener = function () {
 };
 ```
 
-## Las imprimimos en pantalla
-
-### La imprimimos en pantalla
+### 6.6 - Imprimimos el resultado en pantalla
 
 Para mostrar el resultado en nuestra página web, colocaremos un elemento `p`
 con `id=resultado` debajo de nuestro `button` en el cual colocaremos el resultado,
@@ -310,7 +312,7 @@ escribimos un nombre como "ana martinez" (todo en minúsculas), las iniciales
 deberiam ser "AM" y no "am".
 Entonces, vamos a convertir las iniciales a mayúsculas.
 
-### Convertir las iniciales a mayúsculas
+### 6.7 - Convertimos las iniciales a mayúsculas
 
 Para convertir cualquer _string_ en mayúsculas, vamos a usar el método `toUpperCase()`
 en cada una de las iniciales.
@@ -336,3 +338,21 @@ const listener = function () {
   elementResulta.innerHTML = "Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase();
 };
 ```
+
+## Cierre
+
+Este es el último de los ejercicios guiados. A continuación encontrarás otros 2
+ejercicios, que te sugerimos intentes resolverlos por tu cuenta.
+[Continuar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/08-exercises/sandbox/01-coin-convert/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

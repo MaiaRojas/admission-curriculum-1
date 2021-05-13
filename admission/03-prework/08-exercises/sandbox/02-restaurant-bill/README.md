@@ -7,6 +7,8 @@ del consumo es de 50 dólares, pero a eso debes agregarle el 10% de Impuesto al
 Valor Agregado (IVA). Quieres dividir la cuenta equitativamente entre tu y tus amigas.
 Para eso vamos a crear este programa.
 
+[FIXME-VIDEO: Demo del resultado final]
+
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitas completar las siguientes tareas:
@@ -86,24 +88,21 @@ el símbolo de dolar `$` con el `valorFinal` calculado.
 return "$" + valorFinal;
 ```
 
-{% next "Usar la terminal" %}
-
-## Usa de la terminal
-
-### Instala las dependencias del proyecto
-
-Escribe el siguiente comando en la terminal:
-
-```sh
-npm install
-```
-
-### Ejecuta los tests
-
-Escribe el siguiente comando en la terminal:
-
-```sh
-npm test
-```
+## Cierre
 
 Si llegaste hasta aquí y tus test pasaron tu función ya está completa!
+
+Esta es la última lección. Si has conseguido completar todos los tests hasta aquí,
+consideramos que ya estás preparada para resolver el reto que te propusimos.
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

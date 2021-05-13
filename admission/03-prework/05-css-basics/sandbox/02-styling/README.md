@@ -17,7 +17,11 @@ Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
 Primero, necesitamos un documento HTML para formatear.
-Vamos a hacerlo con un elemento `h1`, `h2` y un `p`.
+Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
 ```html
 <!DOCTYPE html>
@@ -49,9 +53,7 @@ dentro de las etiquetas `head`.
   <head>
     <meta charset="utf-8" />
     <title>CSS</title>
-    <style>
-    /* CSS aquí */
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Divirtiéndose con CSS</h1>
@@ -75,19 +77,17 @@ Los nombres de las propiedades y sus valores son siempre en inglés.
 Recuerda que no necesitas saber inglés para continuar con tu aprendizaje.
 Eso puede ayudarte, pero puedes ir aprendiendo más a medida que aprendes a programar!
 
-```html
-    <style>
-      h1 {
-        color: red;
-      }
-      h2 {
-        background-color: yellow;
-      }
-      p {
-        color: blue;
-        background-color: green;
-      }
-    </style>
+```css
+h1 {
+  color: red;
+}
+h2 {
+  background-color: yellow;
+}
+p {
+  color: blue;
+  background-color: green;
+}
 ```
 
 {% endspoiler %}
@@ -158,6 +158,24 @@ Al final, tu código vas a ser algo parecido a eso:
   </style>
 ```
 
-Si quieres saber más sobre los tipos de línea revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
+Si quieres saber más sobre los tipos de línea revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS/border-style)
 
 {% endspoiler %}
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[tamaños con CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/03-sizing/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

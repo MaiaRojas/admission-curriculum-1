@@ -1,0 +1,15 @@
+{
+  "name": "js-basics-comments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "author": "Laboratoria",
+  "license": "ISC",
+  "devDependencies": {
+    "esprima": "^4.0.1",
+    "jest": "^26.6.3"
+  }
+}

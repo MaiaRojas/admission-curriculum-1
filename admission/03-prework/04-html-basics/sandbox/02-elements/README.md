@@ -89,10 +89,13 @@ pero su tipo predeterminado es `text`.
 
 > **ATENCION**: Fíjate que como `input` no tiene contenido, en lugar de definirlo
 > con
+>
 > ```js
 > <input type='text'></input>
 > ```
+>
 > lo definimos en una forma abreviada
+>
 > ```js
 > <input type='text' />
 > ```
@@ -174,8 +177,59 @@ Su segundo archivo `segundoArchivo.html` puede ser algo parecido de eso:
 </html>
 ```
 
-Puede leer más sobre atributos en ese [link aqui](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started#atributos)
+Puede leer más sobre atributos en ese
+[link aqui](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started#atributos)
 
 {% endspoiler %}
 
-[ Explicación y ejemplo de class e ID ]
+### Atributos `class` e `id`
+
+Los atributos `id` y `class` identifican a un elemento en un documento HTML.
+Esto es útil para aplicar estilos con CSS y manipular un elemento con JavaScript.
+
+A diferencia de otros atributos, los atributos `id` y `class` pueden utilizarse
+en **todas las etiquetas HTML**.
+
+Veremos la utilidad de estos atributos en profundidad en las próximas lecciones.
+
+#### Atributo `id`
+
+El atributo `id` identifica un elemento **único** en el documento HTML. Una vez
+que un valor de `id` se utiliza en un elemento, no puede volver a utilizarse
+en ningún otro elemento.
+
+##### Sintaxis
+
+```html
+<etiqueta id="valor_de_id">contenido</etiqueta>
+```
+
+#### Atributo `class`
+
+El atributo `class` puede identificar a uno o múltiples elementos en el
+documento HTML. Esto nos permite aplicar estilos o manipular a múltiples
+elementos que comparten alguna característica en común, de manera homogénea.
+
+##### Sintaxis
+
+```html
+<etiqueta class="valor_de_class">contenido</etiqueta>
+```
+
+## Cierre
+
+Esta es la última lección relacionada a HTML.
+Puedes continuar a tu próxima lección, la primera sobre
+[CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/01-intro/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

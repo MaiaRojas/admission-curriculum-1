@@ -25,13 +25,21 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 {% next "Comencemos" %}
 
-### Primeros Pasos
+> Antes de comenzar recuerda inicializar tu solución ejecutando `npm install` en
+> tu terminal
 
-[ FIXME: Las partes de crear un archivo en CS50 ]
+{%spoiler "¿Cómo ejecutar `npm install`?"%}
+[FIXME-VIDEO: ejecutar `npm install`]
+{%endspoiler%}
 
-### Sintaxis básica
+### Primeros Pasos: Sintaxis básica
 
 Crea un archivo `index.html`.
+
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
 La primera línea que necesita en un archivo HTML es `<!DOCTYPE html>`.
 Esto le permite al navegador (como Chrome, Firefox, Internet Explorer o Safari)
 saber que el tipo de este documento es HTML y no es solo un archivo de texto normal.
@@ -140,3 +148,20 @@ Se visualizan así:
 Cualquier valor entre `<!--` y `-->` no se mostrará en su sitio web y no
 afectará el funcionamiento o la estructura de la página. Se deja como mensaje a
 las personas que leen y editan el HTML.
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[elementos HTML](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/04-html-basics/sandbox/02-elements/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}

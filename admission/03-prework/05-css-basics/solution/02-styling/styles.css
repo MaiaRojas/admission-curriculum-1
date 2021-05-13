@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+  border-top : 2px solid blue;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid blue;
+  border-left: 2px solid blue;
+}
+h2 {
+  background-color: yellow;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+p {
+  color: blue;
+  background-color: green;
+}

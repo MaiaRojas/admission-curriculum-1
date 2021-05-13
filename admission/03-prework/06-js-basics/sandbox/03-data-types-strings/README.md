@@ -13,8 +13,8 @@
 ***
 
 El texto a continuación se basa en gran medida, con ciertos ajustes, en el
-capítulo 1 de [Eloquent JavaScript](http://eloquentjavascript.net/), de Marijn
-Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-JavaScript-ES-online/chapters/01_values.html)
+capítulo 1 de [Eloquent Javascript](http://eloquentJavascript.net/), de Marijn
+Haverbeke, 2014. Traducción en [Español](http://hectorip.github.io/Eloquent-Javascript-ES-online/chapters/01_values.html)
 disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Strings
@@ -24,22 +24,26 @@ referencia a _cadena de caracteres_). Es el tipo de dato que
 utilzamos para representar texto. Se declaran al poner el contenido entre
 comillas.
 
-Abre tu consola y escribe lo siguiente:
+Escribe lo siguiente en el archivo `index.js` y ejecútalo en tu terminal:
 
 ```js
-"Hola, mi nombre es Michelle"
+console.log("Hola, mi nombre es Michelle");
 // retorna: "Hola, mi nombre es Michelle"
 
-'Soy desarrolladora web'
+console.log('Soy desarrolladora web');
 // retorna: "Soy desarrolladora web"
 
-"123"
+console.log("123");
 // retorna: "123"
 ```
 
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
+
 Tanto las comillas simples como las dobles pueden ser usadas para declarar
 `strings`, siempre y cuando coincidan al principio y al final. Casi cualquier
-cosa puede colocarse entre comillas, y JavaScript creará un _string value_ de
+cosa puede colocarse entre comillas, y Javascript creará un _string value_ de
 esa cosa.
 
 ***
@@ -60,23 +64,23 @@ encuentra dentro de un texto entre comillas, indica que el carácter siguiente
 tiene un significado especial. Esto se denomina _escapar el carácter_. Cuando el
 carácter `n` sigue a una diagonal invertida (backslash - `\`), se interpreta
 como una nueva línea. Similarmente, una `t` después de la diagonal invertida
-significa un tab. Escribe los siguientes textos en tu consola (recuerda siempre
-colocarlos entre comillas, sean simples o dobles).
+significa un tab. Escribe lo siguiente en tu `index.js` y pruébalo en tu terminal
+(recuerda siempre colocarlos entre comillas, sean simples o dobles).
 
 ```js
-'Esta es la primera línea \n Y esta la segunda'
+console.log('Esta es la primera línea \n Y esta la segunda');
 // retorna: "Esta es la primera línea
 //            Y esta la segunda"
 
-'Mi lenguaje favorito es \t JavaScript'
-// retorna: "Mi lenguaje favorito es    JavaScript"
+console.log('Mi lenguaje favorito es \t Javascript');
+// retorna: "Mi lenguaje favorito es    Javascript"
 ```
 
 Cuando una comilla es precedida por una diagonal invertida, la comilla no
 terminará la cadena sino que será parte de ella.
 
 ```js
-'Yo \'estudio\' en Laboratoria'
+console.log('Yo \'estudio\' en Laboratoria');
 // retorna: "Yo 'estudio' en Laboratoria"
 ```
 
@@ -86,7 +90,7 @@ invertidas están juntas, se volverán una, y sólo eso quedará como resultado 
 el valor de la cadena.
 
 ```js
-'Un carácter de nueva línea es escrito \'\\n\'.'
+console.log('Un carácter de nueva línea es escrito \'\\n\'.');
 // retorna: "Un carácter de nueva línea es escrito '\n'."
 ```
 
@@ -96,7 +100,7 @@ concatena; pega dos `strings`. La siguiente línea produce el `string`
 "concatenar":
 
 ```js
-'con' + 'cat' + 'e' + 'nar'
+console.log('con' + 'cat' + 'e' + 'nar');
 // retorna: "concatenar"
 ```
 
@@ -104,7 +108,7 @@ Ten cuidado mezclando operaciones entre _numbers_ y _strings_. Por ejemplo,
 multiplicar un _number_ por un _string_ resulta en NaN.
 
 ```js
-'hola' * 3
+console.log('hola' * 3);
 // retorna: NaN
 ```
 
@@ -117,16 +121,16 @@ ejemplo es el operador `typeof`, que produce una cadena de caracteres (_string_)
 que representa el tipo del valor que le pasaste.
 
 ```js
-typeof 4.5
+console.log(typeof 4.5);
 // retorna: "number"
 
-typeof 'hola'
+console.log(typeof 'hola');
 // retorna: "string"
 
-typeof NaN
+console.log(typeof NaN);
 // retorna: "number"
 
-typeof Infinity
+console.log(typeof Infinity);
 // retorna: "number"
 ```
 
@@ -142,6 +146,23 @@ El operador menos (`-`) puede usarse tanto como operador binario como operador
 unario.
 
 ```js
-- (10 - 2)
+console.log(- (10 - 2));
 // retorna: -8
 ```
+
+## Cierre
+
+Puedes continuar a tu próxima lección sobre
+[booleanos](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/04-data-types-booleans/).
+
+> Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
+> `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
+> tu terminal
+
+{%spoiler "¿Cómo ejecutar `npm run test`?"%}
+[FIXME-VIDEO: ejecutar `npm run test`]
+{%endspoiler%}
+
+{%spoiler "¿Cómo ejecutar `npm run submit`?"%}
+[FIXME-VIDEO: ejecutar `npm run submit`]
+{%endspoiler%}
