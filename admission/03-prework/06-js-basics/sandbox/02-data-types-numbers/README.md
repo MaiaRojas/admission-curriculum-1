@@ -71,9 +71,8 @@ el tipo `number`. Esto incluye números positivos, negativos, enteros y
 decimales. Además, el tipo de datos `number` tiene tres valores simbólicos:
 `+Infinity`, `-Infinity` y `NaN` (no-un-número).
 
-Veamos varios ejemplos. Abre tu consola (recuerda que lo haces haciendo click
-con el botón derecho del mouse -> inspect -> console) y escribe los siguientes
-números. Al hacerlo, la consola te regresa el número de vuelta.
+Veamos varios ejemplos. Abre tu archivo `index.js` escribe las siguientes líneas
+y ejecutas el archivo en tu terminal.
 
 ```js
 console.log(13);
@@ -82,6 +81,11 @@ console.log(13);
 console.log(-9.81);
 // retorna: -9.81
 ```
+
+{%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
+[FIXME-VIDEO: ejecutar archivo `.js`]
+{%endspoiler%}
+
 
 También puedes hacer uso de la notación científica para números muy grandes o
 muy pequeños, añadiendo una "e" de "exponente", seguido por el exponente del
@@ -94,6 +98,25 @@ console.log(5e10);
 console.log(-2.998e8);
 // retorna: -299800000
 ```
+
+### `console.log`
+
+Verás en el código de arriba que hemos utilizado `console.log` para poder
+ver en la terminal los números. A lo largo de esta y las siguientes lecciones
+utilizaremos `console.log` para poder entender qué es lo que está haciendo
+nuestro programa.
+
+Ten en cuenta que si ejecutas un archivo `.js` en la terminal con `node`, los
+argumentos pasados a `console.log` se imprimen en la terminal. Si al mismo
+archivo `.js` lo importas desde una página web, el resultado lo verás impreso
+en la consola de tu navegador.
+
+{%spoiler "¿Cómo abrir la consola del navegador?"%}
+[FIXME-VIDEO: Cómo abrir la consola del navegador]
+{%endspoiler%}
+
+> Si quieres saber más sobre `console.log`, te invitamos a revisar la
+> [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Console/log).
 
 ### Operadores Aritméticos
 

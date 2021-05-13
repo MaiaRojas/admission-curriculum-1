@@ -67,7 +67,10 @@ console.log('Zeyla' < '!na');
 // retorna: false
 ```
 
-[FIXME: console.log multiple params]
+{% spoiler %}
+
+Si ejecutas todos las líneas de arriba, vas ver en tu terminal algo parecido a
+esto:
 
 ```js
 true
@@ -78,6 +81,14 @@ true
 false
 true
 ```
+
+Lo que no es realmente útil, porque ya no sabemos qué expresión se correlaciona
+con qué línea de salida.
+
+`console.log` nos permite pasar múltiples argumentos separados por comas, de
+manera que podamos darle más claridad a los mensajes impresos en la terminal.
+
+Mira por ejemplo este ejemplo:
 
 ```js
 console.log('3 > 2', 3 > 2);
@@ -93,8 +104,25 @@ console.log('"Aardvark" < "Zoroaster"', "Aardvark" < "Zoroaster");
 console.log("'Zeyla' < 'ana'", 'Zeyla' < 'ana');
 
 console.log("'Zeyla' < '!na'", 'Zeyla' < '!na');
-
 ```
+
+Lo impreso ahora en la terminal, nos da mucha más información:
+
+```js
+3 > 2 true
+2 > 3 false
+typeof (3 > 2) boolean
+typeof (2 > 3) boolean
+"Aardvark" < "Zoroaster" true
+'Zeyla' < 'ana' true
+'Zeyla' < '!na' false
+```
+
+> Ten en cuenta que por practicidad, los tests de todas las lecciones de
+> Javascript, sólo tendrán en cuenta al último argumento que le coloques
+> a `console.log`, para realizar las validaciones.
+
+{% endspoiler %}
 
 Otros operadores similares son >= (mayor o igual que), <= (menor o igual que),
 === (igual que), y !== (no es igual que).
