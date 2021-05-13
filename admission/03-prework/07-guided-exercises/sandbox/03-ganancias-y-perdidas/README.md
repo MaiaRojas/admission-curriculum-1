@@ -13,10 +13,10 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Crear un archivo `index.html`.
 - Crear la estructura de nuestra página web dentro de nuestro de `index.html`.
 - Crear un archivo `app.js`.
-- Preguntar ganancias, costos y porcentaje de impuestos por medio del
-  método `window.prompt()`.
-- Calcular el resultado de ganancia bruta, ganancia neta e impuestos.
 - Enlazar la funcionalidad `javascript` con la página `html`.
+- Crear los campos html para que el usuario insira las ganancias, costos
+y porcentaje de impuestos por medio del `input`
+- Crear un botón que cuándo clicado calcula el resultado de ganancia bruta, ganancia neta e impuestos
 - Mostrar el resultado en la página web por medio del método `document.write()`
 
 {% next "Comencemos" %}
@@ -69,56 +69,92 @@ Revisa el resultado en tu navegador, debería ser algo parecido a esto
 
 [FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
 
-### Crea varios _prompt_ y guarda los valores que retornan en distintas variables
+### Integra con la página `html`
 
-{% spoiler %}
-El método `window.prompt` de la web, es una función que toma un único argumento
-obligatorio, la pregunta a realizar y retorna el valor ingresado por la usuaria.
-
-Al ejecutarse esta función muestra en pantalla un diálogo con la pregunta
-y una caja de texto para que la usuaria complete.
-
-[FIXME screenshot]
-
-Si quieres saber más sobre el método `window.prompt` revisa su
-[documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
-{% endspoiler %}
-
-```js
-const ingreso = prompt("¿Cuál es el ingreso?");
-const costo = prompt("¿Cuál es el costo?");
-const porcentajeImpuesto = prompt("¿Cuál es el porcentaje(%) de impuestos?");
-```
-
-### Integrar la funcionalidad `javascript` con la página `html`
-
-Si tu recargas la página, verás que nada ha cambiado y el `window.prompt`
-nunca se muestra.
-
-Esto es porque el archivo `index.html` nunca está llamando a la funcionalidad
-`javascript` especificada en el archivo `app.js`.
+El archivo `index.html` no está enlazado a el archivo `app.js`
+y no reconocerá las funcionalidades `javascript`
 
 Para ello necesitamos importar el archivo `app.js` dentro de
 nuestra etiqueta `<body>`:
 
 ```html
-<script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+```
+
+## Crea los campos para poner los dados que el usuario necesita
+
+El usuario necesitar fornecer tres datos, `ingreso`,`costo` y `porcentaje de impuestos`.
+Además de los tres `input`, es necesario una etiqueta de `button`, para que al clique de
+este botón, el programa hace los cálculos y imprima el resultado en la pantalla.
+
+```html
+    <p>Ingreso:</p>
+    <input type="text">
+    <p>Costos:</p>
+    <input type="text">
+    <p>Porcentaje de impuestos:</p>
+    <input type="text">
+    <button>Calcular</button>
+```
+
+## Añade el listener de `click` con `addEventListener`
+
+Para poner un listener de evento usamos el método `addEventListener`, pero primero tenemos que localizar el elemento que
+vamos escuchar. El elemento que buscamos es el botón y para hacer eso, la etiqueta necessita un `id`.
+
+```html
+    <button id="btn">Calcular</button>
+```
+
+```js
+const element = document.getElementById("btn")
+element.addEventListener("click", function () {
+  // Todo que está acá será ejecutado siempre que el element es clicado.
+  console.log("El botón fue clicado")
+})
+```
+
+Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+
+## Calcula el resultado de ganancia bruta, ganancia neta e impuestos
+
+Queremos obtener los valores que el usuario puse en los `input` cuándo el botón es clicado.
+Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
+Para sacar los valores, vamos poner un `id` en las etiquetas de input, para que posamos
+usar la propiedad `value` (valor) y salvarlas en variables`
+
+```html
+    <p>Ingreso:</p>
+    <input type="text" id="ingreso">
+    <p>Costos:</p>
+    <input type="text" id="costos">
+    <p>Porcentaje de impuestos:</p>
+    <input type="text" id="porcentaje-impuesto">
+    <button>Calcular</button>
+```
+
+```js
+  const ingreso = document.getElementById("ingreso").value
+  const costos = document.getElementById("costos").value
+  const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value
 ```
 
 {% spoiler %}
-Valida que las variables `ingreso`, `costo`, y `porcentajeImpuesto`
-tiene el valor ingresado por la usuaria, usando `console.log`
+Valida que las variables `ingreso`, `costos`, y `porcentajeImpuesto`
+tienen el valor que el usuario pone, usando `console.log`
 
 ```js
-console.log(edad);
+console.log(ingreso);
+console.log(costos);
+console.log(porcentajeImpuesto);
 ```
 
-[FIXME: video ver valores de variables en la consola]
 {% endspoiler %}
 
-### Calcula el resultado de ganancia bruta, ganancia neta e impuestos
-
-INSERTA EXPLICACION AQUI
+Ahora que tenemos los valores que el usuario puse en los `input`, vamos a hacer los cálculos.
+Para tener la ganancia después de impuestos necesitamos calcular el valor de impuestos.
+El impuesto es una porcentaje de la ganancia bruta, que es la diferencia entre los ingresos y los costos.
+Así, podemos calcular que la ganancia neta es:
 
 ```js
 const gananciaBruta = ingreso - costos;
