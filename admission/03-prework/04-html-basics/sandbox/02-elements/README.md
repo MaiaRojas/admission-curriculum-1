@@ -154,7 +154,7 @@ en ningún otro elemento.
 ##### Sintaxis
 
 ```html
-<etiqueta id="valor_de_id">contenido</etiqueta> 
+<etiqueta id="valor_de_id">contenido</etiqueta>
 ```
 
 #### Atributo `class`
@@ -166,7 +166,7 @@ elementos que comparten alguna característica en común, de manera homogénea.
 ##### Sintaxis
 
 ```html
-<etiqueta class="valor_de_class">contenido</etiqueta> 
+<etiqueta class="valor_de_class">contenido</etiqueta>
 ```
 
 ## Cierre

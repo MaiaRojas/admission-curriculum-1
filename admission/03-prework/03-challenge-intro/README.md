@@ -82,6 +82,7 @@ permitirán:
 
 No te preocupes si no entiendes todo lo que te planteamos aquí, volveremos a
 verlo cada vez que lo necesitemos.
+
 ### Un sandbox
 
 Esta herramienta es un entorno de trabajo que te permitirá ir probando de

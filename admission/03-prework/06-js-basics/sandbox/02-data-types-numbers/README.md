@@ -86,7 +86,6 @@ console.log(-9.81);
 [FIXME-VIDEO: ejecutar archivo `.js`]
 {%endspoiler%}
 
-
 También puedes hacer uso de la notación científica para números muy grandes o
 muy pequeños, añadiendo una "e" de "exponente", seguido por el exponente del
 número:

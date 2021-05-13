@@ -19,7 +19,7 @@ Completa las siguientes historias de usuario y consigue pasar todos los tests.
 ## Historias de Usuario
 
 > **¿Qué es una Historia de Usuario?**
-> 
+>
 > Las historias de usuario son descripciones cortas y simples de una
 > característica con la que debe contar tu solución. Son una herramienta
 > fundamental para poder especificar con la menor ambigüedad posible, la

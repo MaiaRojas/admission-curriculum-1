@@ -44,7 +44,6 @@ un archivo externo en lugar de usar la etiqueta `<style>`.
 Para ello crea un nuevo archivo `styles.css` y agrega en dentro del `<head>` de
 tu archivo `index.html` la siguiente línea:
 
-
 ```html
     <link rel="stylesheet" href="styles.css" />
 ```
