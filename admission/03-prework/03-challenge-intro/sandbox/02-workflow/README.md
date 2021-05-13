@@ -25,4 +25,3 @@
 ## Registrar tu avance (`npm run submit`)
 
 [FIXME-VIDE0: demo submit]
-
