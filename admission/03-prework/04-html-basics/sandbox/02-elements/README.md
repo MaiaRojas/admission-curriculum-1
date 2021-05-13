@@ -43,30 +43,6 @@ debe ir entre las etiquetas de apertura `<body>` y de cierre `</body>`.
 
 {% endspoiler %}
 
-Dos otros elementos muy utilizados para tener interacción con el usuario son
-las etiquetas de `input` y de `button`.
-
-El elemento de input es usado para recibir datos del usuario y no tiene
-una etiqueta de cierre. Hay una amplia variedad de tipos de datos de entrada,
-pero su tipo predeterminado es `text`.
-
-```html
-<input type='text'>
-```
-
-Por fin, la etiqueta de `button` es un elemento cliqueable que crea un botón.
-
-```html
-<button>Clica aquí</button>
-```
-
-{% spoiler %}
-Si quieres saber más revisa su documentación en MDN del [input](https://developer.mozilla.org/es/docs/Web/HTML/Element/input) y [button](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)
-
-Existen muchos más elementos y etiquetas HTML, que aprenderás en su momento.
-
-{% endspoiler %}
-
 ### Formato de texto
 
 Si escribe un párrafo, es posible que desee darle formato una palabra o una
@@ -92,6 +68,51 @@ creando un documento en formato HTML.
 Testea formatear palabras y párrafos.
 Pero recuerda que todo lo que deseas que se muestre en su página web
 debe ir entre las etiquetas de apertura `<body>` y de cierre `</body>`.
+{% endspoiler %}
+
+{% next "Interacción" %}
+
+### Interacción
+
+Dos otros elementos muy utilizados para tener interacción con el usuario son
+las etiquetas de `input` y de `button`.
+
+#### `input`
+
+El elemento de `input` es usado para recibir datos del usuario y no tiene
+contenido. Hay una amplia variedad de tipos de datos de entrada,
+pero su tipo predeterminado es `text`.
+
+```html
+<input type='text' />
+```
+
+> **ATENCION**: Fíjate que como `input` no tiene contenido, en lugar de definirlo
+> con
+> ```js
+> <input type='text'></input>
+> ```
+> lo definimos en una forma abreviada
+> ```js
+> <input type='text' />
+> ```
+
+#### `button`
+
+La etiqueta de `button` define un elemento _clickeable_ que crea un botón.
+
+```html
+<button>Clica aquí</button>
+```
+
+> Más adelante veremos cómo podemos reaccionar al `click` en un botón utilizando
+> Javascript
+
+{% spoiler %}
+Te recomendamos revisar la documentación en MDN de
+[input](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)
+y
+[button](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)
 {% endspoiler %}
 
 {% next "Atributos" %}

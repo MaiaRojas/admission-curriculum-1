@@ -96,10 +96,11 @@ Para usarlo, necesitamos proporcionar dos argumentos:
   imprimir "Hola" en la consola.
 
 ```js
-const button = document.getElementById("btn")
-button.addEventListener("click", function () {
-  console.log("Hola")
-})
+const button = document.getElementById("btn");
+const sayHi = function () {
+  console.log("Hola");
+};
+button.addEventListener("click", sayHi);
 ```
 
 Si quieres saber más revisa la documentación oficial de
