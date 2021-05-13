@@ -26,6 +26,10 @@ y porcentaje de impuestos.
 
 ## 1 - Crea un archivo `index.html`
 
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
 ## 2 - Crea la estructura de la página web
 
 ### 2.1 - Creamos la estructura básica de cualquier documento `html`
@@ -41,7 +45,7 @@ y porcentaje de impuestos.
 </html>
 ```
 
-### 2.2 La personalizamos un poco
+### 2.2 - La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con
 el texto `Ganancias y perdidas`
@@ -61,11 +65,13 @@ que diga _Coloca tus ganancias, costos y porcentaje de impuestos_.
 
 {% next "Funcionalidad JS" %}
 
-### Crea un archivo `app.js`
+## 3 - Crea un archivo `app.js`
 
-[FIXME: video o screenshots o gif de como crear un archivo en el navegador de archivos]
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
-### Integra con la página `html`
+## 4 - Integra con la página `html`
 
 El archivo `index.html` no está enlazado a el archivo `app.js`
 y no reconocerá las funcionalidades `javascript`
@@ -77,7 +83,7 @@ nuestra etiqueta `<body>`:
   <script type="text/javascript" src="app.js"></script>
 ```
 
-## Crea los campos para poner los datos requeridos
+## 5 - Crea los campos para poner los datos requeridos
 
 El usuario necesitar proporcionar tres datos, `ingreso`,`costo` y
 `porcentaje de impuestos`.
@@ -98,7 +104,9 @@ el programa hace los cálculos e imprima el resultado en la pantalla.
     <button>Calcular</button>
 ```
 
-## Añade el listener de `click` con `addEventListener`
+## 6 - Codeamos la solución
+
+### 6.1 - Añade el listener de `click` con `addEventListener`
 
 Para poner "escuchar" el evento _click_ en el botón, usamos el método
 `addEventListener`, pero primero necesitamos 2 cosas
@@ -118,7 +126,7 @@ const listener = function () {
 element.addEventListener("click", listener);
 ```
 
-## Calcula el resultado de ganancia bruta, ganancia neta e impuestos
+### 6.2 - Calcula el resultado de ganancia bruta, ganancia neta e impuestos
 
 Queremos obtener los valores que el usuario colocó en los `input` cuándo el
 botón es clickeado.
@@ -214,7 +222,7 @@ const listener = function () {
 
 {% endspoiler %}
 
-### La imprimimos en pantalla
+### 6.3 - Imprimimos el resultado en pantalla
 
 Para mostrar el resultado en nuestra página web, colocaremos un elemento `p`
 con `id=resultado` debajo de nuestro `button` en el cual colocaremos el resultado,

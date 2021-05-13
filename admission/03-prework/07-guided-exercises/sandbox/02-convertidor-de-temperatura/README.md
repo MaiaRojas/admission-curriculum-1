@@ -25,6 +25,10 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 ## 1 - Crea un archivo `index.html`
 
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
 ## 2 - Crea la estructura de la página web
 
 ### 2.1 - Creamos la estructura básica de cualquier documento `html`
@@ -61,15 +65,19 @@ que diga _Coloca la temperatura en grados Celsius (°C)_.
 
 {% next "Funcionalidad JS" %}
 
-## 1 - Crea un archivo `app.js`
+## 3 - Crea un archivo `app.js`
 
-## 2 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
+## 4 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
 
 ```js
 const temperaturaCelsius = prompt('¿Cuál es la temperatura en Celsius?');
 ```
 
-## 3 - Integra la funcionalidad `Javascript` con la página `html`
+## 5 - Integra la funcionalidad `Javascript` con la página `html`
 
 Si tu recargas la página, verás que nada ha cambiado
 y el `window.prompt` nunca se muestra.
@@ -87,9 +95,9 @@ Para ello necesitamos importar el archivo `app.js` dentro de nuestro etiqueta `<
 Recargas la página y ahora verás que el `window.prompt` se muestra.
 {% endspoiler %}
 
-## 4 - Codeamos la solución
+## 6 - Codeamos la solución
 
-### 4.1 - Convierte la temperatura Celsius (°C) a grados Fahrenheit (°F)
+### 6.1 - Convierte la temperatura Celsius (°C) a grados Fahrenheit (°F)
 
 Ahora que tenemos la temperatura en grados Celsius guardada en la variable `temperaturaCelsius`,
 vamos a convertirla con la fórmula matemática:
@@ -99,7 +107,7 @@ vamos a convertirla con la fórmula matemática:
 const temperaturaFahrenheit = (temperaturaCelsius*1.8) + 32;
 ```
 
-### 4.2 - La imprimimos en la consola
+### 6.2 - La imprimimos en la consola
 
 Para mostrar un contenido dentro de la consola, usaremos
 el método `console.log()` en nuestro archivo `app.js`.
@@ -112,7 +120,7 @@ console.log("La temperatura en Fahrenheit es " + temperaturaFahrenheit);
 Recargas la página y ahora verás que el `window.prompt` se muestra.
 {% endspoiler %}
 
-### 4.3 - Abre la consola y cheque averigua su valor
+### 6.3 - Abre la consola y cheque averigua su valor
 
 {% spoiler %}
 Como vimos anteriormente, tenemos varios tipos de datos y tenemos
@@ -121,7 +129,7 @@ así para evitar conflictos, vamos a mejorar el código y
 convertir este dato en un tipo `number` con el metodo `parseInt()`.
 {% endspoiler %}
 
-### 4.4 - Convertir el dato a number
+### 6.4 - Convertir el dato a number
 
 Pon el `prompt` dentro del metodo `parseInt()` en la variable `temperaturaCelsius`:
 

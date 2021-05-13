@@ -23,6 +23,10 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 ## 1 - Crea un archivo `index.html`
 
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
 ## 2 - Creamos la estructura básica de cualquier documento `html` dentro de `index.html`
 
 ```html
@@ -57,9 +61,13 @@ que diga _Coloca tu edad en años_.
 
 {% next "Funcionalidad JS" %}
 
-## 1 - Crea un archivo `app.js`
+## 4 - Crea un archivo `app.js`
 
-## 2 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
+## 5 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
 
 {% spoiler %}
 El método `window.prompt` de la web, es una función que toma un único argumento obligatorio,
@@ -78,7 +86,7 @@ revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/
 const edad = prompt('¿Cuál es tu edad?');
 ```
 
-## 3 - Integra la funcionalidad `Javascript` con la página `html`
+## 6 - Integra la funcionalidad `Javascript` con la página `html`
 
 Si tu recargas la página, verás que nada ha cambiado y el `window.prompt`
 nunca se muestra.
@@ -103,9 +111,9 @@ console.log(edad);
 
 {% endspoiler %}
 
-## 4 - Vamos a codear la solición
+## 7 - Vamos a codear la solición
 
-### 4.1 - Convierte la edad a segundos
+### 7.1 - Convierte la edad a segundos
 
 Dado que dentro de un año existe **365** días, y cada día tiene **24** horas,
 y que cada hora cuenta con **60** minutos y cada minuto con **60** segundos,
@@ -125,7 +133,7 @@ console.log(edadEnSegundos);
 
 {% endspoiler %}
 
-### 4.2 - La imprimimos en pantalla
+### 7.2 - La imprimimos en pantalla
 
 Para escribir directamente un contenido dentro de nuestra página web, usaremos
 el método `document.write()` en nuestro archivo `app.js`.

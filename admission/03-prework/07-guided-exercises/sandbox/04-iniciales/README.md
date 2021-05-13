@@ -32,11 +32,15 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-## Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html`
 
-## Crea la estructura de la página web
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
 
-### Creamos la estructura básica de cualquier documento `html`
+## 2 - Crea la estructura de la página web
+
+### 2.1 - Creamos la estructura básica de cualquier documento `html`
 
 ```html
 <!DOCTYPE html>
@@ -51,7 +55,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 </html>
 ```
 
-#### ... y la personalizamos un poco
+### 2.2 - La personalizamos un poco
 
 Cambiamos el contenido de la etiqueta `<title>` con el texto `Iniciales`
 
@@ -70,9 +74,13 @@ que diga _Coloca las iniciales_.
 
 {% next "Funcionalidad JS" %}
 
-## Crea un archivo `app.js`
+## 3 - Crea un archivo `app.js`
 
-### Integra con la página `html`
+{%spoiler "¿Cómo crear un archivo?"%}
+[FIXME-VIDEO: crear archivo en sandbox]
+{%endspoiler%}
+
+## 4 - Integra con la página `html`
 
 El archivo `index.html` no está enlazado a el archivo `app.js`
 y no reconocerá las funcionalidades `Javascript`
@@ -84,7 +92,7 @@ nuestra etiqueta `<body>`:
   <script type="text/Javascript" src="app.js"></script>
 ```
 
-## Añade las etiquetas necesarias
+## 5 - Añade las etiquetas necesarias
 
 Vamos a necesitar de una etiqueta `input` para que el usuario ingrese su nombre
 y apellido, y también un botón `button` para que el usuario pueda hacer click,
@@ -105,7 +113,10 @@ El código debe ser algo parecido con eso:
 
 {% endspoiler %}
 
-## Añadiendo el listener de `click` con `addEventListener`
+
+## 6 - Codeamos la solución
+
+### 6.1 - Añade el listener de `click` con `addEventListener`
 
 Para poner "escuchar" el evento _click_ en el botón, usamos el método
 `addEventListener`, pero primero necesitamos 2 cosas
@@ -130,7 +141,7 @@ Si quieres saber más sobre el método `addEventListener` revisa su [documentaci
 En la consola, escribe la variable `nombre` y presiona `enter`.
 Debe aparecer el valor ingresado en el _prompt_.
 
-### Obteniendo el nombre y apellido del `input`
+### 6.2 - Obtenemos el nombre y apellido del `input`
 
 Queremos obtener el nombre y apellido que el usuario puse en `input` cuándo el botón es clicado.
 Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
@@ -147,7 +158,7 @@ const listener = function () {
 };
 ```
 
-### Obteniendo la inicial del nombre
+### 6.3 - Obtenemos la inicial del nombre
 
 Para obtener la primera inicial, vamos a usar el método `String.slice()`.
 
@@ -180,7 +191,7 @@ Si quieres saber más sobre el método `slice()` para _strings_ revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 {% endspoiler %}
 
-### Obteniendo la inicial del apellido
+### 6.4 - Obtenemos la inicial del apellido
 
 Sólo con `slice()` no es posible obtener la segunda inicial,
 porque su posición no es fija, depende de la longitud del nombre.
@@ -192,15 +203,14 @@ posición 4, pero para "Michelle Seguil" está en la posición 9.
 
 Veamos:
 
-#### Buscar la posición de la segunda inicial
+#### Buscamos la posición de la segunda inicial
 
-{% spoiler "Pista"%}
 Una condición común es que la primera letra del apellido está inmediatamente
 después del espacio.
 Entonces, primero vamos a encontrar la posición del espacio, ya que sabemos que
 la posición de la segunda inicial es la siguiente.
 
-1.1 Posición del espacio
+##### Posición del espacio
 
 Vamos utilizar el método `String.indexOf()` que toma un argumento y sirve para
 encontrar la posición del argumento dentro del _string_. Esa posición es llamada
@@ -221,7 +231,7 @@ console.log("Ana Martinez!".indexOf(" "))ñ
 Si quieres saber más sobre el método `indexOf()` para _strings_ revisa su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 
-1.2 Posición de la segunda inicial
+##### Posición de la segunda inicial
 
 La posición de la segunda inicial es la que le sigue al espacio, por tanto:
 
@@ -248,22 +258,13 @@ const listener = function () {
 };
 ```
 
-{% endspoiler %}
+### 6.5 - Obtenemos la inicial del apellido
 
-#### Obtener la segunda inicial
-
-{% spoiler "Pista"%}
 Ahora que ya tenemos la posición (index) de la segunda inicial,
 vamos a usar `slice` nuevamente.
 
 Vamos a cortar la _string_ comenzando en la posición de la segunda inicial y
 terminando un carácter después:
-
-```js
-const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1)
-```
-
-{% endspoiler %}
 
 ```js
 const listener = function () {
@@ -276,9 +277,7 @@ const listener = function () {
 };
 ```
 
-## Las imprimimos en pantalla
-
-### La imprimimos en pantalla
+### 6.6 - Imprimimos el resultado en pantalla
 
 Para mostrar el resultado en nuestra página web, colocaremos un elemento `p`
 con `id=resultado` debajo de nuestro `button` en el cual colocaremos el resultado,
@@ -307,7 +306,7 @@ escribimos un nombre como "ana martinez" (todo en minúsculas), las iniciales
 deberiam ser "AM" y no "am".
 Entonces, vamos a convertir las iniciales a mayúsculas.
 
-### Convertir las iniciales a mayúsculas
+### 6.7 - Convertimos las iniciales a mayúsculas
 
 Para convertir cualquer _string_ en mayúsculas, vamos a usar el método `toUpperCase()`
 en cada una de las iniciales.
