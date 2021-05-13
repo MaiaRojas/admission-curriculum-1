@@ -25,9 +25,11 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Crear la estructura de nuestra página web dentro de nuestro de `index.html`.
 - Crear un archivo `app.js`.
 - Integrar el archivo `app.js` con la página `html`.
-- Preguntar el nombre y apellido por medio del método `window.prompt()`.
-- Obtener las iniciales.
-- Convertir las iniciales a mayúsculas.
+- Preguntar el nombre y apellido por medio del `input` en html.
+- Crear un botón que al ser clicado vá a:
+  - Obtener el valor (nombre y apellido) inserido en el `input`
+  - Obtener las iniciales y
+  - Convertir las iniciales a mayúsculas.
 - Mostrar el resultado en la página web por medio del método `document.write()`
 
 {% next "Comencemos" %}
@@ -93,39 +95,58 @@ nuestra etiqueta `<body>`:
   <script type="text/javascript" src="app.js"></script>
 ```
 
-## Crea tu _prompt_ y guarda el valor retornado en una variable
+## Añade las etiquetas necesarias
+
+Vamos a necesitar de una etiqueta de `input` para que el usuario insira su nombre y apellido,
+y también un botón `button` para que el programa devuelva sus iniciales.
+
+Crea una etiqueta de `input` en el archivo `index.html`
+Crea una etiqueta de `button` en el archivo `index.html`
 
 {% spoiler %}
-El método `window.prompt()` de la web, es una función que toma un único
-argumento obligatorio, la pregunta a realizar y retorna el valor ingresado
-por la usuaria.
 
-Al ejecutarse esta función muestra en pantalla un diálogo
-con la pregunta y una caja de texto para que la usuaria complete.
+El código deve ser algo parecido con eso:
 
-[FIXME screenshot]
-
-Si quieres saber más sobre el método `window.prompt()`
-revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Window/prompt)
-{% endspoiler %}
-
-```js
-const nombre = window.prompt('¿Cuál es tu nombre y apellido?');
+```html
+    <input type="text">
+    <button>Iniciales</button>
 ```
 
-### Actualiza la pagina web, abra la consola y testea la variable
-
-{% spoiler %}
-
-[FIXME: video o screenshots o gif de como abrir la console en el navegador
-o puede referirse al ejercicio 02 para ver como hacer]
-
-En la consola, escribe la variable `nombre` y presiona `enter`.
-Debe aparecer el valor ingresado en el _prompt_.
-
 {% endspoiler %}
 
-## Obtener las iniciales
+## Añadiendo el listener de `click` con `addEventListener`
+
+Para poner un listener de evento usamos el método `addEventListener`, pero primero tenemos que localizar el elemento que
+vamos escuchar. El elemento que buscamos es el botón y para hacer eso, la etiqueta necessita un `id`.
+
+```html
+    <button id="btn">Iniciales</button>
+```
+
+```js
+const element = document.getElementById("btn")
+element.addEventListener("click", function () {
+  // Todo que está acá será ejecutado siempre que el element es clicado.
+  console.log("El botón fue clicado")
+})
+```
+
+Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+
+### Obteniendo el nombre y apellido del `input`
+
+Queremos obtener el nombre y apellido que el usuario puse en `input` cuándo el botón es clicado.
+Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
+Para sacar el value que está en `input`, vamos poner un `id` en la etiqueta de input, para que posamos
+usar la propiedad `value` (valor) y salvarla en una variable llamada `nombre`
+
+```html
+    <input type="text" id="name">
+```
+
+```js
+  const nombre = document.getElementById("name").value
+```
 
 ### Obteniendo la inicial del nombre
 
