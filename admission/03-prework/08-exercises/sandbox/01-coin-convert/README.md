@@ -67,9 +67,13 @@ Utiliza las siguientes tasas de cambio:
 Asigna a la variable `soles` el resultado de multiplicar `dolares` por
 el tipo de cambio.
 
+{% spoiler %}
+
 ```js
 const soles = dolares * 3.65;
 ```
+
+{% endspoiler %}
 
 {% next "Calculo de pesos mexicanos" %}
 
@@ -78,9 +82,13 @@ const soles = dolares * 3.65;
 Asigna a la variable `pesosMexicanos` el resultado de multiplicar `dolares`
 por el tipo de cambio.
 
+{% spoiler %}
+
 ```js
 const pesosMexicanos = dolares * 19.96;
 ```
+
+{% endspoiler %}
 
 {% next "Calculo de pesos chilenos" %}
 

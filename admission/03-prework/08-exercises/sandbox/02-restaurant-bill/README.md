@@ -51,9 +51,13 @@ ya teniendo en cuenta el 10% de impuestos (e incluyendo el símbolo de dólar).
 Asigna el resultado de multiplicar `cuenta` por `0.1` en la variable `impuesto`.
 Nota: `10%` en decimal se escribe `0.1`.
 
+{% spoiler %}
+
 ```js
 const impuesto = cuenta * 0.1;
 ```
+
+{% endspoiler %}
 
 {% next "Calculo del total de la cuenta" %}
 
@@ -62,9 +66,13 @@ const impuesto = cuenta * 0.1;
 Crea una variable llamada `totalDeLaCuenta` y asígnale el resultado de
 sumar `cuenta` más `impuesto`.
 
+{% spoiler %}
+
 ```js
 const totalDeLaCuenta = cuenta + impuesto;
 ```
+
+{% endspoiler %}
 
 {% next "Calculo del valor final a pagar" %}
 
@@ -73,9 +81,13 @@ const totalDeLaCuenta = cuenta + impuesto;
 Crea una variable llamada `valorFinal` y asígnale el resultado de
 dividir `totalDeLaCuenta` entre `cantidadDeAmigas`.
 
+{% spoiler %}
+
 ```js
 const valorFinal = totalDeLaCuenta / cantidadDeAmigas;
 ```
+
+{% endspoiler %}
 
 {% next "Retornar el resultado" %}
 
@@ -84,9 +96,13 @@ const valorFinal = totalDeLaCuenta / cantidadDeAmigas;
 Para retornar un valor utiliza la palabra `return`. Además concatena
 el símbolo de dolar `$` con el `valorFinal` calculado.
 
+{% spoiler %}
+
 ```js
 return "$" + valorFinal;
 ```
+
+{% endspoiler %}
 
 ## Cierre
 
