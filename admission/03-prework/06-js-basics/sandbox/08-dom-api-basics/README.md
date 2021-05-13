@@ -56,7 +56,7 @@ como por ejemplo, cambiar su texto, sus estilos o "escuchar" sus eventos.
 
 Si quieres saber más revisa la documentación oficial de
 [getElementById](https://developer.mozilla.org/es/docs/Web/API/Document/getElementById)
-y de 
+y de
 [querySelector](https://developer.mozilla.org/es/docs/Web/API/Document/querySelector)
 
 Por medio del DOM, podemos crear un HTML más dinámico, dónde javascript puede,
@@ -91,6 +91,7 @@ const button = document.getElementById("btn")
 Para "escuchar" los eventos de *click* del elemento, vamos a usar el método
 `addEventListener`.
 Para usarlo, necesitamos proporcionar dos argumentos:
+
 - el `tipo` de evento (en ese caso es de "click")
 - qué hacer cuando ocurre el evento (una `function`), que en ese caso es
   imprimir "Hola" en la consola.

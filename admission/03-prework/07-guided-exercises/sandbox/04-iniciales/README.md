@@ -25,9 +25,9 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 - Integrar el archivo `app.js` con la página `html`.
 - Preguntar el nombre y apellido por medio del `input` en html.
 - Crear un botón que al ser clicado vá a:
-  - Obtener el valor (nombre y apellido) insertado en el `input`
-  - Obtener las iniciales.
-  - Convertir las iniciales a mayúsculas.
+  * Obtener el valor (nombre y apellido) insertado en el `input`
+  * Obtener las iniciales.
+  * Convertir las iniciales a mayúsculas.
 - Escribir el resultado dentro de un elemento a través de su propiedad `innerHTML`.
 
 {% next "Comencemos" %}
@@ -113,13 +113,13 @@ El código debe ser algo parecido con eso:
 
 {% endspoiler %}
 
-
 ## 6 - Codeamos la solución
 
 ### 6.1 - Añade el listener de `click` con `addEventListener`
 
 Para poner "escuchar" el evento _click_ en el botón, usamos el método
-`addEventListener`, pero primero necesitamos 2 cosas
+`addEventListener`, pero primero necesitamos 2 cosas:
+
 - localizar al elemento `button`. Para hacer eso, le colocaremos un `id`.
 - definir un `function` que se ejecute cada vez que suceda el evento.
 
@@ -136,17 +136,23 @@ const listener = function () {
 element.addEventListener("click", listener);
 ```
 
-Si quieres saber más sobre el método `addEventListener` revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+Si quieres saber más sobre el método `addEventListener` revisa su
+[documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
 
 En la consola, escribe la variable `nombre` y presiona `enter`.
 Debe aparecer el valor ingresado en el _prompt_.
 
 ### 6.2 - Obtenemos el nombre y apellido del `input`
 
-Queremos obtener el nombre y apellido que el usuario puse en `input` cuándo el botón es clicado.
-Así, vamos a hacer eso **dentro** de la función del método `addEventListener`.
-Para sacar el value que está en `input`, vamos poner un `id` en la etiqueta de input, para que posamos
-usar la propiedad `value` (valor) y salvarla en una variable llamada `nombre`
+Queremos obtener el nombre y apellido que el usuario colocó en el `input` cuándo
+el botón es _clickeado_.
+
+Esta funcionalidad, la colocaremos **dentro** de la función de que colocaremos
+como segundo argumento de `addEventListener`.
+
+Para obtener el nombre y apellido que ingresó la usuaria, vamos poner un `id`
+en la etiquetas `input`, y así podamos extraer el valor (`value`) del `input` y
+guardarlo en una variable llamada `nombre`.
 
 ```html
     <input type="text" id="name">

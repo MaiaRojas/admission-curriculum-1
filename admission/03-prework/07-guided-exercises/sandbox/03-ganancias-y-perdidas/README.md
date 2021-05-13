@@ -109,7 +109,8 @@ el programa hace los cálculos e imprima el resultado en la pantalla.
 ### 6.1 - Añade el listener de `click` con `addEventListener`
 
 Para poner "escuchar" el evento _click_ en el botón, usamos el método
-`addEventListener`, pero primero necesitamos 2 cosas
+`addEventListener`, pero primero necesitamos 2 cosas:
+
 - localizar al elemento `button`. Para hacer eso, le colocaremos un `id`.
 - definir un `function` que se ejecute cada vez que suceda el evento.
 
@@ -129,11 +130,12 @@ element.addEventListener("click", listener);
 ### 6.2 - Calcula el resultado de ganancia bruta, ganancia neta e impuestos
 
 Queremos obtener los valores que el usuario colocó en los `input` cuándo el
-botón es clickeado.
+botón es _clickeado_.
 
-Esta funcionalidad, la colocaremos **dentro** de la función del método
-`addEventListener`.
-Para sacar los valores, vamos poner un `id` en las etiquetas de input, y así
+Esta funcionalidad, la colocaremos **dentro** de la función de que colocaremos
+como segundo argumento de `addEventListener`.
+
+Para sacar los valores, vamos poner un `id` en las etiquetas `input`, y así
 podamos extraer los valores (`value`) de los `input` y guardarlos en variables.
 
 ```html
@@ -246,7 +248,6 @@ const listener = function () {
   elementResulta.innerHTML = "Tu ganancia neta es " + gananciaNeta;
 };
 ```
-
 
 Si quieres saber más sobre `innerHTML` puedes revisar su
 [documentación en MDN](https://developer.mozilla.org/es/docs/Web/API/Document/write).

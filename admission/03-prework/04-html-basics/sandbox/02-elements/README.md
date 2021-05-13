@@ -89,10 +89,13 @@ pero su tipo predeterminado es `text`.
 
 > **ATENCION**: Fíjate que como `input` no tiene contenido, en lugar de definirlo
 > con
+>
 > ```js
 > <input type='text'></input>
 > ```
+>
 > lo definimos en una forma abreviada
+>
 > ```js
 > <input type='text' />
 > ```
