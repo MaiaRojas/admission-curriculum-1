@@ -17,7 +17,8 @@ Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
 Primero, necesitamos un documento HTML para formatear.
-Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
+Crea un archivo `index.html` dentro de la carpeta `src`,
+donde colocaremos un elemento `h1`, `h2` y un `p`.
 
 {%spoiler "¿Cómo crear un archivo?"%}
 [FIXME-VIDEO: crear archivo en sandbox]
