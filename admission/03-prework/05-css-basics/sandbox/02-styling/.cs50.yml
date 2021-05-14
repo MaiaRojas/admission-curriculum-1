@@ -1,4 +1,4 @@
 lab50:
   files:
     - !include "*"
-    - !exclude src/.gitkeep
+    # - !exclude src/.gitkeep
