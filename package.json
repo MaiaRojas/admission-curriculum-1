@@ -8,7 +8,8 @@
     "mdlint": "mdlint .",
     "validate": "node scripts/validate.js",
     "pretest": "npm run mdlint && npm run validate",
-    "test": "jest --testPathPattern ./admission/03-prework/.*/solution/.*.spec.js --testPathIgnorePatterns ./build"
+    "test": "jest --testPathPattern ./admission/03-prework/.*/solution/.*.spec.js --testPathIgnorePatterns ./build",
+    "copy-tests-to-sandboxes": "bash scripts/copy-tests-to-sandboxes.sh"
   },
   "repository": "Laboratoria/admission-curriculum",
   "keywords": [
