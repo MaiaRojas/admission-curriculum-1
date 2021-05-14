@@ -10,7 +10,7 @@
     "pretest": "npm run mdlint && npm run validate",
     "test": "npm run test-mocha && npm run test-jest",
     "test-mocha": "mocha './{,!(node_modules|build)/**/}*.spec.js' --ignore './**/node_modules/**/*.spec.js,./**/solution/**/*.spec.js,./**/sandbox/**/*.spec.js'",
-    "test-jest": "jest ./**/solution/**/*.spec.js"
+    "test-jest": "jest --testPathPattern ./admission/03-prework/.*/solution/.*.spec.js --testPathIgnorePatterns ./build"
   },
   "repository": "Laboratoria/admission-curriculum",
   "keywords": [
