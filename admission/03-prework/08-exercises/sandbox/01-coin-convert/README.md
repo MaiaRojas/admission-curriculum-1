@@ -27,7 +27,7 @@ Para llevar a adelante este reto necesitas completar las siguientes tareas:
 ## Abre el archivo `coinConvert.js`
 
 En el lado derecho de tu pantalla asegurate que estas abriendo y trabajando
-en el archivo coinConvert.js.
+en el archivo `src/coinConvert.js`.
 
 ### Estructura de la función `coinConvert`
 

@@ -25,7 +25,7 @@ de dato _boolean_, que tiene solo dos valores: _true_ (verdadero) y _false_
 
 ### Operadores comparativos
 
-Abre tu archivo `index.js` realiza estas comparaciones y ejecuta el archivo en
+Abre tu archivo `src/index.js` realiza estas comparaciones y ejecuta el archivo en
 tu terminal.
 
 ```js

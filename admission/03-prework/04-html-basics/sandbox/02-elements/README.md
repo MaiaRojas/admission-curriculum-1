@@ -142,11 +142,11 @@ En conjunto, su enlace debería verse así:
 ```
 
 Añade esa etiqueta en lo `body` del HTML, y crea un otro archivo
-`segundoArchivo.html` con un body distinto para testear
+`segundoArchivo.html` dentro de `src` con un body distinto para testear.
 
 {% spoiler %}
 
-Su primer archivo `index.html` puede ser algo parecido de eso:
+Tu primer archivo `index.html` puede ser algo parecido de esto:
 
 ```html
 <!DOCTYPE html>
@@ -162,7 +162,7 @@ Su primer archivo `index.html` puede ser algo parecido de eso:
 </html>
 ```
 
-Su segundo archivo `segundoArchivo.html` puede ser algo parecido de eso:
+Tu segundo archivo `segundoArchivo.html` puede ser algo parecido de esto:
 
 ```html
 <!DOCTYPE html>

@@ -24,10 +24,10 @@ Para llevar a adelante este reto necesitas completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-## Abre el archivo `coinConvert.js`
+## Abre el archivo `restaurantBill.js`
 
 En el lado derecho de tu pantalla asegurate que estas abriendo y trabajando
-en el archivo `coinConvert.js`.
+en el archivo `src/restaurantBill.js`.
 
 ## Estructura de la función `restaurantBill`
 

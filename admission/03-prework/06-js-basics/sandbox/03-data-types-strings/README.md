@@ -24,7 +24,7 @@ referencia a _cadena de caracteres_). Es el tipo de dato que
 utilzamos para representar texto. Se declaran al poner el contenido entre
 comillas.
 
-Escribe lo siguiente en el archivo `index.js` y ejecútalo en tu terminal:
+Escribe lo siguiente en el archivo `src/index.js` y ejecútalo en tu terminal:
 
 ```js
 console.log("Hola, mi nombre es Michelle");

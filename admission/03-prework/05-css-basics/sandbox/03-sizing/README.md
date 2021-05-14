@@ -17,7 +17,8 @@ Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
 Primero, necesitamos un documento HTML para formatear.
-Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
+Crea un archivo `index.html` dentro de la carpeta `src`,
+donde colocaremos un elemento `h1`, `h2` y un `p`.
 
 {%spoiler "¿Cómo crear un archivo?"%}
 [FIXME-VIDEO: crear archivo en sandbox]
@@ -41,8 +42,8 @@ Crea un archivo `index.html` donde colocaremos un elemento `h1`, `h2` y un `p`.
 Ahora, a diferencia de los casos anteriores, vamos a incluir los estilos desde
 un archivo externo en lugar de usar la etiqueta `<style>`.
 
-Para ello crea un nuevo archivo `styles.css` y agrega en dentro del `<head>` de
-tu archivo `index.html` la siguiente línea:
+Para ello crea un nuevo archivo `styles.css` dentro de la carpeta `src` y agrega
+dentro del `<head>` de tu archivo `index.html` la siguiente línea:
 
 ```html
     <link rel="stylesheet" href="styles.css" />

@@ -34,7 +34,7 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 ### Primeros Pasos: Sintaxis básica
 
-Crea un archivo `index.html`.
+Crea un archivo `index.html` dentro de la carpeta `src`.
 
 {%spoiler "¿Cómo crear un archivo?"%}
 [FIXME-VIDEO: crear archivo en sandbox]

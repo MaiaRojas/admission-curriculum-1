@@ -71,7 +71,7 @@ el tipo `number`. Esto incluye números positivos, negativos, enteros y
 decimales. Además, el tipo de datos `number` tiene tres valores simbólicos:
 `+Infinity`, `-Infinity` y `NaN` (no-un-número).
 
-Veamos varios ejemplos. Abre tu archivo `index.js` escribe las siguientes líneas
+Veamos varios ejemplos. Abre tu archivo `src/index.js` escribe las siguientes líneas
 y ejecutas el archivo en tu terminal.
 
 ```js

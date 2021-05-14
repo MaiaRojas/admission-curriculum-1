@@ -32,7 +32,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-## 1 - Crea un archivo `index.html`
+## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
 [FIXME-VIDEO: crear archivo en sandbox]
@@ -74,7 +74,7 @@ que diga _Coloca las iniciales_.
 
 {% next "Funcionalidad JS" %}
 
-## 3 - Crea un archivo `app.js`
+## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
 [FIXME-VIDEO: crear archivo en sandbox]
