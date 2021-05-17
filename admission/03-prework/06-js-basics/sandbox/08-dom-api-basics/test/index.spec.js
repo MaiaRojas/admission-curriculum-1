@@ -1,18 +1,21 @@
 const fs = require('fs');
 const esprima = require('esprima');
 const { esprima: utils } = require('@laboratoria/prework-test-utils');
+const { JSDOM } = require('jsdom');
+
+const html = fs.readFileSync(__dirname + '/../src/index.html', 'utf-8');
+const page = new JSDOM(html);
+const { window } = page;
+const { document } = window;
 
 const script = fs.readFileSync(__dirname + '/../src/index.js', 'utf-8');
 const astLocs = esprima.parseScript(script, { loc: true });
 const ast = esprima.parseScript(script);
 
-const functionExpressions = utils.getAll(ast.body, 'FunctionExpression');
+const functionExpressions = utils.getAll(ast.body, 'VariableDeclaration');
 
 describe('JS Basics: DOM', () => {
   it('Al menos un elemento con id', () => {
-    console.log("oi")
-    const elementId = functionExpressions.filter((fDef) => utils.getAll(fDef.body, 'ReturnStatement').length === 0);
-    expect(elementId.length).toBeGreaterThan(0);
   });
   // it('Al menos un elemento con class', () => {
   // });
