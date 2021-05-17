@@ -16,11 +16,15 @@ const functionExpressions = utils.getAll(ast.body, 'VariableDeclaration');
 
 describe('JS Basics: DOM', () => {
   it('Al menos un elemento con id', () => {
+    expect(document.body.querySelector('[id]')).not.toBe(null);
   });
-  // it('Al menos un elemento con class', () => {
-  // });
-  // it('Al menos un elemento sin id ni class y con la misma etiqueta q el class de arriba', () => {
-  // });
+  it('Al menos un elemento con class', () => {
+    expect(document.body.querySelector('[class]')).not.toBe(null);
+  });
+  it('Al menos un elemento sin id ni class y con la misma etiqueta q el class de arriba', () => {
+    const tag = document.body.querySelector('[class]').localName
+    expect(document.body.querySelector(`${tag}:not([id]):not([class])`)).not.toBe(null);
+  });
   // it('Un getElementById con un id q exista', () => {
   // });
   // it('Un querySelector con un selector que exista', () => {
