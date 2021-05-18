@@ -62,6 +62,17 @@ describe('JS Basics: DOM', () => {
       })
     expect(constDefinedFuncs.length).toBeGreaterThan(0);
   });
-  // it('Un addEventListener sobre un elemento existente, un evento valido y un callback existente', () => {
-  // });
+  it('Un addEventListener sobre un elemento existente, un evento valido y un callback existente', () => {
+    const elementos = utils.getAll(astLocs.body, 'CallExpression')
+      // filtra los elementos con addEventListener
+      .filter((call) => call.callee.property.name === 'addEventListener')
+      .map(call => ({
+        element: call.callee.object.name,
+        event: call.arguments[0].value,
+        callback: call.arguments[1].name,
+      }))
+    // verificar si el element existe
+    // verificar si el event es valido
+    // verificar si el callback existe
+  });
 });
