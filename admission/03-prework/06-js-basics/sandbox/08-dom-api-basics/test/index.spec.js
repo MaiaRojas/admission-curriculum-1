@@ -57,18 +57,14 @@ describe('JS Basics: DOM', () => {
     // filtra los elementos con la propiedad getElementById
     const resultById = expressions.filter((call) => call.callee.property.name === 'getElementById')
       // verifica se los elementos existen en html
-      .map((call) => document.body.querySelector(`[id="${call.arguments[0].value}"]`))
-      // quita si no existe 
-      .filter(el => el !== null)
+      .filter((call) => document.body.querySelector(`[id="${call.arguments[0].value}"]`) !== null)
     expect(resultById.length).toBeGreaterThan(0);
   });
   it('Un querySelector con un selector que exista', () => {
     // filtra los elementos con la propiedad querySelector
     const resultByQuerySelector = expressions.filter((call) => call.callee.property.name === 'querySelector')
       // verifica se los elementos existen en html
-      .map((call) => document.body.querySelector(call.arguments[0].value))
-      // quita si no existe 
-      .filter(el => el !== null)
+      .filter((call) => document.body.querySelector(call.arguments[0].value) !== null)
     expect(resultByQuerySelector.length).toBeGreaterThan(0);
   });
   it('Una definición de una function', () => {
