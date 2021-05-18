@@ -38,4 +38,10 @@ describe('HTML Basics: Elements', () => {
     const html = fs.readFileSync(__dirname + '/../src/' + href, 'utf-8');
     expect(isValidHTML(html)).resolves.toBe(true);
   });
+  it('Hay al menos un <input /> ', () => {
+    expect(document.body.querySelector('input')).not.toBe(null)
+  });
+  it('Hay al menos un <button /> ', () => {
+    expect(document.body.querySelector('button').innerHTML.trim()).not.toBe('')
+  });
 })
