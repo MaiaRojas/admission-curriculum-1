@@ -8,11 +8,12 @@ const page = new JSDOM(html);
 const { window } = page;
 const { document } = window;
 
-const script = fs.readFileSync(__dirname + '/../src/index.js', 'utf-8');
+const script = fs.readFileSync(__dirname + '/../src/app.js', 'utf-8');
 const astLocs = esprima.parseScript(script, { loc: true });
 const ast = esprima.parseScript(script);
 
-const functionExpressions = utils.getAll(ast.body, 'VariableDeclaration');
+// const functionExpressions = utils.getAll(ast.body, 'FunctionExpression');
+
 
 describe('JS Basics: DOM', () => {
   it('Al menos un elemento con id', () => {
@@ -25,10 +26,28 @@ describe('JS Basics: DOM', () => {
     const tag = document.body.querySelector('[class]').localName
     expect(document.body.querySelector(`${tag}:not([id]):not([class])`)).not.toBe(null);
   });
-  // it('Un getElementById con un id q exista', () => {
-  // });
-  // it('Un querySelector con un selector que exista', () => {
-  // });
+  it('Un getElementById con un id q exista', () => {
+    // todas las CallExpression
+    const elementos = utils.getAll(astLocs.body, 'CallExpression')
+      // filtra los elementos con la propiedad getElementById
+      .filter((call) => call.callee.property.name === 'getElementById')
+      // verifica se los elementos existen en html
+      .map((call) => document.body.querySelector(`[id="${call.arguments[0].value}"]`))
+      // quita si no existe 
+      .filter(el => el !== null)
+    expect(elementos.length).toBeGreaterThan(0);
+  });
+  it('Un querySelector con un selector que exista', () => {
+    // todas las CallExpression
+    const elementos = utils.getAll(astLocs.body, 'CallExpression')
+      // filtra los elementos con la propiedad querySelector
+      .filter((call) => call.callee.property.name === 'querySelector')
+      // verifica se los elementos existen en html
+      .map((call) => document.body.querySelector(call.arguments[0].value))
+      // quita si no existe 
+      .filter(el => el !== null)
+    expect(elementos.length).toBeGreaterThan(0);
+  });
   // it('Una definición de una function', () => {
   // });
   // it('Un addEventListener sobre un elemento existente, un evento valido y un callback existente', () => {
