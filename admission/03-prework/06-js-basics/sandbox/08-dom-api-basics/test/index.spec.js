@@ -48,8 +48,20 @@ describe('JS Basics: DOM', () => {
       .filter(el => el !== null)
     expect(elementos.length).toBeGreaterThan(0);
   });
-  // it('Una definición de una function', () => {
-  // });
+  it('Una definición de una function', () => {
+    const constDefinedFuncs = utils.getAll(astLocs.body, 'VariableDeclaration')
+      .filter((decl) => {
+        const d = decl.declarations
+          && decl.declarations.length
+          && decl.declarations[0]
+        return (
+          decl.kind === 'const'
+          && d.init
+          && d.init.type === 'FunctionExpression'
+        );
+      })
+    expect(constDefinedFuncs.length).toBeGreaterThan(0);
+  });
   // it('Un addEventListener sobre un elemento existente, un evento valido y un callback existente', () => {
   // });
 });
