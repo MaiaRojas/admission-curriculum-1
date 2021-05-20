@@ -25,23 +25,6 @@ const constDefinedFuncs = utils.getAll(astLocs.body, 'VariableDeclaration')
     );
   })
 
-const variablesDeclared = utils.getAll(ast, 'VariableDeclaration').map(
-  (node) => {
-    const decl = node.declarations[0];
-    let initialValue;
-    if (decl.init && (typeof decl.init === 'object') && decl.init.type === 'Literal') {
-      initialValue = decl.init.value;
-    } else {
-      initialValue = decl.init;
-    }
-    return {
-      kind: node.kind,
-      name: decl.id.name,
-      initialValue,
-    };
-  }
-);
-
 describe('JS Basics: DOM', () => {
   it('Al menos un elemento con id', () => {
     expect(document.body.querySelector('[id]')).not.toBe(null);
@@ -71,6 +54,30 @@ describe('JS Basics: DOM', () => {
     expect(constDefinedFuncs.length).toBeGreaterThan(0);
   });
   it('Un addEventListener sobre un elemento existente, un evento valido y un callback existente', () => {
+    // Crea la referencia al elemento real
+    const element = document.createElement('input');
+    // primero buscamos todas las propiedades del elemento
+    const elemProps = Object.getOwnPropertyNames(Object.getPrototypeOf(Object.getPrototypeOf(element)));
+    // y filtramos las que no son "onX"
+    const eventNames = elemProps.filter(k => k.startsWith("on") && (element[k] === null || typeof element[k] === "function")).map(k => k.slice(2));
+
+    const variablesDeclared = utils.getAll(ast, 'VariableDeclaration').map(
+      (node) => {
+        const decl = node.declarations[0];
+        let initialValue;
+        if (decl.init && (typeof decl.init === 'object') && decl.init.type === 'Literal') {
+          initialValue = decl.init.value;
+        } else {
+          initialValue = decl.init;
+        }
+        return {
+          kind: node.kind,
+          name: decl.id.name,
+          initialValue,
+        };
+      }
+    );
+
     // filtra los elementos con addEventListener
     const result = expressions.filter((call) => call.callee.property.name === 'addEventListener')
       .map(call => ({
@@ -81,7 +88,7 @@ describe('JS Basics: DOM', () => {
       // verificar si el element existe      
       .filter(item => variablesDeclared.find(variable => variable.name === item.element))
       // verificar si el event es valido
-      .filter(item => item.event === "click")
+      .filter(item => eventNames.includes(item.event))
       // verificar si el callback existe
       .filter(item => constDefinedFuncs.find(func => func.declarations[0].id.name === item.callback))
     expect(result.length).toBeGreaterThan(0);
