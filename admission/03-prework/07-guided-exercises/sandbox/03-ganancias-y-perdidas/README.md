@@ -207,7 +207,7 @@ const listener = function () {
   const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value;
 
   const gananciaBruta = ingreso - costos;
-  const impuestos = (gananciaBruta * porcentajeImpuesto) / 100;
+  const impuestos = gananciaBruta * (porcentajeImpuesto / 100);
   const gananciaNeta = gananciaBruta - impuestos;
 };
 ```
@@ -224,7 +224,7 @@ const listener = function () {
   const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value;
 
   const gananciaBruta = ingreso - costos;
-  const impuestos = (gananciaBruta * porcentajeImpuesto) / 100;
+  const impuestos = gananciaBruta * (porcentajeImpuesto / 100);
   const gananciaNeta = gananciaBruta - impuestos;
 
   console.log(gananciaBruta);
@@ -252,7 +252,7 @@ const listener = function () {
   const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value;
 
   const gananciaBruta = ingreso - costos;
-  const impuestos = (gananciaBruta * porcentajeImpuesto) / 100;
+  const impuestos = gananciaBruta * (porcentajeImpuesto / 100);
   const gananciaNeta = gananciaBruta - impuestos;
 
   const elementResultado =  document.getElementById("resultado");
