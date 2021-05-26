@@ -83,6 +83,17 @@ nuestra etiqueta `<body>`:
   <script type="text/javascript" src="app.js"></script>
 ```
 
+En esta oportunidad, debes garantizarte que el tag `<script>` sea el último
+elemento de tu `<body>`.
+
+> Si tu colocas una etiqueta `script` en la cabecera de tu archivo `html`, ese
+> código se ejecutará inmediatamente. Hasta ahora `window.prompt` le da el
+> tiempo al navegador para terminar de cargar la página antes de ejecutar el
+> resto del código.
+> Ahora, como interactuaremos directamente con los elementos html desde el
+> comienzo, necesitamos garantizar que el código Javascript, no se ejecute
+> hasta que todos los elementos se hayan cargado.
+
 ## 5 - Crea los campos para poner los datos requeridos
 
 El usuario necesitar proporcionar tres datos, `ingreso`,`costo` y
@@ -148,7 +159,7 @@ podamos extraer los valores (`value`) de los `input` y guardarlos en variables.
     <p>Porcentaje de impuestos:</p>
     <input type="text" id="porcentaje-impuesto" />
     <br />
-    <button>Calcular</button>
+    <button id="btn">Calcular</button>
 ```
 
 ```js
@@ -196,7 +207,7 @@ const listener = function () {
   const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value;
 
   const gananciaBruta = ingreso - costos;
-  const impuestos = (gananciaBruta * porcentajeImpuesto) / 100;
+  const impuestos = gananciaBruta * (porcentajeImpuesto / 100);
   const gananciaNeta = gananciaBruta - impuestos;
 };
 ```
@@ -213,7 +224,7 @@ const listener = function () {
   const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value;
 
   const gananciaBruta = ingreso - costos;
-  const impuestos = (gananciaBruta * porcentajeImpuesto) / 100;
+  const impuestos = gananciaBruta * (porcentajeImpuesto / 100);
   const gananciaNeta = gananciaBruta - impuestos;
 
   console.log(gananciaBruta);
@@ -241,11 +252,11 @@ const listener = function () {
   const porcentajeImpuesto = document.getElementById("porcentaje-impuesto").value;
 
   const gananciaBruta = ingreso - costos;
-  const impuestos = (gananciaBruta * porcentajeImpuesto) / 100;
+  const impuestos = gananciaBruta * (porcentajeImpuesto / 100);
   const gananciaNeta = gananciaBruta - impuestos;
 
   const elementResultado =  document.getElementById("resultado");
-  elementResulta.innerHTML = "Tu ganancia neta es " + gananciaNeta;
+  elementResultado.innerHTML = "Tu ganancia neta es " + gananciaNeta;
 };
 ```
 
