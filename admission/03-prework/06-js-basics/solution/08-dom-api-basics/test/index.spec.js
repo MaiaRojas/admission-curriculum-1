@@ -29,13 +29,16 @@ describe('JS Basics: DOM', () => {
   it('Al menos un elemento con id', () => {
     expect(document.body.querySelector('[id]')).not.toBe(null);
   });
+  
   it('Al menos un elemento con class', () => {
     expect(document.body.querySelector('[class]')).not.toBe(null);
   });
+  
   it('Al menos un elemento sin id ni class y con la misma etiqueta q el class de arriba', () => {
     const tag = document.body.querySelector('[class]').localName
     expect(document.body.querySelector(`${tag}:not([id]):not([class])`)).not.toBe(null);
   });
+  
   it('Un getElementById con un id q exista', () => {
     // filtra los elementos con la propiedad getElementById
     const resultById = expressions.filter((call) => call.callee.property.name === 'getElementById')
@@ -43,6 +46,7 @@ describe('JS Basics: DOM', () => {
       .filter((call) => document.body.querySelector(`[id="${call.arguments[0].value}"]`) !== null)
     expect(resultById.length).toBeGreaterThan(0);
   });
+  
   it('Un querySelector con un selector que exista', () => {
     // filtra los elementos con la propiedad querySelector
     const resultByQuerySelector = expressions.filter((call) => call.callee.property.name === 'querySelector')
@@ -50,17 +54,12 @@ describe('JS Basics: DOM', () => {
       .filter((call) => document.body.querySelector(call.arguments[0].value) !== null)
     expect(resultByQuerySelector.length).toBeGreaterThan(0);
   });
+  
   it('Una definición de una function', () => {
     expect(constDefinedFuncs.length).toBeGreaterThan(0);
   });
+  
   it('Un addEventListener sobre un elemento existente, un evento valido y un callback existente', () => {
-    // Crea la referencia al elemento real
-    const element = document.createElement('input');
-    // primero buscamos todas las propiedades del elemento
-    const elemProps = Object.getOwnPropertyNames(Object.getPrototypeOf(Object.getPrototypeOf(element)));
-    // y filtramos las que no son "onX"
-    const eventNames = elemProps.filter(k => k.startsWith("on") && (element[k] === null || typeof element[k] === "function")).map(k => k.slice(2));
-
     const variablesDeclared = utils.getAll(ast, 'VariableDeclaration').map(
       (node) => {
         const decl = node.declarations[0];
@@ -80,15 +79,24 @@ describe('JS Basics: DOM', () => {
 
     // filtra los elementos con addEventListener
     const result = expressions.filter((call) => call.callee.property.name === 'addEventListener')
-      .map(call => ({
+      .map((call) => ({
         element: call.callee.object.name,
         event: call.arguments[0].value,
         callback: call.arguments[1].name,
       }))
       // verificar si el element existe      
-      .filter(item => variablesDeclared.find(variable => variable.name === item.element))
+      .filter((item) => variablesDeclared.find((variable) => variable.name === item.element))
       // verificar si el event es valido
-      .filter(item => eventNames.includes(item.event))
+      .filter((item) => {
+        // Busca la referencia al elemento real
+        const element = document.createElement(item.element);
+        // primero buscamos todas las propiedades del elemento
+        const elemProps = Object.getOwnPropertyNames(Object.getPrototypeOf(Object.getPrototypeOf(element)));
+        // y filtramos las que no son "onX"
+        const eventNames = elemProps.filter(k => k.startsWith("on") && (element[k] === null || typeof element[k] === "function")).map(k => k.slice(2));
+        
+        return eventNames.includes(item.event);
+      })
       // verificar si el callback existe
       .filter(item => constDefinedFuncs.find(func => func.declarations[0].id.name === item.callback))
     expect(result.length).toBeGreaterThan(0);
