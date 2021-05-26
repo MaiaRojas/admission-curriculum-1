@@ -4,25 +4,24 @@ const { e2e: { initStaticServer, stopStaticServer, regExpEscape } } = require('@
 const srcPath = path.normalize(__dirname + '/../src');
 let server;
 
-const testConversion = async ({ page, done, anios, segundos }) => {
+const testConversion = async ({ page, done, celsius, farenheit }) => {
   page.on('dialog', (dialog) => {
-    dialog.accept(`${anios}`);
+    dialog.accept(`${celsius}`);
   });
-  await page.goto('http://localhost:5000');
-  const message = await page.$eval('body', (el) => Array.prototype.filter
-    .call(el.childNodes, (child, index) => index === 0 && child.nodeType === Node.TEXT_NODE)
-    .map((child) => child.textContent)
-  );
-  expect(message.length).toBeGreaterThan(0);
 
-  const aniosEscaped = regExpEscape(` ${anios}`);
-  const segundosEscaped = regExpEscape(` ${segundos}`);
-  const regexp = new RegExp(`${aniosEscaped}.*${segundosEscaped}`, 'g');
+  let message;
+  page.on('console', (console) => {
+    message = console.text();
+  });
+
+  await page.goto('http://localhost:5000');
+
+  const regexp = new RegExp(regExpEscape(` ${farenheit}`), 'g');
   expect(regexp.test(message)).toBe(true);
   done();
 }
 
-describe('Guided Exercises: Edad en segundos', () => {
+describe('Guided Exercises: Convertidor de temperatura', () => {
   beforeAll((done) => {
     server = initStaticServer(srcPath, {}, done);
   });
@@ -36,7 +35,7 @@ describe('Guided Exercises: Edad en segundos', () => {
       dialog.accept('');
     });
     await page.goto('http://localhost:5000');
-    expect(page.title()).resolves.toMatch('Edad en segundos').then(done);
+    expect(page.title()).resolves.toMatch('Convertidor de temperatura').then(done);
   });
 
   it('El prompt muestra el mensaje correcto', async (done) => {
@@ -46,51 +45,51 @@ describe('Guided Exercises: Edad en segundos', () => {
       dialog.accept('');
     });
     await page.goto('http://localhost:5000');
-    expect(message).toBe('¿Cuál es tu edad?');
+    expect(message).toBe('¿Cuál es la temperatura en Celsius?');
     done();
   });
 
-  it('20 Años === 630720000 segundos', async (done) => {
-    const anios = 20;
-    const segundos = 630720000;
+  it('34 celsius === 93.2 farenheit', async (done) => {
+    const celsius = 34;
+    const farenheit = 93.2;
     await testConversion({
       page,
       done,
-      anios,
-      segundos,
+      celsius,
+      farenheit,
     })
   });
 
-  it('0 Años === 0 segundos', async (done) => {
-    const anios = 0;
-    const segundos = 0;
+  it('0 celsius === 32 farenheit', async (done) => {
+    const celsius = 0;
+    const farenheit = 32;
     await testConversion({
       page,
       done,
-      anios,
-      segundos,
+      celsius,
+      farenheit,
     })
   });
 
-  it('String vacio es 0', async (done) => {
-    const anios = '';
-    const segundos = 0;
+  it('String vacio es NaN', async (done) => {
+    const celsius = '';
+    const farenheit = NaN;
     await testConversion({
       page,
       done,
-      anios,
-      segundos,
+      celsius,
+      farenheit,
     })
   });
 
   it('Algo que no es un número es NaN', async (done) => {
-    const anios = 'string';
-    const segundos = NaN;
+    const celsius = 'string';
+    const farenheit = NaN;
     await testConversion({
       page,
       done,
-      anios,
-      segundos,
+      celsius,
+      farenheit,
     })
   });
 
