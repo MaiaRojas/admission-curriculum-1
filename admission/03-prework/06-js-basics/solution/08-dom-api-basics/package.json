@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest .",
+    "presubmit": "npm test",
     "submit": "submit"
   },
   "author": "Laboratoria",
