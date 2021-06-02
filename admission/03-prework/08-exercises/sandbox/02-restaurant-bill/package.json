@@ -4,14 +4,17 @@
   "description": "a program to calculate the final bill each has to pay",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "presubmit": "npm test",
+    "submit": "submit"
   },
   "scripts": {
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@laboratoria/prework-topic-submit": "github:Laboratoria/prework-topic-submit",
     "jest": "^26.6.3"
   }
 }
