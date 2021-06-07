@@ -42,6 +42,10 @@ El valor `undefined` significa que no se ha _asignado_ un valor, a diferencia de
 
 ### Conversión automática de tipo
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 Cuando un operador es aplicado al tipo "incorrecto" de valor, Javascript
 convertirá silenciosamente el valor en el tipo de dato que espera, usando un
 conjunto de reglas que a menudo no son lo que tú quieres o esperas. Esto es
@@ -65,7 +69,7 @@ console.log('false == 0 =', false == 0);
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
 {%endspoiler%}
 
 El null en la primera expresión se vuelve 0, y el "5" en la segunda expresión se
@@ -217,9 +221,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

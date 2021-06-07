@@ -10,6 +10,10 @@
 
 ## Elementos populares
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 Un elemento muy comun es el elemento de _heading_ `h1` (encabezado).
 Hay 6 niveles `h1` hasta `h6`, siendo `h1` el nivel de sección más alto o más
 importante.
@@ -227,9 +231,9 @@ Puedes continuar a tu próxima lección, la primera sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

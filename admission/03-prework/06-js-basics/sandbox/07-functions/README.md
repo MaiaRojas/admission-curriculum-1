@@ -42,6 +42,10 @@ de nuestro propio vocabulario para evitar repetirnos demasiado.
 
 ## Definiendo una función
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 La definición de una función es sólo una definición normal de una variable,
 pero ocurre que el valor dado a la variable es una función. Por ejemplo, el
 siguiente código define la variable `cuadrado` para referirse a la función que
@@ -57,7 +61,7 @@ console.log(cuadrado(12));
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
 {%endspoiler%}
 
 Una función es creada por una expresión que empieza con la palbra reservada
@@ -186,9 +190,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

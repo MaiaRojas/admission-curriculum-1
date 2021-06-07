@@ -18,6 +18,10 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Booleans
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 A menudo, necesitarás un valor que simplemente distinga entre dos posibilidades,
 como "sí" y "no" o "encendido" y "apagado". Para esto, Javascript tiene un tipo
 de dato _boolean_, que tiene solo dos valores: _true_ (verdadero) y _false_
@@ -43,7 +47,7 @@ console.log(typeof (2 > 3));
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
 {%endspoiler%}
 
 Los signos `>` y `<` son los símbolos tradicionales para "mayor que" y "menor
@@ -226,9 +230,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

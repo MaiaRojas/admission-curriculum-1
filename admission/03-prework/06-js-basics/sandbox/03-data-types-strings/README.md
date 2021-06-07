@@ -19,6 +19,10 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Strings
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 El siguiente _data type_ básico es el `String` (_cadena_ en español, ya que hace
 referencia a _cadena de caracteres_). Es el tipo de dato que
 utilzamos para representar texto. Se declaran al poner el contenido entre
@@ -38,7 +42,7 @@ console.log("123");
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
 {%endspoiler%}
 
 Tanto las comillas simples como las dobles pueden ser usadas para declarar
@@ -160,9 +164,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

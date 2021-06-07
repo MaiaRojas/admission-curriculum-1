@@ -24,6 +24,10 @@ Para llevar a adelante este reto necesitas completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 ## Abre el archivo `restaurantBill.js`
 
 En el lado derecho de tu pantalla asegurate que estas abriendo y trabajando
@@ -116,9 +120,9 @@ consideramos que ya estás preparada para resolver el reto que te propusimos.
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

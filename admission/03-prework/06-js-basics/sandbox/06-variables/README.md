@@ -20,6 +20,10 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Variables
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 Ya conoces los tipos de datos más comunes en Javascript. Sabes crear, combinar y
 transformar `numbers`, `strings` y `booleans`. Pero, ¿qué podemos hacer con
 esto? Hasta ahora, todo lo que has trabajado ha sido para uso inmediato. Es
@@ -32,7 +36,7 @@ console.log('Hola, mi nombre es ' + 'Michelle' + ' y tengo ' + 19 + ' años');
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
 {%endspoiler%}
 
 Si quisiera utilizar ese `string` de nuevo, digamos porque Michelle cumplió años
@@ -279,9 +283,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

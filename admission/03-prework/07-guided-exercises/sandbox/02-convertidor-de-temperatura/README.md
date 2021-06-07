@@ -23,10 +23,14 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -68,7 +72,7 @@ que diga _Coloca la temperatura en grados Celsius (°C)_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
 {%endspoiler%}
 
 ## 4 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
@@ -152,9 +156,9 @@ Puedes continuar con tu próximo
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}

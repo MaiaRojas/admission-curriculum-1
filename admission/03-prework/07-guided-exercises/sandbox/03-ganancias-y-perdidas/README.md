@@ -24,10 +24,14 @@ y porcentaje de impuestos.
 
 {% next "Comencemos" %}
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%endspoiler%}
+
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -68,7 +72,7 @@ que diga _Coloca tus ganancias, costos y porcentaje de impuestos_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
 {%endspoiler%}
 
 ## 4 - Integra con la página `html`

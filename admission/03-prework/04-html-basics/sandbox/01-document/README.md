@@ -35,7 +35,7 @@ que antes de comenzar con tu proyecto debes instalar sus _dependencias_,
 ejecutando `npm install` en la terminal.
 
 {%spoiler "¿Cómo ejecutar `npm install`?"%}
-[FIXME-VIDEO: ejecutar `npm install`]
+{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
 {%endspoiler%}
 
 ### Primeros Pasos: Sintaxis básica
@@ -161,9 +161,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
 {%endspoiler%}
