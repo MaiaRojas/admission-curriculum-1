@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "submit": "submit"
+    "submit": "NO_UPDATE_NOTIFIER=1 && submit"
   },
   "author": "",
   "license": "ISC",

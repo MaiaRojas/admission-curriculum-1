@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest ."
+    "test": "NO_UPDATE_NOTIFIER=1 && jest ."
   },
   "author": "Laboratoria",
   "license": "ISC",
