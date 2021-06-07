@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "jest",
-    "presubmit": "npm test",
     "submit": "submit"
   },
   "author": "",
