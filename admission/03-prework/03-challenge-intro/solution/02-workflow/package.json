@@ -1,12 +1,10 @@
 {
-  "name": "js-basics-dom-api-basics",
+  "name": "challenge-intro-workflow",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "jest .",
-    "presubmit": "npm test",
-    "submit": "submit"
+    "test": "jest ."
   },
   "author": "Laboratoria",
   "license": "ISC",
@@ -14,7 +12,6 @@
     "@laboratoria/prework-test-utils": "github:Laboratoria/prework-test-utils",
     "@laboratoria/prework-topic-submit": "github:Laboratoria/prework-topic-submit",
     "esprima": "^4.0.1",
-    "jest": "^26.6.3",
-    "jsdom": "^16.5.3"
+    "jest": "^26.6.3"
   }
 }
