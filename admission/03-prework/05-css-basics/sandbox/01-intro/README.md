@@ -21,7 +21,7 @@ Vamos a formatear el documento HTML con el elemento `style`, por lo eso es impor
 que ya hayas hecho la unidad `HTML basics`.
 
 {%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
 {%endspoiler%}
 
 {% spoiler %}

@@ -24,7 +24,7 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 {% next "Comencemos" %}
 
 {%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
 {%endspoiler%}
 
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`

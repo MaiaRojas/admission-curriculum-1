@@ -20,7 +20,7 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 ## Strings
 
 {%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
 {%endspoiler%}
 
 El siguiente _data type_ básico es el `String` (_cadena_ en español, ya que hace

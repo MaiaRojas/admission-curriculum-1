@@ -39,7 +39,7 @@ según su historial de compra en un hipermercado ([fuente](http://www.forbes.com
 ## Tipos de datos
 
 {%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
 {%endspoiler%}
 
 Las computadoras son un gran recurso para trabajar con grandes cantidades de

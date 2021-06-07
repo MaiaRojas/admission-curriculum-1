@@ -35,7 +35,7 @@ que antes de comenzar con tu proyecto debes instalar sus _dependencias_,
 ejecutando `npm install` en la terminal.
 
 {%spoiler "¿Cómo ejecutar `npm install`?"%}
-{% https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
 {%endspoiler%}
 
 ### Primeros Pasos: Sintaxis básica
