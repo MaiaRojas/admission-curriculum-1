@@ -1,27 +1,11 @@
 const fs = require('fs');
 const { JSDOM } = require('jsdom');
-const validator = require('html-validator');
+require('html-validate/jest');
 
 const html = fs.readFileSync(__dirname + '/../src/index.html', 'utf-8');
 const page = new JSDOM(html);
 const { window } = page;
 const { document } = window;
-
-async function isValidHTML(html) {
-  const options = {
-    validator: 'WHATWG',
-    format: 'text',
-    data: html,
-    ignore: '<html> is missing required "lang" attribute',
-  };
-  
-  try {
-    await validator(options)
-    return true;
-  } catch (error) {
-    return false;
-  }
-}
 
 describe('HTML Basics: Elements', () => {
   it('Hay al menos un <h />', () => {
@@ -36,7 +20,11 @@ describe('HTML Basics: Elements', () => {
   it('Hay al menos un <a /> con un atributo href a un documento html local "bien formado"', () => {
     const href = document.body.querySelector('a').getAttribute('href');
     const html = fs.readFileSync(__dirname + '/../src/' + href, 'utf-8');
-    expect(isValidHTML(html)).resolves.toBe(true);
+    expect(html).toHTMLValidate({
+      rules: {
+        "element-required-attributes": "off",
+      },
+    });
   });
   it('Hay al menos un <input /> ', () => {
     expect(document.body.querySelector('input')).not.toBe(null)
