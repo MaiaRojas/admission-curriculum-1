@@ -2,7 +2,7 @@ const fs = require('fs');
 const esprima = require('esprima');
 const { esprima: utils } = require('@laboratoria/prework-test-utils');
 
-const script = fs.readFileSync(__dirname + '/../src/index.js', 'utf-8');
+const script = fs.readFileSync(__dirname + '/../src/app.js', 'utf-8');
 const ast = esprima.parseScript(script);
 
 const consoleLogsArgs = utils.getAllConsoleLogLastArgs(ast);
