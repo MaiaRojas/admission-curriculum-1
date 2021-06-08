@@ -25,7 +25,7 @@ Crea un archivo `index.html` dentro de la carpeta `src`,
 donde colocaremos un elemento `h1`, `h2` y un `p`.
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ```html
@@ -178,9 +178,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

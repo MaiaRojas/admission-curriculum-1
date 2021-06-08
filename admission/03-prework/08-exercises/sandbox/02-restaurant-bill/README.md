@@ -120,9 +120,9 @@ consideramos que ya estás preparada para resolver el reto que te propusimos.
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

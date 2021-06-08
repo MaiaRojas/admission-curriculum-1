@@ -61,7 +61,7 @@ console.log(cuadrado(12));
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
+{% video https://www.youtube.com/watch?v=I4XWmfN0vxA %}
 {%endspoiler%}
 
 Una función es creada por una expresión que empieza con la palbra reservada
@@ -190,9 +190,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

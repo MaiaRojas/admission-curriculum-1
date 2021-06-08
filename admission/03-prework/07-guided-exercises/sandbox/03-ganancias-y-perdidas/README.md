@@ -31,7 +31,7 @@ y porcentaje de impuestos.
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -72,7 +72,7 @@ que diga _Coloca tus ganancias, costos y porcentaje de impuestos_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 4 - Integra con la página `html`

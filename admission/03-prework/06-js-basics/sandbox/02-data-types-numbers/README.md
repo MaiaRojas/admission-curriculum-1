@@ -87,7 +87,7 @@ console.log(-9.81);
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
+{% video https://www.youtube.com/watch?v=I4XWmfN0vxA %}
 {%endspoiler%}
 
 También puedes hacer uso de la notación científica para números muy grandes o
@@ -115,11 +115,11 @@ archivo `.js` lo importas desde una página web, el resultado lo verás impreso
 en la consola de tu navegador.
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
+{% video https://www.youtube.com/watch?v=I4XWmfN0vxA %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo abrir la consola del navegador?"%}
-{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=7m25s %}
+{% video https://www.youtube.com/watch?v=thgUnPKL9ms %}
 {%endspoiler%}
 
 > Si quieres saber más sobre `console.log`, te invitamos a revisar la
@@ -198,9 +198,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

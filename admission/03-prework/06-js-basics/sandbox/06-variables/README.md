@@ -36,7 +36,7 @@ console.log('Hola, mi nombre es ' + 'Michelle' + ' y tengo ' + 19 + ' años');
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=7m04s %}
+{% video https://www.youtube.com/watch?v=I4XWmfN0vxA %}
 {%endspoiler%}
 
 Si quisiera utilizar ese `string` de nuevo, digamos porque Michelle cumplió años
@@ -283,9 +283,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=10m04s %}
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=12m35s %}
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}
