@@ -24,7 +24,7 @@ const testConversion = async ({
   done();
 }
 
-describe('Guided Exercises: Convertidor de temperatura', () => {
+describe('Guided Exercises: Ganancias y perdidas', () => {
   beforeAll((done) => {
     server = initStaticServer(srcPath, {}, done);
   });
@@ -53,9 +53,51 @@ describe('Guided Exercises: Convertidor de temperatura', () => {
     })
   });
 
-  it.todo('Otros valores');
-  it.todo('Si algun input esta vacio');
-  it.todo('Si algun input no es numero');
+  it('ingreso = 18520, costos = 3850, porcentaje impuesto = 10', async (done) => {
+    const ingreso = 18520;
+    const costos = 3850;
+    const porcentajeImpuesto = 10;
+    const gananciaNeta = 13203;
+    await testConversion({
+      page,
+      done,
+      ingreso,
+      costos,
+      porcentajeImpuesto,
+      gananciaNeta,
+    })
+  });
+
+  it('Si algun input esta vacio es NaN', async(done) => {
+    const ingreso = "";
+    const costos = "";
+    const porcentajeImpuesto = NaN;
+    const gananciaNeta = NaN;
+    await testConversion({
+      page,
+      done,
+      ingreso,
+      costos,
+      porcentajeImpuesto,
+      gananciaNeta,
+    })
+  });
+
+  it('Si algun input no es numero es NaN', async (done) => {
+    const ingreso = "string";
+    const costos = 1400;
+    const porcentajeImpuesto = NaN;
+    const gananciaNeta = NaN;
+    await testConversion({
+      page,
+      done,
+      ingreso,
+      costos,
+      porcentajeImpuesto,
+      gananciaNeta,
+    })
+  });
+
 
   afterAll((done) => {
     stopStaticServer(server, done);
