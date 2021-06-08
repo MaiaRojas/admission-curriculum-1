@@ -1,11 +1,8 @@
 const path = require('path');
 const { e2e: { initStaticServer, stopStaticServer, regExpEscape } } = require('@laboratoria/prework-test-utils');
-const Browser = require('zombie');
 
-Browser.localhost('localhost', 5000);
 const srcPath = path.normalize(__dirname + '/../src');
 let server;
-const browser = new Browser();
 
 const testConversion = async ({ page, done, anios, segundos }) => {
   page.on('dialog', (dialog) => {
@@ -32,12 +29,16 @@ describe('Guided Exercises: Edad en segundos', () => {
     server = initStaticServer(srcPath, {}, done);
   });
 
-  fit('La página tiene el title correcto', async (done) => {
-    // console.log(browser.html('title'))
-    browser.visit('/', function() {
-      expect(browser.evaluate('document.title')).toBe('Edad en segundos');
-      done();
+  afterEach(async () => {
+    page = await browser.newPage();
+  });
+
+  it('La página tiene el title correcto', async (done) => {
+    page.on('dialog', (dialog) => {
+      dialog.accept('');
     });
+    await page.goto('http://localhost:5000');
+    expect(page.title()).resolves.toMatch('Edad en segundos').then(done);
   });
 
   it('El prompt muestra el mensaje correcto', async (done) => {
