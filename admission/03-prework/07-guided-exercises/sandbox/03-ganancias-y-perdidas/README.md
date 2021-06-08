@@ -260,7 +260,7 @@ const listener = function () {
   const gananciaNeta = gananciaBruta - impuestos;
 
   const elementResultado =  document.getElementById("resultado");
-  elementResultado.innerHTML = "Tu ganancia neta es " + gananciaNeta;
+  elementResultado.innerHTML = "Tu ganancia neta es $" + gananciaNeta;
 };
 ```
 
