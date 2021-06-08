@@ -16,7 +16,7 @@
 1. **Comentarios**
    [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/01-comments/)
 2. **Intro a valores, tipos de datos y operadores. Numbers**
-   [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe//admission/03-prework/06-js-basics/sandbox/02-data-types-numbers/)
+   [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/02-data-types-numbers/)
 3. **Strings. Operadores Unarios**
    [Comenzar](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/03-data-types-strings/)
 4. **Booleans. Operadores Lógicos**

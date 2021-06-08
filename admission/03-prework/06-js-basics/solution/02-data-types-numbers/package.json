@@ -12,7 +12,10 @@
   "devDependencies": {
     "@laboratoria/prework-test-utils": "github:Laboratoria/prework-test-utils",
     "@laboratoria/prework-topic-submit": "github:Laboratoria/prework-topic-submit",
+    "connect": "^3.7.0",
     "esprima": "^4.0.1",
-    "jest": "^26.6.3"
+    "esprima-ast-utils": "^0.0.7",
+    "jest": "^26.6.3",
+    "static-serve": "^0.0.1"
   }
 }

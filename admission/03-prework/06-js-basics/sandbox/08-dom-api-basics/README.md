@@ -1,4 +1,4 @@
-# Variables
+# Interactividad en HTML con Javascript
 
 - Tipo: `practice`
 - Formato: `self-paced`
