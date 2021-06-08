@@ -5,7 +5,7 @@
 Crea una página web que solicite a la usuaria su edad **en años** utilizando `window.prompt()`,
 y pinte su edad **en segundos** en la pantalla utilizando `document.write()`.
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=HbWP6a4Sbo8 %}
 
 ## Análisis y lista de tareas
 

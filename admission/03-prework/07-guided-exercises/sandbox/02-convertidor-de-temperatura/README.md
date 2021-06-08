@@ -3,11 +3,11 @@
 ## Enunciado
 
 Crea una página web que pida al usuario la temperatura en grados Celsius (°C),
-utilizando `prompt()`, y devuelva, en la consola, la temperatura en grados
+utilizando `window.prompt()`, y devuelva, en la consola, la temperatura en grados
 Fahrenheit (°F) utilizando `console.log()`.
 La fórmula matemática para pasar de °C a °F es: `T(°F) = ( T(°C) × 1.8 ) + 32`.
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=UR1bDbnCRNk %}
 
 ## Análisis y lista de tareas
 

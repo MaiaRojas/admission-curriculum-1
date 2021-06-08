@@ -13,7 +13,7 @@ Veamos unos ejemplos:
 - "ana martinez" y "Ana Martinez" devuelven las iniciales "AM"
 - "Michelle Seguil" y "michelle seguil" devuelven "MS"
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=Rr8c3koescg %}
 
 ## Análisis y lista de tareas
 

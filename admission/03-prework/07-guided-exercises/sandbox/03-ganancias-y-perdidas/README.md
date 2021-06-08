@@ -6,7 +6,7 @@ Crear un programa que pide los ingresos, los costos y el % de impuestos,
 y calcula la ganancia. Debe imprimir el resultado
 en la web con el símbolo `$` adelante.
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=-0SE3ehTCtY %}
 
 ## Análisis y lista de tareas
 
