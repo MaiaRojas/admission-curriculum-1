@@ -10,8 +10,8 @@
 
 ## Elementos populares
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 Un elemento muy comun es el elemento de _heading_ `h1` (encabezado).

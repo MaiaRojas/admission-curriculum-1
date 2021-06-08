@@ -14,8 +14,8 @@
 
 ## Comentarios
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 Muchas veces, por más descriptivo que escribas tu código, es necesario brindar

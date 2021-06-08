@@ -32,14 +32,14 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -81,7 +81,7 @@ que diga _Coloca las iniciales_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
 {%endspoiler%}
 
 ## 4 - Integra con la página `html`

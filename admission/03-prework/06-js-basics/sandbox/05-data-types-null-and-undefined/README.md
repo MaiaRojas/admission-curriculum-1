@@ -42,8 +42,8 @@ El valor `undefined` significa que no se ha _asignado_ un valor, a diferencia de
 
 ### Conversión automática de tipo
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 Cuando un operador es aplicado al tipo "incorrecto" de valor, Javascript

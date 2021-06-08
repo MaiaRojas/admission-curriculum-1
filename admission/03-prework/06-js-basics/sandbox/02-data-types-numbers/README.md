@@ -38,8 +38,8 @@ según su historial de compra en un hipermercado ([fuente](http://www.forbes.com
 
 ## Tipos de datos
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 Las computadoras son un gran recurso para trabajar con grandes cantidades de
@@ -119,7 +119,7 @@ en la consola de tu navegador.
 {%endspoiler%}
 
 {%spoiler "¿Cómo abrir la consola del navegador?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=7m25s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=7m25s %}
 {%endspoiler%}
 
 > Si quieres saber más sobre `console.log`, te invitamos a revisar la

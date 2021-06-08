@@ -18,8 +18,8 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Booleans
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 A menudo, necesitarás un valor que simplemente distinga entre dos posibilidades,

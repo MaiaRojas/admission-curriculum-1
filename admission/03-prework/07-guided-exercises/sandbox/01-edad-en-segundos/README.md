@@ -21,14 +21,14 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
 {%endspoiler%}
 
 ## 2 - Creamos la estructura básica de cualquier documento `html` dentro de `index.html`
@@ -68,7 +68,7 @@ que diga _Coloca tu edad en años_.
 ## 4 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
 {%endspoiler%}
 
 ## 5 - Crea tu _window.prompt_ y guarda el valor retornado en una variable

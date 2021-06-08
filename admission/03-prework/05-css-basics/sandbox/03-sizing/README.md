@@ -13,8 +13,8 @@
 
 ## El documento HTML
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 Ya conoces la estructura basica para formatear el documento HTML.
@@ -25,7 +25,7 @@ Crea un archivo `index.html` dentro de la carpeta `src`,
 donde colocaremos un elemento `h1`, `h2` y un `p`.
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
 {%endspoiler%}
 
 ```html
@@ -54,7 +54,7 @@ dentro del `<head>` de tu archivo `index.html` la siguiente línea:
 ```
 
 {%spoiler "¿Cómo crear un archivo?"%}
-{% video https://www.youtube.com/watch?v=IDqkROijSJY&t=5m17s %}
+{% video https://www.youtube.com/watch?v=yU-lRcfbYWU&t=5m17s %}
 {%endspoiler%}
 
 Tener la estructura de nuestra página en un archivo y los estilos en otro, nos

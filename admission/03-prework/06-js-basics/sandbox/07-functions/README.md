@@ -42,8 +42,8 @@ de nuestro propio vocabulario para evitar repetirnos demasiado.
 
 ## Definiendo una función
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 La definición de una función es sólo una definición normal de una variable,

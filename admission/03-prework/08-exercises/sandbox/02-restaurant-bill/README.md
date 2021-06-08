@@ -24,8 +24,8 @@ Para llevar a adelante este reto necesitas completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 ## Abre el archivo `restaurantBill.js`

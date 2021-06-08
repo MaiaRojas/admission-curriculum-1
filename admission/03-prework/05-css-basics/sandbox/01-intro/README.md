@@ -20,8 +20,8 @@ No es un lenguaje de programación y sí un lenguaje de hojas de estilo.
 Vamos a formatear el documento HTML con el elemento `style`, por lo eso es importante
 que ya hayas hecho la unidad `HTML basics`.
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 {% spoiler %}

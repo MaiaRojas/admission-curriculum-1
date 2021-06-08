@@ -20,8 +20,8 @@ disponible gracias a [hectorip](https://github.com/hectorip).
 
 ## Variables
 
-{%spoiler "Recuerda inicializar tu proyecto con `npm install`?"%}
-{% video https://www.youtube.com/watch?v=IoVRipOlUsc&t=3m27s %}
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 Ya conoces los tipos de datos más comunes en Javascript. Sabes crear, combinar y
