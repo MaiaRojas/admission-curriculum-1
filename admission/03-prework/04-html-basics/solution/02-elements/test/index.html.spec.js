@@ -1,6 +1,5 @@
 const fs = require('fs');
 const { JSDOM } = require('jsdom');
-require('html-validate/jest');
 
 const html = fs.readFileSync(__dirname + '/../src/index.html', 'utf-8');
 const page = new JSDOM(html);
@@ -20,11 +19,10 @@ describe('HTML Basics: Elements', () => {
   it('Hay al menos un <a /> con un atributo href a un documento html local "bien formado"', () => {
     const href = document.body.querySelector('a').getAttribute('href');
     const html = fs.readFileSync(__dirname + '/../src/' + href, 'utf-8');
-    expect(html).toHTMLValidate({
-      rules: {
-        "element-required-attributes": "off",
-      },
+    new JSDOM(html, {
+      contentType: "application/xhtml+xml",
     });
+    expect(true).toBe(true);
   });
   it('Hay al menos un <input /> ', () => {
     expect(document.body.querySelector('input')).not.toBe(null)
