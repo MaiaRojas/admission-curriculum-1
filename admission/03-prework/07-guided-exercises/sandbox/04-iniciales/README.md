@@ -307,7 +307,7 @@ const listener = function () {
   const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
 
   const elementResultado =  document.getElementById("resultado");
-  elementResulta.innerHTML = "Tus iniciales son " + primeraInicial + segundaInicial;
+  elementResultado.innerHTML = "Tus iniciales son " + primeraInicial + segundaInicial;
 };
 ```
 
@@ -339,7 +339,7 @@ const listener = function () {
   const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
 
   const elementResultado =  document.getElementById("resultado");
-  elementResulta.innerHTML = "Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase();
+  elementResultado.innerHTML = "Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase();
 };
 ```
 
