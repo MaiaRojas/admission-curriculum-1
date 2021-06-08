@@ -102,7 +102,7 @@ Para ello necesitamos importar el archivo `app.js` dentro de nuestra
 etiqueta `<body>`:
 
 ```html
-  <script type="text/Javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 ```
 
 {% spoiler %}
