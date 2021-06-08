@@ -28,6 +28,10 @@ y porcentaje de impuestos.
 {% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
+> Por una limitación del sandbox, los tests para estos ejercicios no se pueden
+> ejecutar. De todas maneras puedes chequear las descripciones ejecutando
+> `npm run test` y validar los resultados a mano.
+
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
