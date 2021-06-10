@@ -1,5 +1,7 @@
 const path = require('path');
 const { e2e: { initStaticServer, stopStaticServer, regExpEscape } } = require('@laboratoria/prework-test-utils');
+const fs = require('fs');
+const { JSDOM } = require('jsdom');
 
 const srcPath = path.normalize(__dirname + '/../src');
 let server;
@@ -33,6 +35,16 @@ describe('Guided Exercises: Ganancias y perdidas', () => {
     page = await browser.newPage();
   });
 
+  it('Tiene que existir un archivo index.html con javascript importado de un archivo local externo', () => {
+    const html = fs.readFileSync(__dirname + '/../src/index.html', 'utf-8');
+    const page = new JSDOM(html);
+    const { window } = page;
+    const { document } = window;
+    const jsPath = document.body.querySelector('script').getAttribute('src');
+    const js = fs.readFileSync(__dirname + '/../src/' + jsPath, 'utf-8');
+    expect(js.trim()).not.toBe('');
+  });
+  
   it('La página tiene el title correcto', async (done) => {
     await page.goto('http://localhost:5000');
     expect(page.title()).resolves.toMatch('Ganancias y perdidas').then(done);
