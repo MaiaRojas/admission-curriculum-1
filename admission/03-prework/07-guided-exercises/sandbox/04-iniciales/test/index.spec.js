@@ -1,5 +1,5 @@
 const path = require('path');
-const { e2e: { initStaticServer, stopStaticServer, regExpEscape } } = require('@laboratoria/prework-test-utils');
+const { e2e: { initStaticServer, stopStaticServer } } = require('@laboratoria/prework-test-utils');
 
 const srcPath = path.normalize(__dirname + '/../src');
 let server;
@@ -14,8 +14,7 @@ const testConversion = async ({ page, done, nombre, iniciales }) => {
   });
 
   const message = await page.$eval('#resultado', (el) => el.innerHTML);
-  const regexp = new RegExp(regExpEscape(` ${iniciales}`), 'g');
-  expect(regexp.test(message)).toBe(true);
+  expect(message).toBe(`Tus iniciales son ${iniciales}`);
   done();
 }
 
@@ -67,6 +66,28 @@ describe('Guided Exercises: Iniciales', () => {
       iniciales
     })
   });
+
+  it('Si el input no tiene espacio', async (done) => {
+    const nombre = "Monica";
+    const iniciales = "MM";
+    await testConversion({
+      page,
+      done,
+      nombre,
+      iniciales
+    })
+  })
+
+  it('Si el input tiene un solo espacio al final', async (done) => {
+    const nombre = "Monica ";
+    const iniciales = "M";
+    await testConversion({
+      page,
+      done,
+      nombre,
+      iniciales
+    })
+  })
 
   afterAll((done) => {
     stopStaticServer(server, done);
