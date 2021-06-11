@@ -3,11 +3,11 @@
 ## Enunciado
 
 Crea una página web que pida al usuario la temperatura en grados Celsius (°C),
-utilizando `prompt()`, y devuelva, en la consola, la temperatura en grados
+utilizando `window.prompt()`, y devuelva, en la consola, la temperatura en grados
 Fahrenheit (°F) utilizando `console.log()`.
 La fórmula matemática para pasar de °C a °F es: `T(°F) = ( T(°C) × 1.8 ) + 32`.
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=UR1bDbnCRNk %}
 
 ## Análisis y lista de tareas
 
@@ -23,10 +23,18 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
+> Por una limitación del sandbox, los tests para estos ejercicios no se pueden
+> ejecutar. De todas maneras puedes chequear las descripciones ejecutando
+> `npm run test` y validar los resultados a mano.
+
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -68,7 +76,7 @@ que diga _Coloca la temperatura en grados Celsius (°C)_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 4 - Crea tu _window.prompt_ y guarda el valor retornado en una variable
@@ -88,7 +96,7 @@ Esto es porque el archivo `index.html` nunca está llamando a la funcionalidad
 Para ello necesitamos importar el archivo `app.js` dentro de nuestro etiqueta `<body>`:
 
 ```html
-  <script type="text/Javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 ```
 
 {% spoiler %}
@@ -152,9 +160,9 @@ Puedes continuar con tu próximo
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

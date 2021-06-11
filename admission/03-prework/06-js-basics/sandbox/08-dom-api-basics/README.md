@@ -1,4 +1,4 @@
-# Variables
+# Interactividad en HTML con Javascript
 
 - Tipo: `practice`
 - Formato: `self-paced`
@@ -13,6 +13,10 @@
 {% next "DOM" %}
 
 ## DOM
+
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
 
 Cuándo abrimos una página web, nuestro navegador (browser) crea un modelo del
 documento llamado _Document Object Model (DOM)_, que es una *"copia"* del HTML,
@@ -119,9 +123,9 @@ hasta el momento a través de algunos
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

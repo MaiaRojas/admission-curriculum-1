@@ -12,9 +12,9 @@ Construir una página web en [codesandbox.io](https://codesandbox.io) que
 funcionalmente sea similar a esta:
 [https://prework-test.netlify.app/](https://prework-test.netlify.app/)
 
-Completa las siguientes historias de usuario y consigue pasar todos los tests.
+{% video https://www.youtube.com/watch?v=iiXApZIx7Yc %}
 
-[FIXME-VIDEO: Demo de nuestra solucion con ejemplo de como ejecutar tests]
+Completa las siguientes historias de usuario y consigue pasar todos los tests.
 
 ## Historias de Usuario
 
@@ -88,7 +88,7 @@ Hasta el momento hemos usado un sandbox, que nos ha permitido resolver las
 prácticas, pero para resolver retos "reales" te comendamos utilizar
 [codesandbox.io](https://codesandbox.io), que es una herramienta profesional.
 
-[FIXME-VIDEO: demo codesandbox]
+{% video https://www.youtube.com/watch?v=iiXApZIx7Yc %}
 
 ## Submit
 

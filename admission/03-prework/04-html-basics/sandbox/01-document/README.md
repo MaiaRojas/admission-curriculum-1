@@ -25,20 +25,22 @@ Si quieres saber más revisa su [documentación en MDN](https://developer.mozill
 
 {% next "Comencemos" %}
 
-> Antes de comenzar recuerda inicializar tu solución ejecutando `npm install` en
-> tu terminal
+Lo **primero** que haremos en esta lección, y en todas las siguientes, es
+inicializar nuestro proyecto.
+
+En general todos los proyectos cuentan con algún archivo de _configuración_, en
+nuestro caso este archivo se llama `package.json`. En este momento no es
+necesario que entiendas nada de lo que dice ese archivo, solamente debes recordar
+que antes de comenzar con tu proyecto debes instalar sus _dependencias_,
+ejecutando `npm install` en la terminal.
 
 {%spoiler "¿Cómo ejecutar `npm install`?"%}
-[FIXME-VIDEO: ejecutar `npm install`]
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
 {%endspoiler%}
 
 ### Primeros Pasos: Sintaxis básica
 
-Crea un archivo `index.html` dentro de la carpeta `src`.
-
-{%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
-{%endspoiler%}
+En la carpeta `src` encontrarás un archivo `index.html` vacío. Vamos a llenarlo.
 
 La primera línea que necesita en un archivo HTML es `<!DOCTYPE html>`.
 Esto le permite al navegador (como Chrome, Firefox, Internet Explorer o Safari)
@@ -159,9 +161,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

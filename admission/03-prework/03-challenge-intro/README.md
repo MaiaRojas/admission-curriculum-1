@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-[FIXME-VIDEO: Demo de nuestra solucion del reto]
+{% video https://www.youtube.com/watch?v=-HN0OHZch0U %}
 
 Construir un sitio web que funcionalmente sea similar a este:
 [https://prework-test.netlify.app/](https://prework-test.netlify.app/)

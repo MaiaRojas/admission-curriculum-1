@@ -13,6 +13,10 @@
 
 ## El documento HTML
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
 Ya conoces la estructura basica para formatear el documento HTML.
 Ahora vamos a practicar y testear!
 
@@ -21,7 +25,7 @@ Crea un archivo `index.html` dentro de la carpeta `src`,
 donde colocaremos un elemento `h1`, `h2` y un `p`.
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ```html
@@ -174,9 +178,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

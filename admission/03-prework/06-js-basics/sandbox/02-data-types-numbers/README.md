@@ -38,6 +38,10 @@ según su historial de compra en un hipermercado ([fuente](http://www.forbes.com
 
 ## Tipos de datos
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
 Las computadoras son un gran recurso para trabajar con grandes cantidades de
 datos. De hecho, en el mundo de las computadoras solo existen datos. Con las
 computadoras podemos leer data, modificar data y crear nueva data. Toda la data
@@ -83,7 +87,7 @@ console.log(-9.81);
 ```
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=I4XWmfN0vxA %}
 {%endspoiler%}
 
 También puedes hacer uso de la notación científica para números muy grandes o
@@ -111,11 +115,11 @@ archivo `.js` lo importas desde una página web, el resultado lo verás impreso
 en la consola de tu navegador.
 
 {%spoiler "¿Cómo ejecutar un archivo `.js` en la terminal?"%}
-[FIXME-VIDEO: ejecutar archivo `.js`]
+{% video https://www.youtube.com/watch?v=I4XWmfN0vxA %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo abrir la consola del navegador?"%}
-[FIXME-VIDEO: Cómo abrir la consola del navegador]
+{% video https://www.youtube.com/watch?v=thgUnPKL9ms %}
 {%endspoiler%}
 
 > Si quieres saber más sobre `console.log`, te invitamos a revisar la
@@ -194,9 +198,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

@@ -14,6 +14,10 @@
 
 ## Comentarios
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
 Muchas veces, por más descriptivo que escribas tu código, es necesario brindar
 más información para que otras personas puedan entender fácilmente cómo funciona
 tu programa. Para añadir esa información sin afectar el flujo de tu código,
@@ -69,9 +73,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

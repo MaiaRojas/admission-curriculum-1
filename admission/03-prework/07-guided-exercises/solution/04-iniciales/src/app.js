@@ -1,7 +1,8 @@
-const element = document.getElementById("btn")
+const element = document.getElementById("btn");
 
 const listener = function () {
   const nombre = document.getElementById("name").value;
+
   const primeraInicial = nombre.slice(0,1);
 
   const posicionSegundaInicial = nombre.indexOf(" ") + 1

@@ -6,7 +6,7 @@ Crear un programa que pide los ingresos, los costos y el % de impuestos,
 y calcula la ganancia. Debe imprimir el resultado
 en la web con el símbolo `$` adelante.
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=-0SE3ehTCtY %}
 
 ## Análisis y lista de tareas
 
@@ -24,10 +24,18 @@ y porcentaje de impuestos.
 
 {% next "Comencemos" %}
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
+> Por una limitación del sandbox, los tests para estos ejercicios no se pueden
+> ejecutar. De todas maneras puedes chequear las descripciones ejecutando
+> `npm run test` y validar los resultados a mano.
+
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -68,7 +76,7 @@ que diga _Coloca tus ganancias, costos y porcentaje de impuestos_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 4 - Integra con la página `html`
@@ -256,7 +264,7 @@ const listener = function () {
   const gananciaNeta = gananciaBruta - impuestos;
 
   const elementResultado =  document.getElementById("resultado");
-  elementResultado.innerHTML = "Tu ganancia neta es " + gananciaNeta;
+  elementResultado.innerHTML = "Tu ganancia neta es $" + gananciaNeta;
 };
 ```
 

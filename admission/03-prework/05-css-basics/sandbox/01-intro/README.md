@@ -20,10 +20,12 @@ No es un lenguaje de programación y sí un lenguaje de hojas de estilo.
 Vamos a formatear el documento HTML con el elemento `style`, por lo eso es importante
 que ya hayas hecho la unidad `HTML basics`.
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
 {% spoiler %}
-
 Si quieres saber más revisa su [documentación en MDN](https://developer.mozilla.org/es/docs/Web/CSS)
-
 {% endspoiler %}
 
 ## Sintaxis básica
@@ -165,9 +167,9 @@ Puedes continuar a tu próxima lección sobre
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

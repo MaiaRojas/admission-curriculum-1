@@ -5,7 +5,7 @@ for d in ./admission/03-prework/*; do
     for sd in $d/solution/*; do
       if [ -d "$sd" ]; then
         target=${sd/solution/sandbox}
-        cp -rf "$sd/package.json" "$sd/package-lock.json" "$sd/test" $target
+        cp -rf "$sd/package.json" "$sd/test" $target
       fi
     done
   fi

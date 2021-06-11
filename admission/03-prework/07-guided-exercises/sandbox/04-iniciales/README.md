@@ -13,7 +13,7 @@ Veamos unos ejemplos:
 - "ana martinez" y "Ana Martinez" devuelven las iniciales "AM"
 - "Michelle Seguil" y "michelle seguil" devuelven "MS"
 
-[FIXME-VIDEO: Demo del resultado final]
+{% video https://www.youtube.com/watch?v=Rr8c3koescg %}
 
 ## Análisis y lista de tareas
 
@@ -32,10 +32,18 @@ Para llevar a adelante este reto necesitaremos completar las siguientes tareas:
 
 {% next "Comencemos" %}
 
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
+
+> Por una limitación del sandbox, los tests para estos ejercicios no se pueden
+> ejecutar. De todas maneras puedes chequear las descripciones ejecutando
+> `npm run test` y validar los resultados a mano.
+
 ## 1 - Crea un archivo `index.html` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 2 - Crea la estructura de la página web
@@ -77,7 +85,7 @@ que diga _Coloca las iniciales_.
 ## 3 - Crea un archivo `app.js` dentro de la carpeta `src`
 
 {%spoiler "¿Cómo crear un archivo?"%}
-[FIXME-VIDEO: crear archivo en sandbox]
+{% video https://www.youtube.com/watch?v=Na07yDL88-0 %}
 {%endspoiler%}
 
 ## 4 - Integra con la página `html`
@@ -89,7 +97,7 @@ Para ello necesitamos importar el archivo `app.js` dentro de
 nuestra etiqueta `<body>`:
 
 ```html
-  <script type="text/Javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 ```
 
 ## 5 - Añade las etiquetas necesarias
@@ -303,7 +311,7 @@ const listener = function () {
   const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
 
   const elementResultado =  document.getElementById("resultado");
-  elementResulta.innerHTML = "Tus iniciales son " + primeraInicial + segundaInicial;
+  elementResultado.innerHTML = "Tus iniciales son " + primeraInicial + segundaInicial;
 };
 ```
 
@@ -335,7 +343,7 @@ const listener = function () {
   const segundaInicial = nombre.slice(posicionSegundaInicial, posicionSegundaInicial + 1);
 
   const elementResultado =  document.getElementById("resultado");
-  elementResulta.innerHTML = "Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase();
+  elementResultado.innerHTML = "Tus iniciales son " + primeraInicial.toUpperCase() + segundaInicial.toUpperCase();
 };
 ```
 
@@ -350,9 +358,9 @@ ejercicios, que te sugerimos intentes resolverlos por tu cuenta.
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

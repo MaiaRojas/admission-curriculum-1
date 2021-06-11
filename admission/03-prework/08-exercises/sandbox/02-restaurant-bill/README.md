@@ -7,8 +7,6 @@ del consumo es de 50 dólares, pero a eso debes agregarle el 10% de Impuesto al
 Valor Agregado (IVA). Quieres dividir la cuenta equitativamente entre tu y tus amigas.
 Para eso vamos a crear este programa.
 
-[FIXME-VIDEO: Demo del resultado final]
-
 ## Análisis y lista de tareas
 
 Para llevar a adelante este reto necesitas completar las siguientes tareas:
@@ -23,6 +21,10 @@ Para llevar a adelante este reto necesitas completar las siguientes tareas:
   * Ejecutar los tests
 
 {% next "Comencemos" %}
+
+{%spoiler "Recuerda inicializar tu proyecto con `npm install`"%}
+{% video https://www.youtube.com/watch?v=QdtKomkVWXE %}
+{%endspoiler%}
 
 ## Abre el archivo `restaurantBill.js`
 
@@ -116,9 +118,9 @@ consideramos que ya estás preparada para resolver el reto que te propusimos.
 > tu terminal
 
 {%spoiler "¿Cómo ejecutar `npm run test`?"%}
-[FIXME-VIDEO: ejecutar `npm run test`]
+{% video https://www.youtube.com/watch?v=dFqamQ-mD1g %}
 {%endspoiler%}
 
 {%spoiler "¿Cómo ejecutar `npm run submit`?"%}
-[FIXME-VIDEO: ejecutar `npm run submit`]
+{% video https://www.youtube.com/watch?v=BsfTBCVF5Gs %}
 {%endspoiler%}

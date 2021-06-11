@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest ."
+    "test": "NO_UPDATE_NOTIFIER=1 && jest .",
+    "submit": "NO_UPDATE_NOTIFIER=1 && submit"
   },
   "author": "Laboratoria",
   "license": "ISC",
   "devDependencies": {
     "@laboratoria/prework-test-utils": "github:Laboratoria/prework-test-utils",
+    "@laboratoria/prework-topic-submit": "github:Laboratoria/prework-topic-submit",
+    "connect": "^3.7.0",
     "esprima": "^4.0.1",
+    "esprima-ast-utils": "^0.0.7",
     "jest": "^26.6.3",
-    "jsdom": "^16.5.3"
+    "jsdom": "^16.5.3",
+    "static-serve": "^0.0.1"
   }
 }

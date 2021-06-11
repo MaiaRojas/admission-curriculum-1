@@ -18,9 +18,6 @@ describe('HTML Basics: Document', () => {
   it('Tiene <body />', () => {
     expect(document.body.innerHTML.trim()).not.toBe('');
   });
-  xit('Esta bien indentado', () => {
-
-  });
   it('Tiene algún comentario', () => {
     const nodeIterator = document.createNodeIterator(
       document.body,

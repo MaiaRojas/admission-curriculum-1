@@ -10,18 +10,6 @@
 
 {% next "Comencemos" %}
 
-## Inicializar proyecto (`npm install`)
+## El flujo de trabajo
 
-[FIXME-VIDE0: abrir temrinal y ejecutar `npm install`]
-
-{% next "Ejecutar tests" %}
-
-## Ejecutar tests (`npm run test`)
-
-[FIXME-VIDE0: demo ejecutar tests]
-
-{% next "Registrar tu avance" %}
-
-## Registrar tu avance (`npm run submit`)
-
-[FIXME-VIDE0: demo submit]
+{% video https://www.youtube.com/watch?v=IoVRipOlUsc %}
