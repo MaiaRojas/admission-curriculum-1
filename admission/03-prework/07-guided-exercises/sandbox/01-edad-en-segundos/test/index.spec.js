@@ -1,5 +1,7 @@
 // const path = require('path');
 // const { e2e: { initStaticServer, stopStaticServer, regExpEscape } } = require('@laboratoria/prework-test-utils');
+const fs = require('fs');
+const { JSDOM } = require('jsdom');
 
 // const srcPath = path.normalize(__dirname + '/../src');
 // let server;
@@ -32,6 +34,16 @@ describe('Guided Exercises: Edad en segundos', () => {
   // afterEach(async () => {
   //   page = await browser.newPage();
   // });
+
+  it('Tiene que existir un archivo index.html con javascript importado de un archivo local externo', () => {
+    const html = fs.readFileSync(__dirname + '/../src/index.html', 'utf-8');
+    const page = new JSDOM(html);
+    const { window } = page;
+    const { document } = window;
+    const jsPath = document.head.querySelector('script').getAttribute('src');
+    const js = fs.readFileSync(__dirname + '/../src/' + jsPath, 'utf-8');
+    expect(js.trim()).not.toBe('');
+  });
 
   it.todo('La página tiene el title "Edad en segundos"');
   // it.todo('La página tiene el title "Edad en segundos"', async (done) => {
@@ -78,7 +90,7 @@ describe('Guided Exercises: Edad en segundos', () => {
   //   })
   // });
 
-  it.todo('String vacio es 0');
+  it.todo('Año como string vacio es 0 segundos');
   // it.todo('String vacio es 0', async (done) => {
   //   const anios = '';
   //   const segundos = 0;
@@ -90,7 +102,7 @@ describe('Guided Exercises: Edad en segundos', () => {
   //   })
   // });
 
-  it.todo('Algo que no es un número es NaN');
+  it.todo('Año es algo que no es un número es NaN segundos');
   // it.todo('Algo que no es un número es NaN', async (done) => {
   //   const anios = 'string';
   //   const segundos = NaN;
