@@ -1,7 +1,5 @@
 // const path = require('path');
 // const { e2e: { initStaticServer, stopStaticServer, regExpEscape } } = require('@laboratoria/prework-test-utils');
-// const fs = require('fs');
-// const { JSDOM } = require('jsdom');
 
 // const srcPath = path.normalize(__dirname + '/../src');
 // let server;
@@ -26,24 +24,13 @@
 //   done();
 // }
 
-describe('Guided Exercises: Ganancias y perdidas', () => {
+describe('Guided Exercises: Convertidor de temperatura', () => {
   // beforeAll((done) => {
   //   server = initStaticServer(srcPath, {}, done);
   // });
 
   // afterEach(async () => {
   //   page = await browser.newPage();
-  // });
-
-  it('Tiene que existir un archivo index.html con javascript importado de un archivo local externo');
-  // it('Tiene que existir un archivo index.html con javascript importado de un archivo local externo', () => {
-  //   const html = fs.readFileSync(__dirname + '/../src/index.html', 'utf-8');
-  //   const page = new JSDOM(html);
-  //   const { window } = page;
-  //   const { document } = window;
-  //   const jsPath = document.body.querySelector('script').getAttribute('src');
-  //   const js = fs.readFileSync(__dirname + '/../src/' + jsPath, 'utf-8');
-  //   expect(js.trim()).not.toBe('');
   // });
 
   it('La página tiene el title "Ganancias y perdidas"');
@@ -68,53 +55,9 @@ describe('Guided Exercises: Ganancias y perdidas', () => {
   //   })
   // });
 
-  it('ingreso = 18520, costos = 3850, porcentaje impuesto = 10');
-  // it('ingreso = 18520, costos = 3850, porcentaje impuesto = 10', async (done) => {
-  //   const ingreso = 18520;
-  //   const costos = 3850;
-  //   const porcentajeImpuesto = 10;
-  //   const gananciaNeta = 13203;
-  //   await testConversion({
-  //     page,
-  //     done,
-  //     ingreso,
-  //     costos,
-  //     porcentajeImpuesto,
-  //     gananciaNeta,
-  //   })
-  // });
-
-  it('Si algun input esta vacio es NaN');
-  // it('Si algun input esta vacio es NaN', async(done) => {
-  //   const ingreso = "";
-  //   const costos = "";
-  //   const porcentajeImpuesto = NaN;
-  //   const gananciaNeta = NaN;
-  //   await testConversion({
-  //     page,
-  //     done,
-  //     ingreso,
-  //     costos,
-  //     porcentajeImpuesto,
-  //     gananciaNeta,
-  //   })
-  // });
-
-  it('Si algun input no es numero es NaN');
-  // it('Si algun input no es numero es NaN', async (done) => {
-  //   const ingreso = "string";
-  //   const costos = 1400;
-  //   const porcentajeImpuesto = NaN;
-  //   const gananciaNeta = NaN;
-  //   await testConversion({
-  //     page,
-  //     done,
-  //     ingreso,
-  //     costos,
-  //     porcentajeImpuesto,
-  //     gananciaNeta,
-  //   })
-  // });
+  it.todo('Otros valores');
+  it.todo('Si algun input esta vacio');
+  it.todo('Si algun input no es numero');
 
   // afterAll((done) => {
   //   stopStaticServer(server, done);
