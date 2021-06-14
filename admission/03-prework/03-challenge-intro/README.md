@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-{% video https://www.youtube.com/watch?v=-HN0OHZch0U %}
+[![Tu primer sitio web](http://img.youtube.com/vi/-HN0OHZch0U/0.jpg)](https://www.youtube.com/watch?v=-HN0OHZch0U)
 
 Construir un sitio web que funcionalmente sea similar a este:
 [https://prework-test.netlify.app/](https://prework-test.netlify.app/)
