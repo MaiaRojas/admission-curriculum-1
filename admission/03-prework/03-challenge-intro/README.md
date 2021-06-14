@@ -6,8 +6,6 @@
 
 ## Objetivo
 
-[![Tu primer sitio web](http://img.youtube.com/vi/-HN0OHZch0U/0.jpg)](https://www.youtube.com/watch?v=-HN0OHZch0U)
-
 Construir un sitio web que funcionalmente sea similar a este:
 [https://prework-test.netlify.app/](https://prework-test.netlify.app/)
 
@@ -47,6 +45,13 @@ Por lo tanto, una página web consta de 2 vistas:
 > Puede ver el código fuente de cualquier página web en la red. El código fuente
 > suele abrirse en una nueva pestaña. Simplemente haz click derecho sobre la
 > página que estás viendo y luego _Ver código fuente_.
+
+## ¿Qué buscaremos construir?
+
+Un sitio web que funcionalmente sea similar a este:
+[https://prework-test.netlify.app/](https://prework-test.netlify.app/)
+
+[![Tu primer sitio web](http://img.youtube.com/vi/-HN0OHZch0U/0.jpg)](https://www.youtube.com/watch?v=-HN0OHZch0U)
 
 ## Pre-aprendizajes
 
