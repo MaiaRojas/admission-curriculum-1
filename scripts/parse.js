@@ -31,6 +31,7 @@ const parse = ({ type, id, locale }, validate = false) => new Promise((resolve) 
   child.stderr.on('data', chunk => stderrChunks.push(chunk));
 
   child.on('close', (code) => {
+    console.log('Debug', code)
     if (code > 0) {
       const err = Object.assign(new Error(`Error parsing ${type} ${id} ${locale}`), {
         item: { type, id, locale },
