@@ -3,11 +3,12 @@ const parse = require('./parse')
 parse(
   [
     { type: 'topic', id: `admission`, locale: 'es-ES' },
-    { type: 'topic', id: `admission`, locale: 'pt-BR' }
+    //{ type: 'topic', id: `admission`, locale: 'pt-BR' }
   ],
   true
 )
   .then(results => {
+    console.log('Debug', results)
     const hasErrors = results.reduce(
       (memo, { result }) => memo || result instanceof Error,
       false

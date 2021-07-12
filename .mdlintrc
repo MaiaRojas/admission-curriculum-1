@@ -27,5 +27,6 @@
       "iframe",
       "pre"
     ]
-  }
+  },
+  "no-bare-urls": false
 }
