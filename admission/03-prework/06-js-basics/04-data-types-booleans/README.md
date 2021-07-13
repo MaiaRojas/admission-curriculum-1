@@ -223,7 +223,7 @@ el valor de la derecha se da como resultado.
 ## Cierre
 
 Puedes continuar a tu próxima lección sobre
-[tipos especiales](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/05-data-types-null-and-undefined/).
+[tipos especiales](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/05-data-types-null-and-undefined/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en

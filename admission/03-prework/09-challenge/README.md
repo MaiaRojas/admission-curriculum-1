@@ -95,4 +95,4 @@ prácticas, pero para resolver retos "reales" te comendamos utilizar
 Una vez que hayas terminado, envía la URL de tu proyecto funcional
 con todos los tests pasando.
 
-[FIXME: Typeform]
+[typeform](https://laboratoria.typeform.com/to/TYPEFORM_ID_TESTS_?email=xxxxx&fname=xxxxx&city=xxxxx&flow=xxxxx&type=xxxxx&uid=xxxxx&cohortid=xxxxx&unitid=xxxxx&partid=xxxxx)

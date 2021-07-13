@@ -116,7 +116,7 @@ Si quieres saber más revisa la documentación oficial de
 Esta es la última lección relacionada a Javascript.
 Puedes continuar a tu próxima lección donde aplicaremos todo lo que hemos visto
 hasta el momento a través de algunos
-[ejercicios guiados](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/sandbox/01-edad-en-segundos/).
+[ejercicios guiados](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/01-edad-en-segundos/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en

@@ -179,7 +179,7 @@ Además pueden leer sobre el modelo de caja de CSS.
 
 Esta es la última lección relacionada a CSS.
 Puedes continuar a tu próxima lección, la primera sobre
-[Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/01-comments/).
+[Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/01-comments/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en

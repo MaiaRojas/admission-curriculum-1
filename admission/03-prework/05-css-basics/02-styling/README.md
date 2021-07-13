@@ -171,7 +171,7 @@ Si quieres saber más sobre los tipos de línea revisa su
 ## Cierre
 
 Puedes continuar a tu próxima lección sobre
-[tamaños con CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/sandbox/03-sizing/).
+[tamaños con CSS](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/05-css-basics/03-sizing/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en

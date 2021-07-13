@@ -183,7 +183,7 @@ las funciones antes de su primer uso.
 ## Cierre
 
 Puedes continuar a tu próxima lección sobre
-[Interactividad en HTML con Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/08-dom-api-basics/).
+[Interactividad en HTML con Javascript](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/08-dom-api-basics/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en

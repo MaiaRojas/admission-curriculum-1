@@ -156,7 +156,7 @@ document.write("Tu edad es " + edad + ", en segundos sería " + edadEnSegundos);
 ## Cierre
 
 Puedes continuar con tu próximo
-[ejercicio guiado](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/sandbox/02-convertidor-de-temperatura/).
+[ejercicio guiado](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/07-guided-exercises/02-convertidor-de-temperatura/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en

@@ -191,7 +191,7 @@ console.log(7 % 2);
 ## Cierre
 
 Puedes continuar a tu próxima lección sobre
-[strings](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/sandbox/03-data-types-strings/).
+[strings](https://lab.cs50.io/Laboratoria/admission-curriculum/rediseno-prework-fe/admission/03-prework/06-js-basics/03-data-types-strings/).
 
 > Antes de terminar, si no lo has hecho todavía valida tu solución ejecutando
 > `npm run test` y recuerda registrar tu avance ejecutando `npm run submit` en
